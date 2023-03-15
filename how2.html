@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Howard's Designs</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="stylesheet.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <style>
@@ -39,13 +32,16 @@
 <body>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<div id="navbar">
+  <div class="topnav" id="myTopnav">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#resume" class="w3-bar-item w3-button" onclick="toggleFunction()">Resume</a>
     <a href="#photos" class="w3-bar-item w3-button" onclick="toggleFunction()">Photos</a>
-	<a href="#cyber" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>Cyber Security Section</a>
-	<a href="#goodcharity" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>Good Charities</a>
-	<a href="#python" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>Python</a>
+  	<a href="#cyber" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>Cyber Security Section</a>
+ 	  <a href="#goodcharity" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>Good Charities</a>
+	  <a href="#python" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>Python</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
 </div>
 
 <div class="row" id="home">
@@ -430,6 +426,15 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 </script>
 
