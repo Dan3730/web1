@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -699,3 +700,706 @@ var currentScrollPos = window.pageYOffset;
 </script>
 
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<title>Howard's Designs</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--------HEADER----------------------------------------------------------->
+<!--------style----------------------------------------------------------->
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+	color: white;
+    padding: 10px;
+    background:	#535640;
+}
+h1 {
+    font-size: 50px;
+	padding: 30px;
+    text-align: center;
+    background: #f1f1f1;
+	font-size: 35px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #535640;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: #535640;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #535640;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: #535640;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #535640;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/***********************************Background Scrollling*****/
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height:100%;
+  max-width: 1600px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('Disney2.JPG');
+    min-height: 350px;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("disney2.JPG");
+    min-height: 350px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("disney6.JPG");
+    min-height: 350px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* This scripts the button
+.button {
+  padding: 50px 500px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 20px #999;
+}
+
+.button:hover {background-color: white}
+
+.button:active {
+  background-color: white;
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 {
+    width: 100%;    
+    background-color: #f1f1c1;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+</head>
+<body>
+<div id="navbar">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#resume" class="w3-bar-item w3-button" onclick="toggleFunction()">Resume</a>
+    <a href="#photos" class="w3-bar-item w3-button" onclick="toggleFunction()">Photos</a>
+	<a href="#cyber" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>Cyber Security Section</a>
+	<a href="#goodcharity" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>Good Charities</a>
+	<a href="#python" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>Python</a>
+</div>
+
+<div class="row" id="home">
+<h3>Welcome to my website!</h3>
+<h4><em><p>This site is to show my progress in my network and security program and for me to find resources or software to come up with a better usable app for home useres, that will help prevent online sex abuse and protect young children on the internet.</em></p>
+<h4><em>How you conduct yourselve on the internet is import and the people who pray on children and the vulnerable <b>shall!!</b> not sleep easily so my children and yours can.</em></h4>
+<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+<img src="DaddyWork1.JPG" class="w3-round w3-image" alt="photos"  width="250" height="111">
+<button onclick="typeWriter()" class="w3-button w3-black">Press Me
+</button>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+
+<div class="bgimg-1 w3-display-container" id="home" style="white-space:nowrap;">   
+</div>
+ 
+
+<!--------------------------------Resume Modal----------------------------->
+<div class="w3-container w3-center">
+<div class="w3-row-padding">
+
+
+<div class="w3-white w3-text-grey w3-card-4"  id="resume">
+<h2>Daniel Howard</h2>
+<p><i class="fa fa-home fa-fw w3-large w3-text-black"></i>Hope Mills, NC</p>
+<p><i class="fa fa-envelope fa-fw w3-marg.in-right w3-large w3-text-black"></i>howardd3730@student.faytechcc.edu</p>
+<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>315-396-7931</p>
+</div>
+
+<div class="w3-column"> 
+<div class="w3-container w3-card-4 w3-white w3-margin-bottom">
+
+<h1 class="w3-text-grey w3-padding-4">
+</h2>Work Experience</h2>
+<h3 class="w3-opacity"><b>United States Army Corps Of Engineer, Heavy equipment operator.</b></h3>
+<h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2nd 2013
+<p>In charge of new soldiers to properly maintain and operate heavy equipment, driving and operating various types of equipment.</p>
+<p>Ended up in the clerical office working with processing new soldiers in, from brigade level down to their assigned units.</p>
+<p>Was trusted to handle many tasks that needed completion without supervision. Leaders trusted me and was written in all my evaluations. 
+</div>
+</div>
+
+<div class="w3-container w3-card-4 w3-white w3-margin-bottom">
+<div class="w3-row">
+<div class="w3-column">
+<h2 class="w3-opacity w3-left w3-border w3-border-bottom w3-border-black">Linux Administration</b></h2>
+<h4><i class="w3-left"> 
+<br>
+<p>I'm developing software that will be able to handle Administration Accounts; that handle user and file account access.</p></h4>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-card-4 w3-white w3-margin-bottom w3-center">
+<div class="w3-row">
+<div class="w3-column">
+<h2 class="w3-opacity w3-left w3-border w3-border-bottom w3-border-black">Network Security and Analysis</b></h2>
+<h4><i class="w3-left"> 
+<p>My goal is to have an official running networking program that is easy to use for home users that will handle their security while working with sensitive files over the internet.</p></h4>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-card-4 w3-white w3-margin-bottom">
+<div class="w3-row">
+<div class="w3-column">
+<h2 class="w3-opacity w3-left w3-border w3-border-bottom w3-border-black">Web Developer</b></h2>
+<h4><i class="w3-left"> 
+<p>This website will be the main platform that will run my programs that help with an over all better personal experience and usability when using the software at home.</p></h4>
+</div>
+</div>
+</div>
+
+<!----Education Section within Resume Section------>
+<div class="w3-container w3-card-4 w3-white w3-left">
+<h2 class="w3-padding-4">
+<i class="fa fa-certificate fa-fw w3-left w3-xxlarge w3-text-black"></i>Education</h2>
+<h4>In Pursuit of a degree in Network Security and Analysis</h3>
+
+<br>
+
+<!----------Button Faytech---->
+<div class="w3-container w3-card-4 w3-white w3-center">
+<div class="w3-row">
+<h2 class="w3-padding-4">
+<b>Fayetteville Technical Community College</b></h2>
+<a href="https://www.faytechcc.edu/" class="w3-btn">
+<img src="ftcc.JPG"></a>
+<br>
+<br>
+<div class="w3-tag w3-black w3-round">2017 - Current
+</div>
+</div>
+
+<br>
+<!----------Faytech Courses---->
+<div class="w3-panel w3-border w3-border-black">
+  <p>Courses I have Completed</p>
+</div>
+<div class="w3-panel w3-border w3-border-bottom w3-border-black">
+<table style="width:100%">
+  <tr>
+    <th>Course</th>
+    <th>Title</th> 
+    <th>Grade</th>
+  </tr>
+   <tr>
+    <td>COM-120</td>
+    <td>Intro Interpersonal Communications</td>
+    <td>A</td>
+  <tr>
+   <tr>
+    <td>MAT-143</td>
+    <td>Quantitative Literacy</td>
+    <td>B</td>
+  <tr>
+  <tr>
+    <td>HUM-110</td>
+    <td>Technology and Society</td>
+    <td>A</td>
+  <tr>
+    <td>SOC-210</td>
+    <td>Introduction to Sociology</td>
+    <td>A</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>CTI-110</td>
+    <td>Web, Pgm, & Db Foundatiom</td>
+    <td>B</td>
+  </tr>
+    <tr>
+    <td>CTI-120</td>
+    <td>Network & Security Foundation</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>CTS-115</td>
+    <td>Info Sys Business Concepts</td>
+    <td>B</td>
+  </tr>
+    <tr>
+    <td>NOS-110</td>
+    <td>Operating System Concepts</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>NOS-120</td>
+    <td>Windows Single User</td>
+    <td>B</td>
+  </tr>
+    <tr>
+    <td>NOS-125</td>
+    <td>Linuz/Unix Single User</td>
+    <td>A</td>
+  </tr>
+   <tr>
+    <td>NOS-130</td>
+    <td>Windows Single User</td>
+    <td>B</td>
+  </tr>
+    <tr>
+    <td>NOS-220</td>
+    <td>Linux/Unix Admin 1</td>
+    <td>B</td>
+  </tr>
+     <tr>
+    <td>SEC-110</td>
+    <td>Security Concepts</td>
+    <td>A</td>
+  </tr>
+    <tr>
+    <td>NET-125</td>
+    <td>Routing Basics</td>
+    <td>D</td>
+  </tr>
+      <tr>
+    <td>NET-125 (2ND Time)</td>
+    <td>Introduction to Networks</td>
+    <td>Current</td>
+  </tr>
+    <tr>
+    <td>NET-126</td>
+    <td>Routing Basics</td>
+    <td>D</td>
+  </tr>
+   <tr>
+    <td>SEC-110</td>
+    <td>Security Concepts</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>SEC-150</td>
+    <td>Secure Communications</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>SEC-175</td>
+    <td>Perimeter Defense</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>SEC-210</td>
+    <td>Intrusion Detection</td>
+    <td>A</td>
+  </tr>
+    <tr>
+    <td>CSC-121</td>
+    <td>Python Programming</td>
+    <td>Current</td>
+  </tr>
+</table>
+</div>
+</div>
+<br>
+<!----------Button Herkimer---->
+<div class="w3-container w3-card-4 w3-white w3-center">
+<div class="w3-row">
+<h2 class="w3-padding-4">
+<b>Herkimer County Community College</b></h2>
+
+
+ <a href="https://www.faytechcc.edu/" class="w3-btn">
+<img src="herkimer.JPG"></a>
+</div>
+
+<div class="w3-container">
+<br>
+
+
+<h4 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2004-2005</h4>
+<p>No Degree Earned</p>
+<p>Pursued a degree in Teaching Assistant</p>
+</div>
+
+</div>
+</div>
+<!---end of Herkimer button image-->
+</div>
+</div>
+</div>
+
+<!----Right of Resume section for Certificate Needed Section------>
+
+
+<!----End Of Right of Resume section for Certificate Needed Section------>
+
+<!--------------------------------End of Resume----------------------------->
+
+<br>
+<br>
+
+<!------------------------Photos-------------------------------------------->
+<div class="w3-container w3-#535640" id="photos">
+<h1>My Photography</h1>
+<div class="w3-row-padding">
+  <div class="w3-container w3-third">
+    <img src="Disney(2).JPG" style="width:50%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-third">
+    <img src="Disney(5).JPG" style="width:50%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+	
+  </div>
+ 
+  <div class="w3-container w3-third">
+    <img src="Disney(4).JPG" style="width:50%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+	<br>
+   <div class="w3-border w3-border-bottom w3-border-white	w3-border w3-border-bottom w3-border-white">
+  </div>
+</div>
+</div>
+</div>
+<!---------------------------End Of Photos--------------------------->
+<br>
+<br>
+<!---------------------------Cyber---------------------------------->
+<div class="bgimg-2" id="cyber">   
+<span class="w3-xxlarge w3-text-white w3-wide" id="cyber">Cyber Section</span>
+</div>
+
+
+<!---Cyber Content-->
+<div class="w3-container w3-left w3-card-4 w3-text-white w3-border-black ">
+<div class="w3-row">
+<div class="w3-column">
+<p>
+Help or advice needed? Here are some links...
+<br>
+<a href="https://suicidepreventionlifeline.org">
+<img border="0" alt="W3Schools" src="suicidebanner.JPG" width="200" height="100">
+</a>
+</p>
+</div>
+</div>
+<p>
+Help and work with stopping online child predators.
+<br>
+<a href="https://www.stopchildpredators.org/">
+<img border="0" alt="W3Schools" src="preditors.JPG" width="200" height="100"></a>	
+</p>
+
+<p>
+"Amber Alersts"
+<br>
+<a href="https://www.missingkids.org/Amber.html">
+<img border="0" alt="W3Schools" src="brinthemhome.JPG" width="200" height="100"></a>
+</p>
+</div>
+
+
+<br>
+<br>
+
+<!----good charity Section---->
+<div class="w3-row">
+<div class="w3-column">
+<span class="w3-xxlarge w3-text-white w3-wide" id="goodcharity">Good Charities</span>
+<div class="w3-container w3-text-white">
+<h3>Charities or companies that provide a good service.</h3>
+</div>
+</div>
+<!----python Section---->
+<span class="w3-xxlarge w3-text-white w3-wide">Welcome to some Python programming.</span>
+<div class="w3-container w3-border">
+</div>
+</div>
+</div>
+
+
+<!-------------------Footer---->
+
+
+<!--------------------------------Bottom Nav----------------------------->
+<!-- Navbar on small screens -->
+
+
+<!--------------------------------End Bottom Nav----------------------------->
+</div>
+<!----------Script---->
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+</script>
+
+</html>
+>>>>>>> 89e0ea72d5ee6e162709df58ccd9d324941801a4
