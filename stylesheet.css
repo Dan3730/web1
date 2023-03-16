@@ -196,6 +196,7 @@ body {
 }
 
 table, th, td {
+  background-color: #000000;
   color: rgb(255, 255, 255);
   border: 1px solid;
   border-collapse: collapse;
@@ -209,6 +210,9 @@ th, td {
 table#t01 {
     width: 100%;    
     background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-color:rgb(20, 255, 12)
 }
 tr:nth-child(even){background-color: #000000}
 
