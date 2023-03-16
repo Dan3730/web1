@@ -1,120 +1,144 @@
 <!DOCTYPE html>
-<html>
+
 <head>
 <title>Howard's Designs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="stylesheet.css">
 </head>
-
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--Back To the Top Button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--Top Nav-->
+<div style="overflow:auto">  
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#resume" class="w3-bar-item w3-button" onclick="toggleFunction()">Resume</a>
     <a href="#photos" class="w3-bar-item w3-button" onclick="toggleFunction()">Photos</a>
     <a href="#cyber" class="w3-bar-item w3-button w3-hide-small"></i>Cyber Security Section</a>
-    <a href="#goodcharity" class="w3-bar-item w3-button"></i>Good Charities</a>
-    <a href="#python" class="w3-bar-item w3-button w3-hide-small"></i>Python</a>
+    <a href="#goodcharity" class="w3-bar-item w3-button">Good Charities</a>
+    <a href="#python" class="w3-bar-item w3-button w3-hide-small">Python</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
     </a>
   </div>
-  
-  <div class="row" id="home">
-  
+</div>
+<!--Just A Heading-->
+<div>
+<p class="dotborder"></p>
   <h2><em><p>This site will show you my accomplishments over the years and hopefully teach you some of what I learned</em></p></h2>
+  <p class="dotborder"></p>
+</div>
+  
+<!-- First Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home" style="white-space:nowrap;">
+</div>
 
-  </div>
-  
-  <!-- First Parallax Image with Logo Text -->
-  
-  <div class="bgimg-1 w3-display-container" id="home" style="white-space:nowrap;">   
-  </div>
-   
-  
-  <!--Resume Modal-->
-  
-  <div class="w3-container w3-center">
+<!--Resume Modal-->
+<div class="w3-container w3-center">
   <div class="w3-row-padding">
-  
-  
-  <div class="w3-white w3-text-grey w3-card-4"  id="resume">
-  <h2>Daniel Howard</h2>
-  <p><i class="fa fa-home fa-fw w3-large w3-text-black"></i>New York</p>
-  <p><i class="fa fa-envelope fa-fw w3-marg.in-right w3-large w3-text-black"></i>howardd3730@yahoo.com</p>
-  <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>910-241-9829</p>
+    <div class="w3-white w3-text-grey w3-card-4"  id="resume">
+      <p class="dotborder"></p>
+      <h2>Resume</h2>
+      <h2><i class="fa fa-home fa-fw w3-large"></i>Upstate New York</h2>
+      <h2><i class="fa fa-envelope fa-fw w3-marg.in-right w3-large"></i>howardd3730@yahoo.com</h2>
+      <h2><i class="fa fa-phone fa-fw w3-margin-right w3-large"></i>910-241-9829</h2>
+    </div>
+
+<!-- Work History-->
+<p class="dotborder"></p>
+<h2>Work Experience</h2>
+
+<!--PNC-->
+<div>
+  <div class="w3-panel w3-border w3-border-bottom w3-border-black">
+    <table style="width:100%">
+      <tr>
+        <th>      
+<h2 class="w3-opacity"><b>PNC National Bank</h2>
+  <h2>Customer Serivce Represenitive</h2>
+  <h2><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2020 - 2021   
+</tr>
+</th>
+</table>
+<br><br>
+</div>
+</div>
+
+<!--Army-->
+<div>
+  <div class="w3-panel w3-border w3-border-bottom w3-border-black">
+    <table style="width:100%">
+      <tr>
+      <th>  
+        <h2 class="w3-opacity"><b>United States Army Corps Of Engineer, Heavy equipment operator.</b></h2>
+        <h2><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2nd 2013
+        <p>In charge of new soldiers to properly maintain and operate heavy equipment, driving and operating various types of equipment.</p>
+        <p>Ended up in the clerical office working with processing new soldiers in, from brigade level down to their assigned units.</p>
+        <p>Was trusted to handle many tasks that needed completion without supervision. Leaders trusted me and was written in all my evaluations.</p> 
+      </th>
+      </tr>
+    </table>
   </div>
-  
-  <div class="w3-column"> 
-  <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
-  
-  <h1 class="w3-text-grey w3-padding-4">
-  </h2>Work Experience</h2>
-  <h3 class="w3-opacity"><b>United States Army Corps Of Engineer, Heavy equipment operator.</b></h3>
-  <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2nd 2013
-  <p>In charge of new soldiers to properly maintain and operate heavy equipment, driving and operating various types of equipment.</p>
-  <p>Ended up in the clerical office working with processing new soldiers in, from brigade level down to their assigned units.</p>
-  <p>Was trusted to handle many tasks that needed completion without supervision. Leaders trusted me and was written in all my evaluations. 
-  </div>
-  </div>
-  
-  <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
-  <div class="w3-row">
-  <div class="w3-column">
-   <h2 class="w3-opacity w3-left w3-border w3-border-bottom w3-border-black">Linux Administration</b></h2>
-  <h4><i class="w3-left"> 
-  <br>
-  <p>I'm developing software that will be able to handle Administration Accounts; that handle user and file account access.</p></h4>
-  </div>
-  </div>
-  </div>
-  
-  <div class="w3-container w3-card-4 w3-white w3-margin-bottom w3-center">
-  <div class="w3-row">
-  <div class="w3-column">
-  <h2 class="w3-opacity w3-left w3-border w3-border-bottom w3-border-black">Network Security and Analysis</b></h2>
-  <h4><i class="w3-left"> 
-  <p>My goal is to have an official running networking program that is easy to use for home users that will handle their security while working with sensitive files over the internet.</p></h4>
-  </div>
-  </div>
-  </div>
-  
-  <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
-  <div class="w3-row">
-  <div class="w3-column">
-  <h2 class="w3-opacity w3-left w3-border w3-border-bottom w3-border-black">Web Developer</b></h2>
-  <h4><i class="w3-left"> 
-  <p>This website will be the main platform that will run my programs that help with an over all better personal experience and usability when using the software at home.</p></h4>
-  </div>
-  </div>
-  </div>
-  
-  <!----Education Section within Resume Section------>
-  <div class="w3-container w3-card-4 w3-white w3-left">
+</div>
+
+<!--Education-->
+ <div class="w3-container w3-card-4 w3-white w3-left">
   <h2 class="w3-padding-4">
-  <i class="fa fa-certificate fa-fw w3-left w3-xxlarge w3-text-black"></i>Education</h2>
-  <h4>Network Security and Analysis</h3>
-  
-  <br>
-  
-  <!----------Button Faytech---->
+    <p class="dotborder"></p> 
+  <i class="fa-fw w3-left w3-xxlarge w3-text-black"></i>Education</h2>
+<!--University Of Advancing Technology-->
+<div class="w3-container w3-card-4 w3-white w3-center">
+  <div class="w3-row">
+    <h2 class="w3-padding-4">
+    <b>University Of Advancing Technology</b>
+    <b>Network Security</b></h2>
   <div class="w3-container w3-card-4 w3-white w3-center">
+    <div class="w3-row">
+      <h2 class="w3-padding-4">
+    <p>Courses</p>
+  </div>
+  </div>  
+  <div class="w3-panel w3-border w3-border-bottom w3-border-black">
+    <table style="width:100%">
+      <tr>
+        <th>Course</th>
+        <th>Title</th> 
+      </tr>
+       <tr>
+        <td>COM-120</td>
+        <td>Intro Interpersonal Communications</td>
+      <tr>
+       <tr>
+        <td>MAT-143</td>
+        <td>Quantitative Literacy</td>
+      <tr>
+      <tr>
+        <td>HUM-110</td>
+        <td>Technology and Society</td>
+      <tr>
+        <td>SOC-210</td>
+        <td>Introduction to Sociology</td>
+      </tr>
+    </table>
+    </div>
+    </div>
+    <br>
+</div>   
+</div>
+<!--Faytech-->
+<div class="w3-container w3-card-4 w3-white w3-center">
   <div class="w3-row">
   <h2 class="w3-padding-4">
-  <b>Fayetteville Technical Community College</b></h2>
-  <a href="https://www.faytechcc.edu/" class="w3-btn">
-  <img src="ftcc.JPG"></a>
-  <br>
-  <br>
-  <div class="w3-tag w3-black w3-round">2017 - Current
-  </div>
-  </div>
+  <p class="dotborder"></p>
+  <b>Fayetteville Technical Community College</b>
+  <b>Network Security and Analysis</b></h2>
   
-  <br>
-  <!----------Faytech Courses---->
-  <div class="w3-panel w3-border w3-border-black">
-    <p>Courses I have Completed</p>
+  <div class="w3-container w3-card-4 w3-white w3-center">
+    <div class="w3-row">
+      <h2 class="w3-padding-4">
+    <p>Courses</p>    
+   
+  </div>
   </div>
   <div class="w3-panel w3-border w3-border-bottom w3-border-black">
   <table style="width:100%">
@@ -129,183 +153,111 @@
      <tr>
       <td>MAT-143</td>
       <td>Quantitative Literacy</td>
-   
     <tr>
     <tr>
       <td>HUM-110</td>
       <td>Technology and Society</td>
-  
     <tr>
       <td>SOC-210</td>
       <td>Introduction to Sociology</td>
-    
     </tr>
       </tr>
       <tr>
       <td>CTI-110</td>
       <td>Web, Pgm, & Db Foundatiom</td>
-  
     </tr>
       <tr>
       <td>CTI-120</td>
-      <td>Network & Security Foundation</td>
-  
+      <td>Network & Security Foundation</td>  
     </tr>
     <tr>
       <td>CTS-115</td>
       <td>Info Sys Business Concepts</td>
-    
     </tr>
       <tr>
       <td>NOS-110</td>
       <td>Operating System Concepts</td>
-      
     </tr>
     <tr>
       <td>NOS-120</td>
       <td>Windows Single User</td>
-      
     </tr>
       <tr>
       <td>NOS-125</td>
-      <td>Linuz/Unix Single User</td>
-    
+      <td>Linux/Unix Single User</td>
     </tr>
      <tr>
       <td>NOS-130</td>
       <td>Windows Single User</td>
-    
     </tr>
       <tr>
       <td>NOS-220</td>
       <td>Linux/Unix Admin 1</td>
-  
     </tr>
        <tr>
       <td>SEC-110</td>
       <td>Security Concepts</td>
-    
     </tr>
       <tr>
       <td>NET-125</td>
       <td>Routing Basics</td>
-      
     </tr>
-        <tr>
+    <tr>
       <td>NET-125 (2ND Time)</td>
-      <td>Introduction to Networks</td>
-      
+      <td>Introduction to Networks</td>  
     </tr>
-      <tr>
+    <tr>
       <td>NET-126</td>
       <td>Routing Basics</td>
-    
     </tr>
-     <tr>
+    <tr>
       <td>SEC-110</td>
-      <td>Security Concepts</td>
-     
+      <td>Security Concepts</td> 
     </tr>
     <tr>
       <td>SEC-150</td>
-      <td>Secure Communications</td>
-      
+      <td>Secure Communications</td> 
     </tr>
     <tr>
       <td>SEC-175</td>
       <td>Perimeter Defense</td>
-      
     </tr>
     <tr>
       <td>SEC-210</td>
       <td>Intrusion Detection</td>
-      
     </tr>
       <tr>
       <td>CSC-121</td>
-      <td>Python Programming</td>
-     
+      <td>Python Programming</td>     
     </tr>
   </table>
   </div>
   </div>
   <br>
-  <!----------Button Herkimer---->
+  <!--Herkimer-->
   <div class="w3-container w3-card-4 w3-white w3-center">
   <div class="w3-row">
   <h2 class="w3-padding-4">
-  <b>Herkimer County Community College</b></h2>
-  
-  
-   <a href="https://www.faytechcc.edu/" class="w3-btn">
-  <img src="herkimer.JPG"></a>
-  </div>
-  
-  <div class="w3-container">
-  <br>
-  
-  
-  <h4 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2004-2005</h4>
-  <p>No Degree Earned</p>
-  <p>Pursued a degree in Teaching Assistant</p>
-  </div>
-  
-  </div>
-  </div>
-  <!---end of Herkimer button image-->
-  </div>
-  </div>
-  </div>
-  
-  
-  <!--------------------------------End of Resume----------------------------->
-  
-  <br>
-  <br>
-  
-  <!------------------------Photos-------------------------------------------->
-  <div class="w3-container w3-#535640" id="photos">
-  <h1>My Photography</h1>
-  <div class="w3-row-padding">
-    <div class="w3-container w3-third">
-      <img src="Disney(2).JPG" style="width:50%;cursor:pointer" 
-      onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-container w3-third">
-      <img src="Disney(5).JPG" style="width:50%;cursor:pointer" 
-      onclick="onClick(this)" class="w3-hover-opacity">
-      
-    </div>
-   
-    <div class="w3-container w3-third">
-      <img src="Disney(4).JPG" style="width:50%;cursor:pointer" 
-      onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-  
-  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img id="img01" style="width:100%">
-      <br>
-     <div class="w3-border w3-border-bottom w3-border-white	w3-border w3-border-bottom w3-border-white">
-    </div>
-  </div>
-  </div>
-  </div>
-  <!---------------------------End Of Photos--------------------------->
-  <br>
-  <br>
-  <!---------------------------Cyber---------------------------------->
-  <div class="bgimg-2" id="cyber">   
-  <span class="w3-xxlarge w3-text-white w3-wide" id="cyber">Cyber Section</span>
-  </div>
-  
-  
-  <!---Cyber Content-->
-  <div class="w3-container w3-left w3-card-4 w3-text-white w3-border-black ">
-  <div class="w3-row">
-  <div class="w3-column">
+    <p class="dotborder"></p>
+    <b>Herkimer County Community College</b></h2>  
+    <br>
+  <h2 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2004-2005</h2>
+  <h2>Pursued A degree in Teaching Assistant</h2>
+</div>
+</div>
+  <p class="dotborder"></p>  
+<!---End of Herkimer-->
+</div>  
+</div>
+</div>
+
+<!--END OF RESME-->
+
+
+<!---Cyber Content-->
+<div class="w3-container w3-left w3-card-4 w3-text-white w3-border-black ">
+<div class="w3-row">
+<div class="w3-column">
   <p>
   Help or advice needed? Here are some links...
   <br>
@@ -313,41 +265,30 @@
   <img alt="W3Schools" src="suicidebanner.JPG" width="200" height="100">
   </a>
   </p>
-  </div>
-  </div>
-  <p>
-  Help and work with stopping online child predators.
+</div>
+</div>
+  <p>Help and work with stopping online child predators.
   <br>
   <a href="https://www.stopchildpredators.org/">
   <img alt="W3Schools" src="preditors.JPG" width="200" height="100"></a>	
-  </p>
-  
+  </p>  
   <p>
-  "Amber Alersts"
+  "Amber Alerts"
   <br>
   <a href="https://www.missingkids.org/Amber.html">
-  <img alt="W3Schools" src="brinthemhome.JPG" width="200" height="100"></a>
+  <img alt="W3Schools" src="images/Flag1.jpg" width="200" height="100"></a>
   </p>
-  </div>
-  
-  
-  <br>
-  <br>
+</div>
+<br>
+<br>
   
   <!----good charity Section---->
-  <div class="w3-row">
-  <div class="w3-column">
-  <span class="w3-xxlarge w3-text-white w3-wide" id="goodcharity">Good Charities</span>
-  <div class="w3-container w3-text-white">
-  <h3>Charities or companies that provide a good service.</h3>
-  </div>
-  </div>
-  <!----python Section---->
-  <span class="w3-xxlarge w3-text-white w3-wide">Welcome to some Python programming.</span>
-  <div class="w3-container w3-border">
-  </div>
-  </div>
-  </div>
+<div class="w3-row">
+<div class="w3-column">
+  <span class="w3-xxlarge w3-text-white w3-wide" id="goodcharity">Verified Charities</span>
+</div>
+</div>
+ 
 
 <script>
 // Get the button

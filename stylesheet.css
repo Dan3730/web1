@@ -196,8 +196,10 @@ body {
 }
 
 table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  color: rgb(255, 255, 255);
+  border: 1px solid;
+  border-collapse: collapse;
+  border-color:rgb(20, 255, 12)
 }
 
 th, td {
@@ -206,10 +208,16 @@ th, td {
 }
 table#t01 {
     width: 100%;    
-    background-color: #f1f1c1;
+    background-color: #000000;
 }
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){background-color: #000000}
 
+/* Border */
+p.dotborder {
+  border-style: solid;
+  border-width: thick;
+  color:rgb(20, 255, 12)
+}
 
 h1 {
   font-size: 50px;
@@ -220,10 +228,9 @@ font-size: 35px;
 }
 
 h2 {
-  font-size: 10px;
   text-align: center;
   color: #f1f1f1;
-font-size: 35px;
+  font-size: 20px;
 }
 
 
