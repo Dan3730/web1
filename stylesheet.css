@@ -217,7 +217,7 @@ table#t01 {
 tr:nth-child(even){background-color: #000000}
 
 /* Border */
-p.dotborder {
+p.thickborder {
   border-style: solid;
   border-width: thick;
   color:rgb(20, 255, 12)
