@@ -195,25 +195,24 @@ body {
   transform: translateY(4px);
 }
 
-table, th, td {
+table {
+  text-align: center;
   background-color: #000000;
-  color: rgb(255, 255, 255);
-  border: 1px solid;
-  border-collapse: collapse;
-  border-color:rgb(20, 255, 12)
+  color:rgb(20, 255, 12)
+}
+th, td { 
+  background-color: #3a3a3ecb;
+  padding: 10px;
+  text-align: center;
+} 
+
+tr { 
+  background-color: #535354cb;
+  padding: 10px;
+  text-align: center;
+
 }
 
-th, td {
-    padding: 15px;
-    text-align: left;
-}
-table#t01 {
-    width: 100%;    
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    border: 1px solid;
-    border-color:rgb(20, 255, 12)
-}
 tr:nth-child(even){background-color: #000000}
 
 /* Border */
