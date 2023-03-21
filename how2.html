@@ -156,101 +156,78 @@
       </th>
     </tr>
   </table>
-  <table style="width:50%">
+  <br>
+  <table style="width:100%">
+  <th><p>What is the purpose of subnetting</p>
+  </th>
+  <br>
+  <tr>
+    <td>
+    <li>To seperate device from other devices</li>
+    <li>Limit the amount of available ip addresses 
+    on the network.</li>
+    <li>Network segmentation</li>
+    <li>
+      The goal is to provide ip addresses to devices
+    </li>
+    <li>
+      To accomplish this you needed to know how many ip addresses 
+      are needed
+    </li>
+    <br>
+    <li>Now lets look at the tables below</li>
+    </td>   
+  </tr>  
+  </table>
+  <br>  
+  <table style="width:100%">
     <tr>
-      <th>Layer</th>
-      <th>Name</th>
-      <th>use</th>
+      <th>First Octet value</th>
+      <th>Class</th>
+      <th>Example IP address</th>
     </tr>
-    <tr>  
-      <td>7</td>
-      <td>Application</td>
-      <td>Where the applications access networks
-      </td>
+    <tr>
+      <td>0-126</td>
+      <td>Class A</td>
+      <td>34.126.35.125</td>     
     </tr>
-    <tr>  
-      <td>6</td>
-      <td>Presentation</td>
-      <td>Where the applications access networks
-      </td>
+    <tr>
+      <td>128-191</td>
+      <td>Class B</td>
+      <td>134.23.45.123</td>
     </tr>
-    <tr>  
-      <td>5</td>
-      <td>Session</td>
-      <td>Where the applications access networks
-      </td>
+    <tr>
+      <td>192-223</td>
+      <td>Class C</td>
+      <td>245.192.1.123</td>      
     </tr>
-    <tr>  
-      <td>4</td>
-      <td>Transport</td>
-      <td>Where the applications access networks
-      </td>
+    <tr>
+    <td>
+    <p>127 is not shown because it's the assigned loopback address.</p>
+    </td>
     </tr>
-    <tr>  
-      <td>3</td>
-      <td>Network</td>
-      <td>Where the applications access networks
-      </td>
-    </tr>
-    <tr>  
-      <td>2</td>
-      <td>Datalink</td>
-      <td>Where the applications access networks
-      </td>
-    </tr>
-    <tr>  
-      <td>1</td>
-      <td>Physical</td>
-      <td>Where the applications access networks
-      </td>
-    </tr>
-
-<div class="w3-panel w3-border w3-border-bottom w3-border-black">
-  <table style="width:100%">
-    <th> 
-      <h2>
-       The purpose of subnetting is to designate devices, computers
-       or anything connecting to the internet.
-      </h2>
-    </th>  
-    <th>
-      <h2>
-        For example corporate networks or hospitals would specifically 
-        assign their local trusted connections on network that is 
-        seperate from all other traffic such as vistors, guests, customers etc. 
-      </h2>
-    </th>
-    <th>  
-      <h2>
-        Beginning with the classes of IP Address they are made up
-        three,<br> class A, B, C 
-      </h2>
-    </th>
+    </p>
   </table>
   <br>
   <table style="width:100%">
+  <tr>
     <th>
-      <h2>Next Steps</h2>  
-    </th>  
+      <h2>Classes</h2> 
+    </th>    
+    <br>       
+    <td>
+    <li>Class A 255.0.0.0</li> 
+    <li>class B 255.255.0.0</li>
+    <li>Class C 255.255.255.0</li>  
+    </td>
+  </tr>
   </table>
-  
-  <br>
+  <br>   
+  <br>   
   <table style="width:100%">
     <th>
-      <h2>Subnetting</h2>
-      <p><li>The goal is to assign an IP address<br>
-        for a section of devices needing to connect<br>
-        to A network  
-        Class A 255.0.0.0<br> 
-        class B 255.255.0.0<br> 
-        Class C 255.255.255.0<br> 
-      </li></p>
-    </p>When assigning ip address we 
+      <h2>Subnet Mask/Range</h2>
     </th>
-  </table>
-  <br>
-  
-  <table>
     <tr>
       <th>Class</th>
       <th>Mask</th>

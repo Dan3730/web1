@@ -125,17 +125,27 @@ html,body {background-color: black; color: white;}
   background-color: black;
 }
 
-table, th, td { 
+table{ 
   background-color: #222222cb;
   text-align: center;
   color: #ffffff;
   width: auto;
   margin-left: auto;
   margin-right: auto;
+  border-style: solid;
   border-color: white;
 }
-p {
+th, td { 
+  background-color: #222222cb;
   text-align: center;
+  color: #ffffff;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+p, li {
+  text-align: left;
+  
 }
 /* Border */
 p.thickborder {
