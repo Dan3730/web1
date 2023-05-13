@@ -21,7 +21,7 @@ body, html {
   background-color: #f1f1f1;
   padding: 30px;
   text-align: center;
-}                                 
+}                 y                
 
 #navbar {
   overflow: hidden;
@@ -83,13 +83,15 @@ body, html {
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #4eff03;
+  color: rgb(0, 0, 0);
 }
 
 .topnav .icon {
   display: none;
 }
+
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
