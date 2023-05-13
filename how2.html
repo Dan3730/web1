@@ -11,7 +11,6 @@
 </head>
 <div class="parallax"></div>
 <body>
-
   <div class="topnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
     <a href="#contact">Contact</a>
@@ -23,7 +22,15 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
     </a> 
+  
+   </nav>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    </div>
+    </body>
+    </div> 
   </div> 
+
 <!-- Overlay effect when opening sidebar on small screens -->
   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
   </div>
@@ -86,16 +93,7 @@
 </div>
 <!-- Sidebar -->
 
-<a href="#resume" class="w3-bar-item w3-button" onclick="toggleFunction()">Resume</a>
-<a href="#cyber" class="w3-bar-item w3-button ">Cyber Security Section</a>
-<a href="#goodcharity" class="w3-bar-item w3-button">Important Links</a> 
-<p class="thickborder"></p>
-</nav>
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-</div>
-</body>
-</div> 
+
   
 <!-- END MAIN -->
 </div>
@@ -112,7 +110,6 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
