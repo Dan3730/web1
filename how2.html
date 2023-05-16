@@ -11,8 +11,8 @@
 </head>
 <div class="parallax"></div>
 <body>
-  
-  <div class="topnav" id="myTopnav">
+  <div id="navbar">
+  <div class="myTopnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
@@ -23,17 +23,11 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
     </a> 
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-    </div>
-    </body>
-    </div> 
+  </div> \
   </div> 
-
 <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-  </div>
-<body>  
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+</div>
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-container"  id="Home">
   <p class="thickborder"></p>
@@ -98,9 +92,18 @@
 </div>
 
 <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("myTopnav");
+var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
@@ -111,14 +114,6 @@ function myFunction() {
   }
 }
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
 </script>
 
 </body>
