@@ -15,24 +15,46 @@ html,body {background-color: black; color: white;}
   height: inherit;
   background-color: black;
 }
-
-table{ 
-  background-color: #222222cb;
-  text-align: center;
-  color: #ffffff;
-  width:fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: solid;
-  border-color: white;
+/*single table */
+* {
+  box-sizing: border-box;
 }
-th, td { 
-  background-color: #222222cb;
-  text-align: center;
-  color: #ffffff;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: .1px solid;
+  border-color:rgb(69, 69, 69);
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+  border-bottom: .1px solid;
+  border-color:rgb(69,69,69);
+}
+
+tr:nth-child(even) {
+  background-color: #000000;
 }
 p, li {
   text-align: left;
@@ -53,7 +75,7 @@ h1 {
 }
 h2 {
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   color: #f1f1f1;
   margin-left: auto;
   margin-right: auto;
