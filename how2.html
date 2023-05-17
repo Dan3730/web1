@@ -10,25 +10,18 @@
 <link rel="stylesheet" href="stylesheet.css">
 </head>
 <div class="parallax"></div>
-<body>
-  <div id="navbar">
-  <div class="myTopnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-    <a href="#resume" class="w3-bar-item w3-button" onclick="toggleFunction()">Resume</a>
-    <a href="#cyber" class="w3-bar-item w3-button">Cyber Security Section</a>
-    <a href="#goodcharity" class="w3-bar-item w3-button">Important Links</a> 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-    </a> 
-  </div> 
-  
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
-</div>
-
+<body> 
+  <div class="topnav" id="myTopnav">
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#" class="w3-bar-item w3-button">Logo</a>
+      <a href="#resume" class="w3-bar-item w3-button">Resume</a>
+      <a href="#cyber" class="w3-bar-item w3-button">Cyber Security Section</a>
+      <a href="#goodcharity" class="w3-bar-item w3-button">Important Links</a>  
+  </div>
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-container"  id="Home">
   <p class="thickborder"></p>
@@ -84,38 +77,29 @@
 </div>
 </div> 
 </div>
-</div>
-<!-- Sidebar -->
-
-
-  
+</div>  
 <!-- END MAIN -->
 </div>
-
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+
+
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
   }
-}
+  </script>
+<script>
 
-window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 
 </script>
+
 
 </body>
 </html>
