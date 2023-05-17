@@ -33,7 +33,7 @@
 <p class="thickborder"></p>
 <!---Cyber Content-->
 <div class="w3-container"  id="cyber">
-  <h5>Cyber Section</h5> 
+  <h5>Cyber</h5> 
   <table>
   <th><p>What is the purpose of subnetting</p>
   </th>
@@ -55,40 +55,116 @@
     </td>   
   </tr>  
   </table>
-  <br>  
+  <!---Classful IPv4 Addresses-->
+  <br> 
+  <h3>Classful IPv4 Addresses <h3> 
   <table>
     <tr>
-      <th>First Octet value</th>
       <th>Class</th>
-      <th>Example IP address</th>
+      <th>Range</th>
     </tr>
     <tr>
-      <td>0-126</td>
-      <td>Class A</td>
-      <td>34.126.35.125</td>     
+      <td>A</td>
+      <td>0.0.0.0-127.255.255.255</td>     
     </tr>
     <tr>
-      <td>128-191</td>
-      <td>Class B</td>
-      <td>134.23.45.123</td>
+      <td>B</td>
+      <td>128.0.0.0-191.255.255.255</td>
     </tr>
     <tr>
-      <td>192-223</td>
-      <td>Class C</td>
-      <td>245.192.1.123</td>      
+      <td>C</td>
+      <td>192.0.0.0-223.255.255.255</td>
     </tr>
     <tr>
+     <td>D</td>
+     <td>224.0.0.0-239.255.255.255</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>240.0.0.0-255.255.255.255</td>      
+    </tr>
     <td>
     <p>127 is not shown because it's the assigned loopback address.</p>
     </td>
-    </tr>
-    </p>
   </table>
-  <br>
-  <table>
-    <th>
-      <h2>Subnet Mask/Range</h2>
-    </th>
+<!--Private IPv4 Addresses-->
+<h3>Private IPv4 Addresses</h3>
+<table>
+    <tr><td>10.0.0.0-10.255.255.255</td></tr>
+    <tr><td>172.16.0.0-172.31.255.255</td></tr>
+    <tr><td>192.168.0.0-192.168.255.255</td></tr>
+</table>
+<br>
+<!--Special IPv4 Addresses-->  
+<h3>Special IPv4 Addresses</h3>
+<table> 
+    <tr>
+      <td>Local Host</td>
+      <td>APIPA</td>
+    </tr>
+    <tr>
+      <td>127.0.0.0-127.255.255.255</td>
+      <td>169.254.0.0-169.254.255.255</td>
+    </tr>
+</table>
+<!---Bogon IPv4 Addresses-->
+<h3>Bogon IPv4 Addresses</h3>
+<table>
+  <tr>
+    <td>0.0.0.8</td>
+    <td>This network</td>
+  <tr>
+    <td>10.0.0/8</td>
+    <td>Private IPv4 Address Block</td>
+  </tr>
+  <tr>
+    <td>100.64.0.0/10</td>
+    <td>Carrier-grade NAT</td>
+  </tr>
+  <tr>
+    <td>127.0.0/8</td>
+    <td>Loopback</td>
+  </tr>
+  <tr>
+    <td>127.0.53.53</td>
+    <td>Name Collision occurence</td>
+  </tr>
+  <tr>
+    <td>169.254.0.0/16</td>
+    <td>Link Local</td>
+  </tr>
+  <tr>
+    <td>172.16.0.0/12</td>
+    <td>Private IPv4 Address Block</td>
+  </tr>
+  <tr>
+    <td>192.0.0/24</td>
+    <td>IETF protocol assignments</td>
+  </tr>
+  <tr>
+    <td>198.18.0.0/15</td>
+    <td>Network benchmark testing</td>
+  </tr>
+  <tr>
+    <td>198.51.100.0/24</td>
+    <td>TEST-NET-2</td>
+  <tr>
+    <td>203.0.113.0/24</td>
+    <td>TEST-NET-3</td>
+  </tr>
+    <td>224.0.0.0/4</td> 
+    <td>Multicast</td>
+  </tr>
+    <td>240.0.0.0/4</td>
+    <td>Reserved</td> 
+  </tr>
+    <td>255.255.255.255/32</td>
+    <td>Limited broadcast</td> 
+  </tr>
+</table>
+<!--Notations-->  
+<h3>Subnet Mask/Range</h3>
+<table>
     <tr>
       <th>CIDR</th>
       <th>Subnet Mask</th>
@@ -277,23 +353,9 @@
     <td>4,294,967,296</td>            
     <td>255.255.255.255</td>  
   </tr>
-  <br>
+ <!--Converting -->
   <table>
-  <tr>
-    <th>
-      <h2>Classes</h2> 
-    </th>    
-    <br>       
-    <td>
-    <li>Class A 255.0.0.0</li> 
-    <li>class B 255.255.0.0</li>
-    <li>Class C 255.255.255.0</li>  
-    </td>
-  </tr>
-  </table>
-  <!-- -->
-  <table>
-    <th>Convert 1011 to A Decimal:</th><br />
+    <th>Convert 1011 to A Decimal:</th><br/>
     <tr>
       <td>Bytes:</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
     </tr>
