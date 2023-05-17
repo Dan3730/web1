@@ -12,11 +12,9 @@
 <div class="parallax"></div>
 <body> 
   <div class="topnav" id="myTopnav">
-      <a href="https:funcryptology.com">home</a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      <a href="#about" class="w3-bar-item w3-button">about</a>
-      <a href="#resume" class="w3-bar-item w3-button">Resume</a>
-      <a href="#cyber" class="w3-bar-item w3-button">Cyber Security Section</a>
+      <a href="#about" class="w3-bar-item w3-button">Welcome</a>
+      <a href="#cyber" class="w3-bar-item w3-button">Cyber</a>
       <a href="#links" class="w3-bar-item w3-button">Important Links</a>  
   </div>
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
@@ -24,7 +22,7 @@
   <p class="thickborder"></p>
   <h5>Welcome</h5>
   <p>This site will show you my accomplishments over the years and hopefully teach you some of what I learned</p>  
-  <h3>Mission Statement</h3>
+  <h2>Mission Statement</h2>
   <p>We strive to be on the front line of
   teaching basics in ncyber security and teach 
   anyone to work efficiently and feel comfortable with 
@@ -32,7 +30,357 @@
   </p>
 </div>
 <br>
+<p class="thickborder"></p>
+<!---Cyber Content-->
+<div class="w3-container"  id="cyber">
+  <h5>Cyber Section</h5> 
+  <table style="width:100%">
+    <tr>
+      <th><h2>OSI Layering</h2> 
+      </th>
+    </tr>
+  </table>
+  <br>
+  <table style="width:100%">
+  <th><p>What is the purpose of subnetting</p>
+  </th>
+  <br>
+  <tr>
+    <td>
+    <li>To seperate device from other devices</li>
+    <li>Limit the amount of available ip addresses 
+    on the network.</li>
+    <li>Network segmentation</li>
+    <li>
+      The goal is to provide ip addresses to devices
+    </li>
+    <li>
+      To accomplish this you needed to know how many ip addresses 
+      are needed
+    </li>
+    <br>
+    <li>Now lets look at the tables below</li>
+    </td>   
+  </tr>  
+  </table>
+  <br>  
+  <table style="width:100%">
+    <tr>
+      <th>First Octet value</th>
+      <th>Class</th>
+      <th>Example IP address</th>
+    </tr>
+    <tr>
+      <td>0-126</td>
+      <td>Class A</td>
+      <td>34.126.35.125</td>     
+    </tr>
+    <tr>
+      <td>128-191</td>
+      <td>Class B</td>
+      <td>134.23.45.123</td>
+    </tr>
+    <tr>
+      <td>192-223</td>
+      <td>Class C</td>
+      <td>245.192.1.123</td>      
+    </tr>
+    <tr>
+    <td>
+    <p>127 is not shown because it's the assigned loopback address.</p>
+    </td>
+    </tr>
+    </p>
+  </table>
+  <br>
+  <table style="width:100%">
+  <tr>
+    <th>
+      <h2>Classes</h2> 
+    </th>    
+    <br>       
+    <td>
+    <li>Class A 255.0.0.0</li> 
+    <li>class B 255.255.0.0</li>
+    <li>Class C 255.255.255.0</li>  
+    </td>
+  </tr>
+  </table>
+  <br>   
+  <br>   
+  <table style="width:100%">
+    <th>
+      <h2>Subnet Mask/Range</h2>
+    </th>
+    <tr>
+      <th>CIDR</th>
+      <th>Subnet Mask</th>
+      <th>Addresses</th>
+      <th>Wildcard</th>
+    </tr>
+    <tr>
+      <td>/32</td>
+      <td>255.255.255.255</td>
+      <td>1</td>
+      <td>0.0.0.0</td>     
+    </tr>
+    <tr>
+      <td>/31</td>
+      <td>255.255.255.254</td>
+      <td>2</td>
+      <td>0.0.0.1</td>    
+    </tr>
+    <tr>
+      <td>/30</td>
+      <td>255.255.255.252</td>
+      <td>4</td>            
+      <td>0.0.0.3</td>  
+    </tr>
+    <tr>
+      <td>/29</td>
+      <td>255.255.255.248</td>
+      <td>8</td>            
+      <td>0.0.0.7</td>  
+    </tr>
+    <tr>
+      <td>/28</td>
+      <td>255.255.255.240</td>
+      <td>16</td>            
+      <td>0.0.0.15</td>  
+    </tr>
+  
+  <tr>
+    <td>/27</td>
+    <td>255.255.255.224</td>
+    <td>32</td>            
+    <td>0.0.0.31</td>  
+  </tr>
+  <tr>
+    <td>/26</td>
+    <td>255.255.255.192</td>
+    <td>64</td>            
+    <td>0.0.0.63</td>  
+  </tr>
+  <tr>
+    <td>/25</td>
+    <td>255.255.255.128</td>
+    <td>128</td>            
+    <td>0.0.0.127</td>  
+  </tr>
+  <tr>
+    <td>/24</td>
+    <td>255.255.255.0</td>
+    <td>256</td>            
+    <td>0.0.0.255</td>  
+  </tr>
+  <tr>
+    <td>/23</td>
+    <td>255.255.254.0</td>
+    <td>512</td>            
+    <td>0.0.1.255</td>  
+  </tr>
+  <tr>
+    <td>/22</td>
+    <td>255.255.255.0</td>
+    <td>1,024</td>            
+    <td>0.0.3.255</td>  
+  </tr>
+  <tr>
+    <td>/21</td>
+    <td>255.255.248.0</td>
+    <td>2,048</td>            
+    <td>0.0.7.255</td>  
+  </tr>
+  <tr>
+    <td>/20</td>
+    <td>255.255.248.0</td>
+    <td>4,096</td>            
+    <td>0.0.15.255</td>  
+  </tr>
+  <tr>
+    <td>/19</td>
+    <td>255.255.254.0</td>
+    <td>8,192</td>            
+    <td>0.0.31.255</td>  
+  </tr>
+  <tr>
+    <td>/18</td>
+    <td>255.255.192.0</td>
+    <td>16,384</td>            
+    <td>0.0.63.255</td>  
+  </tr>
+  <tr>
+    <td>/17</td>
+    <td>255.255.128.0</td>
+    <td>32,768</td>            
+    <td>0.0.127.255</td>  
+  </tr>
+  <tr>
+    <td>/16</td>
+    <td>255.255.0.0</td>
+    <td>65,536</td>            
+    <td>0.0.255.255</td>  
+  </tr>  <tr>
+    <td>/15</td>
+    <td>255.254.0.0</td>
+    <td>131,072</td>            
+    <td>0.1.255.255</td>  
+  </tr>  <tr>
+    <td>/14</td>
+    <td>255.252.0.0</td>
+    <td>262,144</td>            
+    <td>0.3.255.255</td>  
+  </tr>  <tr>
+    <td>/13</td>
+    <td>255.248.0.0</td>
+    <td>524,288</td>            
+    <td>0.7.255.255</td>  
+  </tr>  <tr>
+    <td>/12</td>
+    <td>255.240.0.0</td>
+    <td>1,048,576</td>            
+    <td>0.15.255.255</td>  
+  </tr>  <tr>
+    <td>/11</td>
+    <td>255.224.0.0</td>
+    <td>4,194,304</td>            
+    <td>0.63.255.255</td>  
+  </tr>  <tr>
+    <td>/10</td>
+    <td>255.192.0.0</td>
+    <td>4,194,304</td>            
+    <td>0.63.255.255</td>  
+  </tr>  <tr>
+    <td>/09</td>
+    <td>255.128.0.0</td>
+    <td>8,388,608</td>            
+    <td>0.127.255.255</td>  
+  </tr>  <tr>
+    <td>/08</td>
+    <td>255.0.0.0</td>
+    <td>16,777,216</td>            
+    <td>0.255.255.255</td>  
+  </tr>  <tr>
+    <td>/07</td>
+    <td>254.0.0.0</td>
+    <td>33,554,432</td>            
+    <td>1.255.255.255</td>  
+  </tr>  <tr>
+    <td>/06</td>
+    <td>252.0.0.0</td>
+    <td>67,108,864</td>            
+    <td>3.255.255.255</td>  
+  </tr>  <tr>
+    <td>/05</td> 
+    <td>248.0.0.0</td>
+    <td>134,217,728</td>            
+    <td>7.255.255.255</td>  
+  </tr>  <tr>
+    <td>/04</td>
+    <td>240.0.0.0</td>
+    <td>268,435,456</td>            
+    <td>15.255.255.255</td>  
+  </tr>  <tr>
+    <td>/03</td>
+    <td>224.0.0.0</td>
+    <td>536,870,912</td>            
+    <td>31.255.255.255</td>  
+  </tr>  <tr>
+    <td>/02</td>
+    <td>192.0.0.0</td>
+    <td>1,073,741,824</td>            
+    <td>63.255.255.255</td>  
+  </tr>  <tr>
+    <td>/01</td>
+    <td>128.0.0.0</td>
+    <td>2,147,483,648</td>            
+    <td>127.255.255.255</td>  
+  </tr>  <tr>
+    <td>/00</td>
+    <td>0.0.0.0</td>
+    <td>4,294,967,296</td>            
+    <td>255.255.255.255</td>  
+  </tr>
+  <br>
+<br>
+<!---
+  <table style="width:100%">
+    <th>    
+    <li></li>
+    </th>
+  </table>
+
+-->
+  <!-- -->
+  <table style="width:100%">
+    <th>Convert 1011 to A Decimal:</th><br />
+    <tr>
+      <td>Bytes:</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+    </tr>
+    <tr>
+      <td>Power2</td><br><br><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>    
+    </tr>
+    <tr>
+      <td>0/1 Binary</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+    </tr> 
+    <tr>
+      <td>Now add the represented bit value.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>  
+  </table>  
+  <table style="width:100%">
+	  <th>Convert 1011 to A Decimal:</th><br />
+    <tr>
+    <td>Bytes:</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+    </tr>
+    <tr>
+    <td>Power2</td><br><br><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>    
+    </tr>
+    <tr>
+    <td>0/1 Binary</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+    </tr> 
+    <tr>
+	  <td>Now add the represented bit value.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+  </table>
+  <table style="width:100%">
+    <th>Add the values</th>
+  	<tr>
+    <td>
+	    8 + 2=10<br>
+      10 + 1 = 11<br>	
+	    <td>11</td>
+    </td>
+    </tr>
+  </table>
+  <table style="width:100%">
+	  <th>Change 111011 to A decimal.</th><br />
+    <tr>
+      <td>0</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+    </tr>
+    <tr>
+      <td>Power2</td><br><br><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>    
+    </tr>
+    <tr>
+      <td>Binary turned on:</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
+    </tr> 
+	   <td>Now add the represented bit value.</td><td>0</td><td>0</td><td>32</td><td>16</td><td>8<td>0</td><td>2</td><td>1</td>
+    </tr>  
+  </table>
+  <table style="width:100%">
+    <th>Add the values</th><br>
+    <tr>
+    <td>
+	    32 + 16 = 48<br>
+      48 + 8 = 56<br>
+	    56 + 2 = 58<br>
+	    58 + 1 = 59
+	  <td>59</td></td>
+    </tr>
+  </table>
+</div>
+  <p class="thickborder"></p> 
 <!----good charity Section---->
+<p class="thickborder"></p>
 <div class="w3-container" id="links">
   <div class="flex-item-left">
   <h5>Important Links</h5>
