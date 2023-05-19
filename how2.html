@@ -695,9 +695,9 @@
   </div>
 </div>
   <div class="row">
-    <div class="column">
-    <h2>ls Options</h2>
-    <table>
+  <div class="column">
+  <h2>ls Options</h2>
+  <table>
     <tr>
       <td>-a</td>
       <td>shows all (including hidden)</td>
@@ -733,10 +733,8 @@
       <td>-Q</td>
       <td>quoted output</td>
     </tr>
-  </div>
-</table> 
-</div>
-    
+  </table>   
+</div>  
   <div class="column">
     <h2>File Transfer Commands</h2>
     <table>
@@ -762,152 +760,118 @@
     </tr>
     </table>
   </div>
+  <div class="row">
   <div class="column">
     <h3>Disk Usage Commands</h3>
+    <table>
     <tr>
-      <td>
-      </td>
+      <td>df</td>
+      <td>shows free hard disk space on the system</td>
     </tr>
-  </div>  
- df -i shows free and used inodes on
-mounted filesystems
-fdisk -l shows free and used inodes on
-mounted filesystems
-ps displays currently running processes du -sh shows total disk usage off the
-current directory
-ps PID gives the status of a particular
-process
-du -ah shows disk usage for all files and
-directories in readable format
-pidof gives the process ID of a process free shows free RAM on the system
-ps -ef displays all running processes on the
-system free -h shows free and used memory
-ps -ef | grep xyz displays process information for xyz findmnt shows target mount point for all
-filesystem
-top displays and manages the top
-processes
-mount /xyz /abc mounts a device in /xyz to /abc
-htop interactive process viewer (top
-alternative)
-kill pid kills process with process ID of pid gzip abc compresses abc file using gzip.
-pkill xyz kills process with name xyz bzip2 abc compresses abc file using bzip2.
-killall abc kills all processes named abc zip abc.zip abc compresses abc file into the archive
-abc.zip.
-program & starts program in the background tar -czvf archive.tar.gz
-/home/temp2/
-compresses a full directory with all
-subdirectories
-bg lists and resumes stopped jobs in
-the background gzip -d xyz.gz extracts xyz.gz with gzip utility
-fg brings the most recent background
-job to foreground. gunzip xyz.gz extracts xyz.gz with gzip utility
-fg x brings job x to the foreground bzip2 -d file.php.bz2 extracts xyz.gz with bzip2 utility
-nice starts a process with a given priority bunzip2 file.php.bz2 extracts xyz.gz with bzip2 utility
-renice changes priority of an already
-running process unzip xyz.zip extracts xyz.zip with zip utility
-pstree displays processes in a tree-like
-diagram gunzip -c output.txt.gz to view the contents of both files
-without extracting
-pmap
-displays a memory usage map of
-processes
-tar cf archive.tar directory creates tar named archive.tar
-containing directory
-lsof lists files opened by running
-processes
-tar xf archive.tar extracts the contents from
-archive.tar
-tar czf archive.tar.gz
-directory
-creates a gzip compressed tar file
-name archive.tar.gz
-command -h / command
-–help
-to review all available options of the
-“command” tar xzf archive.tar.gz extracts a gzip compressed tar file
-info command to find info documents about the
-“command”
-tar cjf archive.tar.bz2
-directory
-creates a tar file with bzip2
-compression
-whatis command displays a single line description
-about the”command” tar xjf archive.tar.bz2 extracts a bzip2 compressed tar file
-$ man UNIXCOMMAND to view detailed man page of the
-“command”
-apropos
-used to search man pages for
-available commands on a specific
-LINUX COMMANDS CHEAT SHEET
-by Gokhan Kosem, www.ipcisco.com
-ls Options File Transfer Commands
-Disk Usage Commands
-Process Management Commands
-Search Commands
-Compress and Decompress Commands
-arp displays ARP table of the device yum search keyword compresses abc file using gzip.
-arpwatch displays ethernet activity and
-Ethernet/ip pairings yum install abc installs abc package
-bmon displays bandwidth, captures yum info abc displays description and summary
-info about abc package
-curl used for for file transfer rpm -i abc.rpm installs package from local file
-named abc.rpm
-dhclient used to analyze clients ip address,
-subnet mask, gateway, dns server yum remove abc Remove/uninstall abc package
-dig used for simple DNS lookup yum list installedl lists all installed packages with yum
-dstat collects and shows system resources yum search [keyword] finds a package by a related
-keyword
-ethtool used to check settings of your NIC yum info [package_name] shows package information and
-summary
-ftp used for for file transfer yum install
-[package_name.rpm]
-installs a package using the YUM
-package manager
-host used for IP-Name matchings dnf install
-[package_name.rpm]
-installs a package using the DNF
-package manager
-hping3 used for packet analyze apt-get install
-[package_name]
-installs a package using the APT
-package manager
-ifstat used to monitor network interface
-statistics rpm -i [package_name.rpm] installs an .rpm package from a local
-file
-ip addr used to check network interfaces
-and routing activities rpm -e [package_name.rpm] removes an .rpm package
-iptables used for ip packet filtering
-iftop displays current bandwidth usage dmesg displays messages in kernel ring
-buffer
-ifup/ifdown used to enable or disable interfaces cat /proc/cpuinfo displays CPU information
-iwconfig used to configure wireless interfaces cat /proc/meminfo displays memory information
-netstat to check network connections lspci -tv displays PCI devices
-nload used as bandwidth monitoring tool lsusb -tv displays USB devices
-nmap used for security audits dmidecode displays DMI/SMBIOS from BIOS
-nslookup used also for DNS query hdparm -i /dev/sda displays info about disk sda
-ping used to check reachability hdparm -tT /dev/sda performs a read speed test on disk
-sda
-route displays IP Routing Table badblocks -s /dev/sda tests for unreadable blocks on disk
-sda
-scp secured file transfer
-sftp secured file transfer
-ss
-gives detailed information about the
-sockets
-ssh used for secure connection
-tshark analyzing and capturing
-tcpdump used for analyzing and capturing
-telnet used for classical unsecure
-connection
-tshark used for packet analyze
-tracepath used for path tracking
-traceroute used for path tracking
-w
-used to check the current system
-activity
-wget used to download the content of the
-web servers
-whois checks the whois database and 
+    <tr>
+      <td>df -h</td>
+      <td>Shows free and used space on mounted filesystems</td>
+    </tr>
+    <tr>
+      <td>df -i</td>
+      <td>Shows free and used inodes on mounted filesystems</td>
+    </tr>
+    <tr>
+      <td>fdisk -l</td>
+      <td>Shows free and used inodes on mounted filesystems</td>
+    </tr>
+    <tr>
+      <td>du -sh</td>
+      <td>Shows total disk usage for all files and directory</td>
+    </tr>
+    <tr>
+      <td>du -ah</td>
+      <td>Shows disk usage for all files and direcories in readable format</td>
+    </tr>
+    <tr>
+      <td>free</td>
+      <td>shows free RAM on the system</td>
+    </tr>
+    <tr>
+      <td>free -h</td>
+      <td>Shows free and used memory</td>
+    </tr>
+    <tr>
+      <td>findmnt</td>
+      <td>Shows target mount point for all filesystem</td>
+    </tr>
+    <tr>
+      <td>Mount /xyz /abc</td>
+      <td>Mounts a device in /xyz to /abc</td>
+    </tr>
+  </table>
+  </div>
+  <div class="column">
+  <h2>Compress and Decompress commands</h2>
+  <table>
+    <tr>
+      <td>gzip abc</td>
+      <td>compress abc file using gzip</td>
+    </tr>
+    <tr>
+      <td>bzip2 abc</td>
+      <td>compresses abc file using bzip2.</td>
+    </tr>
+    <tr>
+      <td>zip abc.zip abc</td>
+      <td>compresses abc file into the archive abc.zip.</td>
+    </tr>
+    <tr>
+      <td>tar -czvf archive.tar.gz /home/temp2/</td>
+      </td>Compress a full directory with all subdirectories</td>
+    </tr>
+    <tr>
+      <td>gzip -d xyz.gz</td>
+      <td>extracts xyz.gz with gzip utility</td>
+    <tr>
+      <td>gunzip xyz.gz</td>
+      <td>extracts xyz.gz with gzip utility</td>
+    </tr>
+    <tr>
+      <td>bzip2 -d file.php.bz2</td>
+      <td>extracts xyz.gz with bzip2 utility</td>
+    </tr>
+      <td>bunzip2 file.php.bz2</td>
+      <td>extracts xyz.gz with bzip2 utility</td>
+    <tr>
+      <td>unzip xyz.zip</td>
+      <td>extracts xyz.zip with zip utility</td>
+    </tr>
+    <tr>
+      <td>gunzip -c output.txt.gz </td>
+      <td>to view the contents of both files without extracting</td>
+    </tr>
+    <tr>
+      <td>tar cf archive.tar directory</td>
+      <td>creates tar named archive.tar containing directory</td>
+    </tr>
+    <tr>
+      <td>tar xf archive.tar</td>
+      <td>extracts the contents from archive.tar</td>
+    </tr>
+    <tr>
+      <td>tar czf archive.tar.gz directory</td>
+      <td>creates a gzip compressed tar file name archive.tar.gz</td>
+    <tr>
+      <td>tar xzf archives.tar.gz</td>
+      <td>extracts a gzip compressed tar file</td>
+    </tr>
+    <tr>
+      <td>tar cjf archive.tar.bz2 directory</td>
+      <td>creates a tar file with bzip2 comression</td>
+    </tr>
+    <tr>
+      <td>tar xjf archive.tarbz2</td>
+      <td>extracts a bzip2 compressed tar file</td>
+    </tr>
+  </div>
+  
+
 
 <!----good charity Section---->
 <p class="thickborder"></p>
