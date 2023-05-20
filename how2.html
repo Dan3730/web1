@@ -35,26 +35,17 @@
 <div class="w3-container"  id="cyber">
   <h5>Cyber</h5> 
   <table>
-  <th><p>What is the purpose of subnetting</p>
-  </th>
+  <h2>What is the purpose of subnetting</h2>
   <tr>
     <td>
-    <li>To seperate device from other devices</li>
-    <li>Limit the amount of available ip addresses 
-    on the network.</li>
-    <li>Network segmentation</li>
-    <li>
-      The goal is to provide ip addresses to devices
-    </li>
-    <li>
-      To accomplish this you needed to know how many ip addresses 
-      are needed
-    </li>
+      <li>To seperate device from other devices</li>
+      <li>Limit the amount of available ip addresses on the network.</li>
+      <li>Network segmentation</li>
+      <li>Provide ip addresses to devices</li>
     </td>   
   </tr>  
   </table>
   <!---Classful IPv4 Addresses-->
-  <br> 
   <h3>Classful IPv4 Addresses </h3> 
   <table>
     <tr>
@@ -81,12 +72,12 @@
       <td>E</td>
       <td>240.0.0.0-255.255.255.255</td>      
     </tr>
-    <td>
-    <p>127 is not shown because it's the assigned loopback address.</p>
-    </td>
+    <tr>
+      <td><p>127 is not shown because it's the assigned loopback address.</p></td>
+      <td></td>
+    </tr>
   </table>
 <!--Private IPv4 Addresses-->
-<br>
 <h3>Private IPv4 Addresses</h3>
 <table>
     <tr><td>10.0.0.0-10.255.255.255</td></tr>
@@ -94,7 +85,6 @@
     <tr><td>192.168.0.0-192.168.255.255</td></tr>
 </table>
 <!--Special IPv4 Addresses-->  
-<br>
 <h3>Special IPv4 Addresses</h3>
 <table> 
     <tr>
@@ -107,7 +97,6 @@
     </tr>
 </table>
 <!---Bogon IPv4 Addresses-->
-<br>
 <h3>Bogon IPv4 Addresses</h3>
 <table>
   <tr>
@@ -148,24 +137,27 @@
   <tr>
     <td>198.51.100.0/24</td>
     <td>TEST-NET-2</td>
+  </tr>
   <tr>
     <td>203.0.113.0/24</td>
     <td>TEST-NET-3</td>
   </tr>
+  <tr>
     <td>224.0.0.0/4</td> 
     <td>Multicast</td>
   </tr>
+  <tr>
     <td>240.0.0.0/4</td>
     <td>Reserved</td> 
   </tr>
+  <tr>
     <td>255.255.255.255/32</td>
     <td>Limited broadcast</td> 
   </tr>
 </table>
 <!--Notations-->  
-<br>
 <h3>Subnet Mask/Range</h3>
-<table>
+  <table>
     <tr>
       <th>CIDR</th>
       <th>Subnet Mask</th>
@@ -202,203 +194,189 @@
       <td>16</td>            
       <td>0.0.0.15</td>  
     </tr>  
-  <tr>
-    <td>/27</td>
-    <td>255.255.255.224</td>
-    <td>32</td>            
-    <td>0.0.0.31</td>  
-  </tr>
-  <tr>
-    <td>/26</td>
-    <td>255.255.255.192</td>
-    <td>64</td>            
-    <td>0.0.0.63</td>  
-  </tr>
-  <tr>
-    <td>/25</td>
-    <td>255.255.255.128</td>
-    <td>128</td>            
-    <td>0.0.0.127</td>  
-  </tr>
-  <tr>
-    <td>/24</td>
-    <td>255.255.255.0</td>
-    <td>256</td>            
-    <td>0.0.0.255</td>  
-  </tr>
-  <tr>
-    <td>/23</td>
-    <td>255.255.254.0</td>
-    <td>512</td>            
-    <td>0.0.1.255</td>  
-  </tr>
-  <tr>
-    <td>/22</td>
-    <td>255.255.252.0</td>
-    <td>1,024</td>            
-    <td>0.0.3.255</td>  
-  </tr>
-  <tr>
-    <td>/21</td>
-    <td>255.255.248.0</td>
-    <td>2,048</td>            
-    <td>0.0.7.255</td>  
-  </tr>
-  <tr>
-    <td>/20</td>
-    <td>255.255.240.0</td>
-    <td>4,096</td>            
-    <td>0.0.15.255</td>  
-  </tr>
-  <tr>
-    <td>/19</td>
-    <td>255.255.254.0</td>
-    <td>8,192</td>            
-    <td>0.0.31.255</td>  
-  </tr>
-  <tr>
-    <td>/18</td>
-    <td>255.255.192.0</td>
-    <td>16,384</td>            
-    <td>0.0.63.255</td>  
-  </tr>
-  <tr>
-    <td>/17</td>
-    <td>255.255.128.0</td>
-    <td>32,768</td>            
-    <td>0.0.127.255</td>  
-  </tr>
-  <tr>
-    <td>/16</td>
-    <td>255.255.0.0</td>
-    <td>65,536</td>            
-    <td>0.0.255.255</td>  
-  </tr>
-    <td>/15</td>
-    <td>255.254.0.0</td>
-    <td>131,072</td>            
-    <td>0.1.255.255</td>  
-  </tr> 
-    <td>/14</td>
-    <td>255.252.0.0</td>
-    <td>262,144</td>            
-    <td>0.3.255.255</td>  
-  </tr>
-    <td>/13</td>
-    <td>255.248.0.0</td>
-    <td>524,288</td>            
-    <td>0.7.255.255</td>  
-  </tr> 
-    <td>/12</td>
-    <td>255.240.0.0</td>
-    <td>1,048,576</td>            
-    <td>0.15.255.255</td>  
-  </tr>  
-    <td>/11</td>
-    <td>255.224.0.0</td>
-    <td>2,097,152</td>            
-    <td>0.31.255.255</td>  
-  </tr>  
-    <td>/10</td>
-    <td>255.192.0.0</td>
-    <td>4,194,304</td>            
-    <td>0.63.255.255</td>  
-  </tr>  
-    <td>/09</td>
-    <td>255.128.0.0</td>
-    <td>8,388,608</td>            
-    <td>0.127.255.255</td>  
-  </tr>
-    <td>/08</td>
-    <td>255.0.0.0</td>
-    <td>16,777,216</td>            
-    <td>0.255.255.255</td>  
-  </tr>
-    <td>/07</td>
-    <td>254.0.0.0</td>
-    <td>33,554,432</td>            
-    <td>1.255.255.255</td>  
-  <tr>
-    <td>/06</td>
-    <td>252.0.0.0</td>
-    <td>67,108,864</td>            
-    <td>3.255.255.255</td>  
-  </tr> 
-    <td>/05</td> 
-    <td>248.0.0.0</td>
-    <td>134,217,728</td>            
-    <td>7.255.255.255</td>  
-  </tr> 
-    <td>/04</td>
-    <td>240.0.0.0</td>
-    <td>268,435,456</td>            
-    <td>15.255.255.255</td>  
-  </tr>
-    <td>/03</td>
-    <td>224.0.0.0</td>
-    <td>536,870,912</td>            
-    <td>31.255.255.255</td>  
-  </tr> 
-    <td>/02</td>
-    <td>192.0.0.0</td>
-    <td>1,073,741,824</td>            
-    <td>63.255.255.255</td>  
-  </tr> 
-    <td>/01</td>
-    <td>128.0.0.0</td>
-    <td>2,147,483,648</td>            
-    <td>127.255.255.255</td>  
-  </tr> 
-    <td>/00</td>
-    <td>0.0.0.0</td>
-    <td>4,294,967,296</td>            
-    <td>255.255.255.255</td>  
-  </tr>
+    <tr>
+      <td>/27</td>
+      <td>255.255.255.224</td>
+      <td>32</td>            
+      <td>0.0.0.31</td>  
+    </tr>
+    <tr>
+      <td>/26</td>
+      <td>255.255.255.192</td>
+      <td>64</td>            
+      <td>0.0.0.63</td>  
+    </tr>
+    <tr>
+      <td>/25</td>
+      <td>255.255.255.128</td>
+      <td>128</td>            
+      <td>0.0.0.127</td>  
+    </tr>
+    <tr>
+      <td>/24</td>
+      <td>255.255.255.0</td>
+      <td>256</td>            
+      <td>0.0.0.255</td>  
+    </tr>
+    <tr>
+      <td>/23</td>
+      <td>255.255.254.0</td>
+      <td>512</td>            
+      <td>0.0.1.255</td>  
+    </tr>
+    <tr>
+      <td>/22</td>
+      <td>255.255.252.0</td>
+      <td>1,024</td>            
+      <td>0.0.3.255</td>  
+    </tr>
+    <tr>
+      <td>/21</td>
+      <td>255.255.248.0</td>
+      <td>2,048</td>            
+      <td>0.0.7.255</td>  
+    </tr>
+    <tr>
+      <td>/20</td>
+      <td>255.255.240.0</td>
+      <td>4,096</td>            
+      <td>0.0.15.255</td>  
+    </tr>
+    <tr>
+      <td>/19</td>
+      <td>255.255.254.0</td>
+      <td>8,192</td>            
+      <td>0.0.31.255</td>  
+   </tr>
+   <tr>
+      <td>/18</td>
+      <td>255.255.192.0</td>
+      <td>16,384</td>            
+      <td>0.0.63.255</td>  
+    </tr>
+    <tr>
+      <td>/17</td>
+      <td>255.255.128.0</td>
+      <td>32,768</td>            
+      <td>0.0.127.255</td>  
+    </tr>
+    <tr>
+      <td>/16</td>
+      <td>255.255.0.0</td>
+      <td>65,536</td>            
+      <td>0.0.255.255</td>  
+    </tr>
+      <td>/15</td>
+      <td>255.254.0.0</td>
+      <td>131,072</td>            
+      <td>0.1.255.255</td>  
+    </tr> 
+      <td>/14</td>
+      <td>255.252.0.0</td>
+      <td>262,144</td>            
+      <td>0.3.255.255</td>  
+    </tr>
+      <td>/13</td>
+      <td>255.248.0.0</td>
+      <td>524,288</td>            
+      <td>0.7.255.255</td>  
+    </tr> 
+      <td>/12</td>
+      <td>255.240.0.0</td>
+      <td>1,048,576</td>            
+      <td>0.15.255.255</td>  
+    </tr>  
+      <td>/11</td>
+      <td>255.224.0.0</td>
+      <td>2,097,152</td>            
+      <td>0.31.255.255</td>  
+    </tr>  
+      <td>/10</td>
+      <td>255.192.0.0</td>
+      <td>4,194,304</td>            
+      <td>0.63.255.255</td>  
+    </tr>  
+      <td>/09</td>
+      <td>255.128.0.0</td>
+      <td>8,388,608</td>            
+      <td>0.127.255.255</td>  
+    </tr>
+      <td>/08</td>
+      <td>255.0.0.0</td>
+      <td>16,777,216</td>            
+      <td>0.255.255.255</td>  
+    </tr>
+      <td>/07</td>
+      <td>254.0.0.0</td>
+      <td>33,554,432</td>            
+      <td>1.255.255.255</td>  
+    <tr>
+      <td>/06</td>
+      <td>252.0.0.0</td>
+      <td>67,108,864</td>            
+      <td>3.255.255.255</td>  
+    </tr> 
+      <td>/05</td> 
+      <td>248.0.0.0</td>
+      <td>134,217,728</td>            
+      <td>7.255.255.255</td>  
+    </tr> 
+      <td>/04</td>
+      <td>240.0.0.0</td>
+      <td>268,435,456</td>            
+      <td>15.255.255.255</td>  
+    </tr>
+      <td>/03</td>
+      <td>224.0.0.0</td>
+      <td>536,870,912</td>            
+      <td>31.255.255.255</td>  
+    </tr> 
+      <td>/02</td>
+      <td>192.0.0.0</td>
+      <td>1,073,741,824</td>            
+      <td>63.255.255.255</td>  
+    </tr> 
+      <td>/01</td>
+      <td>128.0.0.0</td>
+      <td>2,147,483,648</td>            
+      <td>127.255.255.255</td>  
+    </tr> 
+      <td>/00</td>
+      <td>0.0.0.0</td>
+      <td>4,294,967,296</td>            
+      <td>255.255.255.255</td>  
+    </tr>
 </table>
  <!--Converting -->
- <h3>Converting</h3>
   <table>
-    <th>Convert 1011 to A Decimal:</th>
+    <h2>Convert 1011 to A Decimal</h2>
     <tr>
-      <td>Bytes:</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+      <td>Bytes</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
     </tr>
     <tr>
       <td>Power2</td><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>    
     </tr>
     <tr>
-      <td>0/1 Binary</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+      <td>Binary Turned On</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td> 
     </tr> 
     <tr>
-      <td>Now add the represented bit value.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      <td>Represented bit value.</td><td>0</td><td>0</td><td>0</td><td>0</td><td>8</td><td>0</td><td>2</td><td>1</td>
     </tr>  
   </table>  
   <table>
-	  <th>Convert 1011 to A Decimal:</th>
-    <tr>
-    <td>Bytes:</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
-    </tr>
-    <tr>
-    <td>Power2</td><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>    
-    </tr>
-    <tr>
-    <td>0/1 Binary</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
-    </tr> 
-    <tr>
-	  <td>Now add the represented bit value.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-  </table>
-  <table>
     <th>Add the values</th>
-  	<tr>
+    <tr>
     <td>
-	    8 + 2=10
-      10 + 1 = 11
-	    <td>11</td>
-    </td>
+	    8 + 2 = 10
+      10 + 2 = 12
+	    12 + 1 = 13</td>
+	  <td>13</td>
     </tr>
   </table>
+  
+  </table>
   <table>
-	  <th>Change 111011 to A decimal.</th>
+	  <h2>Convert 111011 to A decimal.</h2>
     <tr>
       <td>0</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
     </tr>
@@ -406,9 +384,9 @@
       <td>Power2</td><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>    
     </tr>
     <tr>
-      <td>Binary turned on:</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
+      <td>Binary Turned On</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
     </tr> 
-	   <td>Now add the represented bit value.</td><td>0</td><td>0</td><td>32</td><td>16</td><td>8<td>0</td><td>2</td><td>1</td>
+	   <td>Represented bit value.</td><td>0</td><td>0</td><td>32</td><td>16</td><td>8<td>0</td><td>2</td><td>1</td>
     </tr>  
   </table>
   <table>
@@ -418,11 +396,11 @@
 	    32 + 16 = 48
       48 + 8 = 56
 	    56 + 2 = 58
-	    58 + 1 = 59
-	  <td>59</td></td>
+	    58 + 1 = 59</td>
+	  <td>59</td>
     </tr>
   </table>
-</div>
+
 <!----Linux Cheat Sheet---->
 <h3>Linux Cheet Sheet</h3>
 <div class="row">
@@ -503,7 +481,7 @@
     </tr>
   </table>
   </div>
-  </div>
+</div>
 <div class="row">
   <div class="column">
     <h2>File Commands</h2>
@@ -608,7 +586,6 @@
         <td>get file</td>
         <td>downloads file abc from remote to local device</td>
       </tr>
-    </div>
   </table>  
   </div>
   <div class="column">
@@ -624,8 +601,10 @@
       </tr>
       <tr>
         <td>file permissions</td>
+      </tr>  
+      <tr>
         <td>r(read) permission, 4</td>
-        <td>>w (write) permission, 2</td>
+        <td>w (write) permission, 2</td>
         <td>x (execute) permission, 1</td>
         <td>-= no permission</td>
       </tr>
@@ -693,9 +672,9 @@
       </tr> 
     </table>
   </div>
-</div>
-  <div class="row">
-  <div class="column">
+</div> 
+<div class="row">
+<div class="column">
   <h2>ls Options</h2>
   <table>
     <tr>
@@ -733,8 +712,8 @@
       <td>-Q</td>
       <td>quoted output</td>
     </tr>
-  </table>   
-</div>  
+  </table> 
+</div>
   <div class="column">
     <h2>File Transfer Commands</h2>
     <table>
@@ -760,10 +739,92 @@
     </tr>
     </table>
   </div>
-  <div class="row">
-  <div class="column">
-    <h3>Disk Usage Commands</h3>
+</div>
+<div class="row">
+<div class="column"> 
+    <h2>Process Management Commands</h2>
     <table>
+      <tr>
+        <td>ps</td>
+        <td>displas currently running processes</td>
+      </tr>
+      <tr>
+        <td>ps PID</td>
+        <td>give the stats of a particular process</td>
+      </tr>
+      <tr>
+        <td>pidof</td>
+        <td>gives the process ID of a process</td>
+      </tr>
+      <tr>
+        <td>ps -ef</td>
+        <td>displays all running processes on the system</td>
+      </tr>
+    <tr> 
+        <td>ps -ef | grep xyz</td>
+        <td>displays process information for xyz</td>
+    </tr>
+        <td>top</td>
+        <td> displays and manages the top processes</td>
+    </tr>
+    <tr>
+        <td>htop</td>
+        <td>interactive process viewer (top alternative)</td>
+    </tr>
+    <tr>
+        <td>kill pid</td>
+        <td>kills process with process ID of pid</td>
+    </tr>
+    <tr>
+      <td>pkill xyz</td>
+      <td>kills process with name xyz</td>
+    </tr>
+    <tr>
+    <tr>
+      <td>killall abc</td>
+      <td>kills all processes named abc</td>
+    </tr>
+    <tr>
+      <td>program &</td>
+      <td>starts program in the background</td>
+    </tr>
+    <tr>
+      <td>bg</td>
+      <td>lists and resumes stopped jobs in the background</td>
+    </tr>
+    <tr>
+      <td>fg</td>
+      <td>brings the most recent background job to foreground.</td>
+    </tr>
+    <tr>
+      <td>fg x</td>
+      <td>brings job x to the foreground</td>
+    </tr>
+    <tr>
+      <td>nice</td>
+      <td>starts a process with a given priority</td>
+    </tr> 
+    <tr>
+      <td>renice</td>
+      <td>changes priority of an already running process</td>
+    </tr>
+    <tr>
+      <td>pstree</td>
+      <td>displays processes in a tree-like diagram</td>
+    </tr>
+    <tr>
+      <td>pmap</td>
+      <td>displays a memory usage map of processes</td>
+    </tr>
+    <tr>
+      <td>lsof</td>
+      <td>lists files opened by running processes</td>
+    </tr>
+  </table>
+</div>
+<div class="column">
+  <h2>Disk Usage Commands</h2>
+  <table>
     <tr>
       <td>df</td>
       <td>shows free hard disk space on the system</td>
@@ -805,8 +866,35 @@
       <td>Mounts a device in /xyz to /abc</td>
     </tr>
   </table>
+</div>
+</div>
+<div class="row">
+  <div class="column"> 
+  <h2>Search Commands</h2>
+  <table>
+    <tr>
+      <td>command -h / command –help</td>
+      <td>to review all available options of the “command”</td>
+    </tr>
+    <tr>
+      <td>info command</td>
+      <td>to find info documents about the “command”</td>
+    </tr>
+    <tr>
+      <td>whatis command</td>
+      <td>displays a single line description about the "command"</td>
+    </tr>
+    <tr>
+      <td>$ man UNIXCOMMAND</td>
+      <td>to view detailed man page of the “command”</td>
+    </tr>
+    <tr>
+      <td>apropos</td>
+      <td>used to search man pages for available commands on a specific</td>
+    </tr>
+  </table>
   </div>
-  <div class="column">
+<div class="column">
   <h2>Compress and Decompress commands</h2>
   <table>
     <tr>
@@ -823,7 +911,7 @@
     </tr>
     <tr>
       <td>tar -czvf archive.tar.gz /home/temp2/</td>
-      </td>Compress a full directory with all subdirectories</td>
+      <td>Compress a full directory with all subdirectories</td>
     </tr>
     <tr>
       <td>gzip -d xyz.gz</td>
@@ -869,10 +957,246 @@
       <td>tar xjf archive.tarbz2</td>
       <td>extracts a bzip2 compressed tar file</td>
     </tr>
-  </div>
-  
-
-
+  </table>
+</div>
+</div>
+<div class="row">
+<div class="column"> 
+<h2>Networking Commands</h2>
+<table>
+  <tr>
+    <td>arp</td>
+    <td>displays ARP table of the device</td>
+  </tr>
+  <tr>
+    <td>arpwatch</td>
+    <td>displays ethernet activity and Ethernet/ip pairings</td>
+  </tr>
+  <tr>
+    <td>bmon</td>
+    <td>displays bandwidth, captures</td>
+  </tr>
+  <tr>
+    <td>curl</td>
+    <td>used for file transfer</td>
+  </tr>
+  <tr>
+    <td>dhclient</td>
+    <td>used to analyze clients ip address, subnet mask, gateway, dns server</td>
+  </tr>
+  <tr>
+    <td>dig</td>
+    <td>used for simple DNS lookup</td>
+  </tr>
+  <tr>
+    <td>dstat</td>
+    <td>collects and shows system resources</td>
+  </tr>
+  <tr>
+    <td>ethtool</td>
+    <td> used to check settings of your NIC</td>
+  </tr>
+  <tr>
+    <td>ftp</td>
+    <td>used for file transfer</td>
+  </tr>
+  <tr>
+    <td>host</td>
+    <td>used for IP-name matchings</td>
+  </tr>
+  <tr>
+    <td>hping3</td>
+    <td>used for packet analyze</td>
+  </tr>
+  <tr>
+    <td>ifstat</td>
+    <td>used to monitor network interface statistics</td>
+  </tr>
+  <tr>
+    <td>ip addr</td>
+    <td>used to check network interfaces and routing activitie</td>
+  </tr>
+  <tr>
+    <td>iptables</td>
+    <td>used for ip packet filtering</td>
+  </tr>
+  <tr>
+    <td>iftop</td>
+    <td>displays current bandwidth usage</td>
+  </tr>
+  <tr>
+    <td>ifup/ifdown</td>
+    <td>used to enable or disable interfaces</td>
+  </tr>
+  <tr>
+    <td>iwconfig</td>
+    <td>used to configure wireless interfaces</td>
+  </tr>
+  <tr>
+    <td>netstat</td>
+    <td>to check network connections</td>
+  </tr>
+  <tr>
+    <td>nload</td>
+    <td>used as bandwidth monitoring tool</td>
+  </tr>
+  <tr>
+    <td>nmap</td>
+    <td>used for security audits</td>
+  </tr>
+  <tr>
+    <td>nslookup</td>
+    <td>used also for DNS quesry</td>
+  </tr>
+  <tr>
+    <td>ping</td>
+    <td>used to check reachability</td>
+  </tr>
+  <tr>
+    <td>route</td>
+    <td>displays IP Routing Table</td>
+  </tr>
+  <tr>
+    <td>scp</td>
+    <td>secured file transfer</td>
+  <tr>
+    <td>sftp</td>
+    <td>secured file transfer</td>
+  </tr>
+  <tr>
+    <td>ss</td>
+    <td>gives details about the sockets</td>
+  </tr>
+  <tr>
+    <td>ssh</td>
+    <td>used for secure connections</td>
+  </tr>
+    <td>tshark</td>
+    <td>analyzing and capturing</td>
+  </tr>
+  <tr>
+    <td>tcpdump</td>
+    <td>used for analyzing and capturing</td>
+  </tr>
+  <tr>
+    <td>telnet</td>
+    <td>used for classical unsecure connnection</td>
+  </tr>
+  <tr>
+    <td>tracepath</td>
+    <td>used for path tracking</td>
+  </tr>
+  <tr>
+    <td>traceroute</td>
+    <td>used for path tracking</td>
+  </tr>
+  <tr>
+    <td>w</td>
+    <td>used to check the current system activity</td>
+  </tr>
+  <tr>
+    <td>wget</td>
+    <td>used to download the content of the web servers</td>
+  </tr>
+  <tr>
+    <td>whois</td>
+    <td>checks the whois database and return with IP and Domain infor</td>
+  </tr>
+</table>
+</div>
+</div>
+<div class="column"> 
+  <h2>Install commands</h2>
+  <table>
+    <tr>
+      <td>yum search keyword</td>
+      <td>compresses abc file using gzip.</td>
+    </tr>
+    <tr>
+      <td>yum info abc</td>
+      <td>displays description and summary info about abc package</td>
+    </tr>
+    <tr>
+      <td>rpm -i abc.rpm</td>
+      <td>installs packag from local file named abc.rpm</td>
+    </tr>
+    <tr>
+      <td>yum remove abc</td>
+      <td>Remove/uninstall abc package</td>
+    </tr>
+    <tr>
+      <td>yum list installedl</td>
+      <td>lists all installed packages with yum</td>
+    </tr>
+    <tr>
+      <td>yum search [keyword]</td>
+      <td>finds a package by a related</td>
+    </tr>
+    <tr>
+      <td>yum info [package_name]</td>
+      <td>shows package information and summary</td>
+    </tr>
+    <tr>
+      <td>yum install [package_name.rpm]</td>
+      <td>installs a package using the YUM package manager</td>
+    </tr>
+    <tr>
+      <td>dnf install [package_name.rpm]</td>
+      <td>installs a package using the DNF package manager</td>
+    </tr>
+    <tr>
+      <td>apt-get install [package_name]</td>
+      <td>insalls a package using the APT package manager</td>
+    </tr>
+    <tr>
+      <td>rpm -i [package_name.rpm]</td>
+      <td>installs an .rpm package from a local file</td>
+    </tr>
+    <tr>
+      <td>rpm -e [package_name.rpm]</td>
+      <td>removes an .rpm package</td>
+    </tr>
+    </table>
+</div>
+<div class="column"> 
+  <h2>Hardware Information Commands</h2>
+    <table>
+      <tr>
+        <td>dmesg</td>
+        <td>displays messages in kernel ring buffer</td>
+      <tr>
+      <tr>
+        <td>cat /proc/cpuinfo</td>
+        <td>displays CPU information</td>
+      <tr>
+        <td>cat /proc/meminfo</td>
+        <td>displays memory information</td>
+      </tr>
+      <tr>
+        <td>lspci -tv</td>
+        <td>displays PCI devices</td>
+      </tr>
+      <tr>
+        <td>lsusb -tv</td>
+        <td>displays USB devices</td>
+      </tr>
+      <tr>
+        <td>dmidecode</td>
+        <td>displays DMI/SMBIOS from BIOS</td>
+      <tr>
+        <td>hdparm -i /dev/sda</td>
+        <td>displays info about disk sda</td>
+      </tr>
+      <tr>
+        <td>hdparm -tT /dev/sda</td>
+        <td>performs a read speed test on disk sda</td>
+      <tr>
+        <td>badblocks -s /dev/sda</td>
+        <td>tests for unreadable blocks on disk sda</td>
+      <tr>
+    </table>
+</div>
+</div>
 <!----good charity Section---->
 <p class="thickborder"></p>
 <div class="w3-container" id="links">
@@ -905,7 +1229,7 @@
 <div class="flex-container"> 
 <div class="flex-item-left">
 <footer id="myFooter">
-  Find me on Social media
+  <h2>Find me on Social media</h2>
   <a href="#" class="fa fa-facebook"></a>
   <a href="#" class="fa fa-linkedin"></a>
 </footer>
