@@ -404,7 +404,7 @@
 <!----Linux Cheat Sheet---->
 <h3>Linux Cheet Sheet</h3>
 <div class="row">
-  <div class="column">
+<div class="column">
   <h2>System Information Commands</h2>
   <table>
   <tr>
@@ -533,93 +533,68 @@
       <tr>
         <td>mv aaa bbb</td>
         <td>renames or moves file aaa to file bbb</td>
-      </tr>
-      <tr>
-        <td>touch abc</td>
-        <td>creates an empty file named abc</td>
-      </tr>
-      <tr>
-        <td>cat abc</td>
-        <td>used to view file abc</td>
-      </tr>
-      <tr>
-        <td>less abc</td>
-        <td>browse through a text file abc
-      </tr>
-      <tr>
-        <td>head abc</td>
-        <td>displays first 10 lines of file abc</td>
-      </tr>
-      <tr>
-        <td>tail abc</td>
-        <td>displays last 10 lines of file abc
-      </tr>
-      <tr>
-        <td>tail -f abc</td>
-        <td>displays last 10 lines of file abc and follow it as it grows</td>
-      </tr>
-      <tr>
-        <td>tail -F abc</td>
-        <td>outputs last lines of abc as it changes</td>
-      </tr>
-      <tr>
-        <td>file abc</td>
-        <td>gets type of abc</td>
-      </tr>
-      <tr>
-        <td>gpg -c abc</td>
-        <td>encrypts file abc</td>
-      </tr>
-      <tr>
-        <td>gpg abc</td>
-        <td>decrypts file abc</td>
-      </tr>
-      <tr>
-        <td>dir</td>
-        <td>shows files in the current directory</td>
-      </tr>
-      <tr>
-        <td>put abc</td>
-        <td>uploads file abc from local to remote device</td>
-      </tr>
-      <tr>
-        <td>get file</td>
-        <td>downloads file abc from remote to local device</td>
-      </tr>
+      </tr>      
+    </table>
+</div>
+<div class="column">
+  <h2>File commands continued...</h2>
+  <table>    
+    <tr>
+      <td>touch abc</td>
+      <td>creates an empty file named abc</td>
+    </tr>
+    <tr>
+      <td>cat abc</td>
+      <td>used to view file abc</td>
+    </tr>
+    <tr>
+      <td>less abc</td>
+      <td>browse through a text file abc
+    </tr>
+    <tr>
+      <td>head abc</td>
+      <td>displays first 10 lines of file abc</td>
+    </tr>
+    <tr>
+      <td>tail abc</td>
+      <td>displays last 10 lines of file abc
+    </tr>
+    <tr>
+      <td>tail -f abc</td>
+      <td>displays last 10 lines of file abc and follow it as it grows</td>
+    </tr>
+    <tr>
+      <td>tail -F abc</td>
+      <td>outputs last lines of abc as it changes</td>
+    </tr>
+    <tr>
+      <td>file abc</td>
+      <td>gets type of abc</td>
+    </tr>
+    <tr>
+      <td>gpg -c abc</td>
+      <td>encrypts file abc</td>
+    </tr>
+    <tr>
+      <td>gpg abc</td>
+      <td>decrypts file abc</td>
+    </tr>
+    <tr>
+      <td>dir</td>
+      <td>shows files in the current directory</td>
+    </tr>
+    <tr>
+      <td>put abc</td>
+      <td>uploads file abc from local to remote device</td>
+    </tr>
+    <tr>
+      <td>get file</td>
+      <td>downloads file abc from remote to local device</td>
+     </tr>
   </table>  
   </div>
-  <div class="column">
-    <h2>File Permission</h2>
-    <table>
-      <tr>
-        <td>chown user</td>
-        <td>changes ownership of a file/directory</td>
-      </tr>
-      <tr>
-        <td>chown user:group filename</td>
-        <td>changes user and group for a file or directory</td>
-      </tr>
-      <tr>
-        <td>file permissions</td>
-      </tr>  
-      <tr>
-        <td>r(read) permission, 4</td>
-        <td>w (write) permission, 2</td>
-        <td>x (execute) permission, 1</td>
-        <td>-= no permission</td>
-      </tr>
-      <tr>
-        <td>File Owner</td>
-        <td>owner/group/everyone</td>
-      <tr>
-        <td>File permissions Example</td>
-        <td>777 | Owner, Group, Everyone has rwx permissions</td>
-        <td>744 | Owner has rwx permission recursively</td>
-        <td>755 | Owner has rwx permission, Group, Everyone has rx permissions</td>
-        <td>776 | Owner, Group has rwx permission, Everyone has rw</td>
-      </tr>
-    </table>
   </div>
+  <div cvlass="row">
   <div class="column">
     <h2>Search Commands</h2>
     <table>
@@ -671,50 +646,50 @@
         <td>finds the location of abc quickly</td>
       </tr> 
     </table>
-  </div>
-</div> 
-<div class="row">
-<div class="column">
-  <h2>ls Options</h2>
-  <table>
-    <tr>
-      <td>-a</td>
-      <td>shows all (including hidden)</td>
-    </tr>
-    <tr>
-      <td>-R</td>
-      <td>recursive list scp server:/var/www/*.html/tmp</td>
-    </tr>
-    <tr>
-      <td>-r</td>
-      <td>reverse order</td>
-    </tr>
-    <tr>
-      <td>-t</td>
-      <td>sort by last modified</td>
-    </tr>
-    <tr>
-      <td>-S</td>
-      <td>sort by file size</td>
-    </tr>
-    <tr>
-      <td>-l</td>
-      <td>long listing format</td>
-    <tr>
-      <td>-1</td>
-      <td>one file per line</td>
-    </tr>
-    <tr>
-      <td>-m</td> 
-      <td>comma--sep-arated output</td>
-    </tr>
-    <tr>
-      <td>-Q</td>
-      <td>quoted output</td>
-    </tr>
-  </table> 
-</div>
+  </div> 
   <div class="column">
+    <div style="overflow-x:auto;">
+    <h2>File Permission</h2>
+    <table>
+      <tr>
+        <td>chown user</td>
+        <td>changes ownership of a file/directory</td>
+        <td></td>
+        <td></td>
+      </td>
+      </tr>
+      <tr>
+        <td>chown user:group filename</td>
+        <td>changes user and group for a file or directory</td>
+        <td></td>
+        <td></td>
+      </tr>       
+      <tr>
+        <td>r (read) permission, 4</td>
+        <td>w (write) permission, 2</td>
+        <td>x (execute) permission, 1</td>
+        <td>-= no permission</td>
+      </tr>
+      <tr>
+        <td>File Owner</td>
+        <td>owner/group/everyone</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      <tr>
+        <td>File permissions Example</td>
+        <td>777 | Owner, Group, Everyone has rwx permissions</td>
+        <td>744 | Owner has rwx permission recursively</td>
+        <td>755 | Owner has rwx permission, Group, Everyone has rx permissions</td>
+        <td>776 | Owner, Group has rwx permission, Everyone has rw</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+<div class="row">
+
+<div class="column">
     <h2>File Transfer Commands</h2>
     <table>
     <tr>
@@ -742,38 +717,38 @@
 </div>
 <div class="row">
 <div class="column"> 
-    <h2>Process Management Commands</h2>
-    <table>
-      <tr>
-        <td>ps</td>
-        <td>displas currently running processes</td>
-      </tr>
-      <tr>
-        <td>ps PID</td>
-        <td>give the stats of a particular process</td>
-      </tr>
-      <tr>
-        <td>pidof</td>
-        <td>gives the process ID of a process</td>
-      </tr>
-      <tr>
-        <td>ps -ef</td>
-        <td>displays all running processes on the system</td>
-      </tr>
+  <h2>Process Management Commands</h2>
+  <table>
+    <tr>
+      <td>ps</td>
+      <td>displas currently running processes</td>
+    </tr>
+    <tr>
+      <td>ps PID</td>
+      <td>give the stats of a particular process</td>
+    </tr>
+    <tr>
+      <td>pidof</td>
+      <td>gives the process ID of a process</td>
+    </tr>
+    <tr>
+      <td>ps -ef</td>
+      <td>displays all running processes on the system</td>
+    </tr>
     <tr> 
-        <td>ps -ef | grep xyz</td>
-        <td>displays process information for xyz</td>
+      <td>ps -ef | grep xyz</td>
+      <td>displays process information for xyz</td>
     </tr>
-        <td>top</td>
-        <td> displays and manages the top processes</td>
-    </tr>
-    <tr>
-        <td>htop</td>
-        <td>interactive process viewer (top alternative)</td>
+      <td>top</td>
+      <td> displays and manages the top processes</td>
     </tr>
     <tr>
-        <td>kill pid</td>
-        <td>kills process with process ID of pid</td>
+      <td>htop</td>
+      <td>interactive process viewer (top alternative)</td>
+    </tr>
+    <tr>
+      <td>kill pid</td>
+      <td>kills process with process ID of pid</td>
     </tr>
     <tr>
       <td>pkill xyz</td>
@@ -893,6 +868,47 @@
       <td>used to search man pages for available commands on a specific</td>
     </tr>
   </table>
+  </div>
+  <div class="column">
+    <h2>ls Options</h2>
+    <table>
+      <tr>
+        <td>-a</td>
+        <td>shows all (including hidden)</td>
+      </tr>
+      <tr>
+        <td>-R</td>
+        <td>recursive list scp server:/var/www/*.html/tmp</td>
+      </tr>
+      <tr>
+        <td>-r</td>
+        <td>reverse order</td>
+      </tr>
+      <tr>
+        <td>-t</td>
+        <td>sort by last modified</td>
+      </tr>
+      <tr>
+        <td>-S</td>
+        <td>sort by file size</td>
+      </tr>
+      <tr>
+        <td>-l</td>
+        <td>long listing format</td>
+      </tr>
+      <tr>
+        <td>-1</td>
+        <td>one file per line</td>
+      </tr>
+      <tr>
+        <td>-m</td> 
+        <td>comma--sep-arated output</td>
+      </tr>
+      <tr>
+        <td>-Q</td>
+        <td>quoted output</td>
+      </tr>
+    </table> 
   </div>
 <div class="column">
   <h2>Compress and Decompress commands</h2>
