@@ -408,10 +408,9 @@
 
 <!----Linux Cheat Sheet---->
 <h3>Linux Cheet Sheet</h3>
-<div class="row">
-<div class="column">
+
   <h2>System Information Commands</h2>
-  <table>
+  <table class="center">
   <tr>
     <td>uname -a</td> 
     <td>shows Linux system info</td>
@@ -449,10 +448,8 @@
     <td>shows mounted filesy-stems</td>
   </tr>
 </table>
-</div>
-<div class="column">
   <h2>User Information Commands</h2>
-  <table>
+  <table class="center">
     <tr>
       <td>id</td>
       <td>shows user&group ids of the current user</td>
@@ -485,12 +482,8 @@
       <td>adds account “Gokhan” to the “Networkers” group</td>
     </tr>
   </table>
-  </div>
-</div>
-<div class="row">
-  <div class="column">
     <h2>File Commands</h2>
-    <table>
+    <table class="center">
       <tr>
         <td>ls -l</td>
         <td>shows file type and access permission</td>
@@ -540,10 +533,8 @@
         <td>renames or moves file aaa to file bbb</td>
       </tr>      
     </table>
-</div>
-<div class="column">
   <h2>File commands continued...</h2>
-  <table>    
+  <table class="center">    
     <tr>
       <td>touch abc</td>
       <td>creates an empty file named abc</td>
@@ -597,12 +588,8 @@
       <td>downloads file abc from remote to local device</td>
      </tr>
   </table>  
-  </div>
-  </div>
-  <div cvlass="row">
-  <div class="column">
     <h2>Search Commands</h2>
-    <table>
+    <table class="center">
       <tr>
         <td>grep x file</td>
         <td>searches for x in file</td>
@@ -651,14 +638,13 @@
         <td>finds the location of abc quickly</td>
       </tr> 
     </table>
-  </div> 
-  <div class="column">
-    <div style="overflow-x:auto;">
+ <div style="overflow-x:auto;">
     <h2>File Permission</h2>
     <table>
       <tr>
         <td>chown user</td>
         <td>changes ownership of a file/directory</td>
+        <td></td>
         <td></td>
         <td></td>
       </td>
@@ -668,12 +654,14 @@
         <td>changes user and group for a file or directory</td>
         <td></td>
         <td></td>
+        <td></td>
       </tr>       
       <tr>
         <td>r (read) permission, 4</td>
         <td>w (write) permission, 2</td>
         <td>x (execute) permission, 1</td>
         <td>-= no permission</td>
+        <td></td>
       </tr>
       <tr>
         <td>File Owner</td>
@@ -689,14 +677,9 @@
         <td>776 | Owner, Group has rwx permission, Everyone has rw</td>
       </tr>
     </table>
-  </div>
 </div>
-</div>
-<div class="row">
-
-<div class="column">
-    <h2>File Transfer Commands</h2>
-    <table>
+<h2>File Transfer Commands</h2>
+  <table class="center">
     <tr>
       <td>scp file.txt server:/tmp</td> 
       <td>secure copy file.txt to the /tmp folder on server</td>
@@ -718,12 +701,8 @@
       <td>Synchronize files/directories between the local and remote</td>
     </tr>
     </table>
-  </div>
-</div>
-<div class="row">
-<div class="column"> 
   <h2>Process Management Commands</h2>
-  <table>
+  <table class="center">
     <tr>
       <td>ps</td>
       <td>displas currently running processes</td>
@@ -801,13 +780,8 @@
       <td>lists files opened by running processes</td>
     </tr>
   </table>
-</div>
-
-</div>
-<div class="row">
-  <div class="column"> 
   <h2>Search Commands</h2>
-  <table>
+  <table class="center">
     <tr>
       <td>command -h / command –help</td>
       <td>to review all available options of the “command”</td>
@@ -829,10 +803,8 @@
       <td>used to search man pages for available commands on a specific</td>
     </tr>
   </table>
-  </div>
-  <div class="column">
-    <h2>ls Options</h2>
-    <table>
+  <h2>ls Options</h2>
+  <table class="center">
       <tr>
         <td>-a</td>
         <td>shows all (including hidden)</td>
@@ -870,10 +842,8 @@
         <td>quoted output</td>
       </tr>
     </table> 
-  </div>
-<div class="column">
-  <h2>Compress and Decompress commands</h2>
-  <table>
+<h2>Compress and Decompress commands</h2>
+<table class="center">
     <tr>
       <td>gzip abc</td>
       <td>compress abc file using gzip</td>
@@ -935,12 +905,8 @@
       <td>extracts a bzip2 compressed tar file</td>
     </tr>
   </table>
-</div>
-</div>
-<div class="row">
-<div class="column"> 
 <h2>Networking Commands</h2>
-<table>
+<table class="center">
   <tr>
     <td>arp</td>
     <td>displays ARP table of the device</td>
@@ -1080,11 +1046,8 @@
     <td>checks the whois database and return with IP and Domain infor</td>
   </tr>
 </table>
-</div>
-</div>
-<div class="column"> 
-  <h2>Install commands</h2>
-  <table>
+<h2>Install commands</h2>
+<table class="center">
     <tr>
       <td>yum search keyword</td>
       <td>compresses abc file using gzip.</td>
@@ -1134,10 +1097,8 @@
       <td>removes an .rpm package</td>
     </tr>
     </table>
-</div>
-<div class="column"> 
-  <h2>Hardware Information Commands</h2>
-    <table>
+<h2>Hardware Information Commands</h2>
+<table class="center">
       <tr>
         <td>dmesg</td>
         <td>displays messages in kernel ring buffer</td>
