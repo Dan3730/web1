@@ -184,13 +184,13 @@ a:hover {
 /*navbar*/
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #3a3131;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -199,11 +199,11 @@ a:hover {
 
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: rgb(20, 255, 12);
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color:#555;
   color: white;
 }
 
@@ -232,14 +232,15 @@ a:hover {
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-  color: rgb(255, 255, 255);
+  color: rgb(20, 255, 12);
+  background-color:rgb(74, 70, 70)
 }
 
 .subnav-content {
   display: none;
   position: absolute;
   left: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(74, 70, 70);
   color: rgb(255, 255, 255);
   width: 100%;
   z-index: 1;
@@ -248,17 +249,19 @@ a:hover {
 
 .subnav-content a {
   float: left;
-  color:rgb(20, 255, 12);
+  color:rgb(255, 255, 255);
   text-decoration: none;
 }
 
 .subnav-content a:hover {
   background-color: #000000;
-  color: rgb(255, 255, 255);
+  color: rgb(20, 255, 12);
 }
 
 .subnav:hover .subnav-content {
   display: block;
+  background-color: #000000;
+  color: rgb(20, 255, 12);
 }
 
 
@@ -281,7 +284,7 @@ a:hover {
     float: none;
     display: block;
     text-align: left;
-  }
+}
 }
 
 /* Footer */
