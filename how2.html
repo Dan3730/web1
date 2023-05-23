@@ -13,14 +13,14 @@
 
 <div class="parallax"></div>
 <body> 
-  
-  <div class="topnav" id="topnav">
-  <div class="navbar" id="navbar">
+<div class="topnav" id="topnav">
     <a href="#home">Home</a>
     <a href="#links">Important Links</a>  
-    <div class="subnav">
-      <button class="subnavbtn">About</button>
-      <div class="subnav-content">
+    <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
         <a href="#company">Company</a>
         <a href="#team">Team</a>
         <a href="#careers">Careers</a>
@@ -28,16 +28,20 @@
         <a href="#contact">Contact</a>
       </div>
     </div> 
-    <div class="subnav">
-      <button class="subnavbtn">Cyber</button>
-      <div class="subnav-content">
+    <div class="dropdown">
+    <button class="dropbtn">Cyber
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
         <a href="#ipheader">Packets</a>
         <a href="#ports">Ports</a>
       </div>
     </div>
-    <div class="subnav">
-      <button class="subnavbtn">IPv4 Addressing</button>
-      <div class="subnav-content">        
+    <div class="dropdown">
+    <button class="dropbtn">IPv4 Addressing
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">        
         <a href="#ipv4">Classful IPv4Addresses</a>
         <a href="#privateipv4">Private IPv4 Addresses</a>
         <a href="#special">Special IPv4 Addresses</a>
@@ -46,10 +50,11 @@
         <a href="#converting">Converting</a>       
       </div>
     </div> 
-  
-  <div class="subnav">
-    <button class="subnavbtn">Linux Commands</button>
-    <div class="subnav-content">
+    <div class="dropdown">
+    <button class="dropbtn">Linux Commands
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
       <a href="#sysinfo">System Info</a>
       <a href="#useinfo">User Info</a>
       <a href="#filecom">File Commands</a>
@@ -1341,15 +1346,14 @@
 <!-- END MAIN -->
 </div>
 <script>
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+ function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
+}
   </script>
 <script>
   // Get the button
