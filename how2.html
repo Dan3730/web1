@@ -10,8 +10,10 @@
 <link rel="stylesheet" href="stylesheet.css">
 <link rel="twotables" href="twotables.css">
 </head>
+
 <div class="parallax"></div>
 <body> 
+  
   <div class="navbar">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#links" class="w3-bar-item w3-button">Important Links</a>  
@@ -70,6 +72,7 @@
  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-container"  id="about">
   <p class="thickborder"></p>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <h5>Welcome</h5>
   <p>This site will showyou my accomplishments over the years and hopefully teach you some of what I learned</p>  
   <h2>Mission Statement</h2>
@@ -85,25 +88,52 @@
   <h5>Ip Header</h5>
   <img src="images/Ip_header.jpg" alt="ipheader">
   <br>
-  <li>version - Current IP Version / Used in IPv4 and IPv6 / Needed for IPv6 backwards-compatabile.</li><br>
-  <li>IHL - Length of the IP header in 32 bit increments</li><br>
-  <li>DSCP - Mechanism used for classifying network traffic on IP Networks<br> 
-    https://www.sciencedirect.com/topics/computer-science/version-field</li><br>
-  <li>ECN - Explicit Congestion Notification - An extension to the Internet Protocol<br>
-  and to the Transmision Control Protocol allows end-to-end notification of network congestion without dropping packets.<br>
-  https://en.wikipedia.org/wiki/Explicit_Congestion_Notification</li><br>
-  <li>Total Length</li>
-  <li>Identification</li>
-  <li>Flags</li>
-  <li>Fragment Offset</li>
-  <li>Time To Live</li>
-  <li>Protocol</li>
-  <li>Header Checksum</li>
-  <li>Source Address</li>
-  <li>Destination Address</li>
-  <li>Options></li>
+  <ul>
+    <li>version - Current IP Version / Used in IPv4 and IPv6 / Needed for IPv6 backwards-compatabile.</li>
+    <li>IHL - Length of the IP header in 32 bit increments</li>
+    <li>DSCP - Mechanism used for classifying network traffic on IP Networks
+    <h2>https://www.sciencedirect.com/topics/computer-science/version-field</h2>
+    <li>ECN - Explicit Congestion Notification - An extension to the 
+        Internet Protocol to the Transmision Control Protocol
+        allows end-to-end notification of network congestion
+        without dropping packets.
+    </li>
+  <sh2>https://en.wikipedia.org/wiki/Explicit_Congestion_Notification</h2>
+    <li>Total Length - 16-bit field indicates to the entire
+        size of ip packe header and data in bytes
+        The minimum size 20 bytes (No Data) Maximum 65.535 bytes
+    </li>
+    <li>Identification - The Ip packet is fragmented then each 
+      packet will use the same 16 bit number
+      to identify which IP packet they belong to.
+    </li>
+    <li>Flags</li>
+    1rst bit is always set to 0<br>
+    2nd bit is called the DG (Dont Fragment)
+    3rd bit is called the MF (More Fragments) bit and is
+    set on all fragmented packets except the last one.
+    </li>
+    <li>Fragment Offset - 13th bit field specifies the position of
+    fragment in the original fragmented IP packet.</li>
+    <li>Time To Live - Every packet that passes through the router. the
+    time to live field is decremented b 1. Once it hits 0 the router will
+    drop the packet and sends an ICMP time exceeded messafe to the sender.The time to live filed has 8 bits and is used
+    to prevent packets from looping around forever (if you have a routing loop)
+    </li>
+    <li>Protocol</li>
+    <li>Header Checksum - 16 bit field used to store a checksum of the header.
+    The receiver can use the checksum to check if there are any errors in the header.</li>
+    <li>Source Address - 32 bit source IP address</li>
+    <li>Destination Address - 32 bit destination IP address</li>
+    <li>Options - this field is not used often, is optional and has a 
+        variable length based on the options that were used.
+        When you use this field, the value in the header length field will increase.
+        An example of a possible option is “source route” where the sender<br>
+        requests for a certain routing path.
+    </li>
+    <h2>Source - https://networklessons.com/cisco/ccna-routing-switching-icnd1-100-105/ipv4-packet-header </h2>
+    <h2>https://www.sciencedirect.com/topics/computer-science/version-field</h2>
 </div>
-<h2>https://www.sciencedirect.com/topics/computer-science/version-field</h2>
 <p class="thickborder"></p>
 <!---Cyber Content-->
 <div class="w3-container">
@@ -1264,11 +1294,26 @@
   }
   </script>
 <script>
-
-
-
-
-</script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
 
 
 </body>
