@@ -17,57 +17,62 @@
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
   </div>
   <br>
-  <img src="images/disney4.jpg" width="130" height="100">
+  <div class="sidenav">
+  <img src="images/disney4.jpg" width="180" height="100">
+  
+    
   <div class="w3-padding-24 w3-medium w3-text-grey" style="font-weight:bold">
     <a href="#" class="w3-bar-item w3-button">Home</a>
     <a href="#" class="w3-bar-item w3-button">Important Links</a>
   </div>
-    <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn1">About<i class="fa fa-caret-down"></i>
-    </a>
-    <div id="demoAcc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+  <button class="dropdown-btn">About 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
       <a href="#team" class="w3-bar-item w3-button">Company</a>
       <a href="#careers" class="w3-bar-item w3-button">Team</a>
       <a href="#about" class="w3-bar-item w3-button">Careers</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">Cyber<i class="fa fa-caret-down"></i>
-    </a>
-    <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#team" class="w3-bar-item w3-button">Packets</a>
-      <a href="#careers" class="w3-bar-item w3-button">Ports</a>
-    </div>
-    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3" >Ipv4 Addressing<i class="fa fa-caret-down"></i>
-    </a>
-    <div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#ipv4" class="w3-bar-block w3-hide w3-padding-large w3-medium">Classful IPv4Addresses</a>
-      <a href="#privateipv4" class="w3-bar-block w3-hide w3-padding-large w3-medium">Private IPv4 Addresses</a>
-      <a href="#special" class="w3-bar-block w3-hide w3-padding-large w3-medium">Special IPv4 Addresses</a>
-      <a href="#bogon" class="w3-bar-block w3-hide w3-padding-large w3-medium">Bogon Ipv4 Addresses</a>
-      <a href="#subnetrange" class="w3-bar-block w3-hide w3-padding-large w3-medium">Subnet Mask/Range</a>
-      <a href="#converting" class="w3-bar-block w3-hide w3-padding-large w3-medium">Converting</a>       
-    </div>
-    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">Linux Commands<i class="fa fa-caret-down"></i>
-    </a>
-    <div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#sysinfo" class="w3-bar-item w3-button">System Info</a>
-      <a href="#useinfo" class="w3-bar-item w3-button">User Info</a>
-      <a href="#search" class="w3-bar-item w3-button">File Commands</a>
-      <a href="#fileperm" class="w3-bar-item w3-button">Search Command</a>
-      <a href="#filetran" class="w3-bar-item w3-button">File Permission</a>
-      <a href="#procman" class="w3-bar-item w3-button">File transfer</a>Process Management Commands
-      <a href="#lsoption" class="w3-bar-item w3-button">ls options</a>
-      <a href="#comprdec" class="w3-bar-item w3-button">Compress and Decompress</a>
-      <a href="#network" class="w3-bar-item w3-button">Networking</a>
-      <a href="#install" class="w3-bar-item w3-button">install</a>
-      <a href="hardware" class="w3-bar-item w3-button">hardware</a>
-    </div>
+  </div>
+  <button class="dropdown-btn">Networking<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#team" class="w3-bar-item w3-button">Packets</a>
+    <a href="#careers" class="w3-bar-item w3-button">Ports</a>
+  </div>
+  <button class="dropdown-btn">Ipv4 Adressing<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <a href="#ipv4" class="w3-bar-item w3-button">Classful IPv4Addresses</a>
+      <a href="#privateipv4" class="w3-bar-item w3-button">Private IPv4 Addresses</a>
+      <a href="#special" class="w3-bar-item w3-button">Special IPv4 Addresses</a>
+      <a href="#bogon" class="w3-bar-item w3-button">Bogon Ipv4 Addresses</a>
+      <a href="#subnetrange" class="w3-bar-item w3-button">Subnet Mask/Range</a>
+      <a href="#converting" class="w3-bar-item w3-button">Converting</a>       
+  </div>
+  <button class="dropdown-btn">Linux Commands<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">  
+    <a href="#sysinfo" class="w3-bar-item w3-button">System Info</a>
+    <a href="#useinfo" class="w3-bar-item w3-button">User Info</a>
+    <a href="#filecom" class="w3-bar-item w3-button">File Commands</a>
+    <a href="#search" class="w3-bar-item w3-button">Search Command</a>
+    <a href="#fileperm" class="w3-bar-item w3-button">File Permission</a>
+    <a href="#filetran" class="w3-bar-item w3-button">File transfer</a>
+    <a href="#procman" class="w3-bar-item w3-button">Process Management Commands
+    <a href="#lsoption" class="w3-bar-item w3-button">ls options</a>
+    <a href="#comprdec" class="w3-bar-item w3-button">Compress and Decompress</a>
+    <a href="#network" class="w3-bar-item w3-button">Networking</a>
+    <a href="#install" class="w3-bar-item w3-button">install</a>
+    <a href="hardwares" class="w3-bar-item w3-button">hardware</a>
+  </div>    
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
   
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-12 w3-right" onclick="w3_open()"><i class="fa fa-bars" style="font-size: 24px;"></i></a>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -1352,60 +1357,24 @@
 </div>  
 <!-- END MAIN -->
 </div>
-
 <script>
-// Accordion 1
-// Click on the "about" link on page load to open the accordion for demo purposes
-  document.getElementById("myBtn1").click();
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
 
-  function myAccFunc1() {
-    var x = document.getElementById("demoAcc1");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
     } else {
-      x.className = x.className.replace(" w3-show", "");
+      dropdownContent.style.display = "block";
     }
-  }
-  // Click on the "about" link on page load to open the accordion for demo purposes
-  document.getElementById("myBtn2").click();
-  
-  // Accordion 2
-    function myAccFunc2() {
-    var x = document.getElementById("demoAcc2");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else {
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  // Click on the "about" link on page load to open the accordion for demo purposes
-  document.getElementById("myBtn3").click();
-  
-   // Accordion 3
-   function myAccFunc3() {
-    var x = document.getElementById("demoAcc3");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else {
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  
-  // Click on the "about" link on page load to open the accordion for demo purposes
-  document.getElementById("myBtn4").click();
-  
-    // Accordion 4
-    function myAccFunc4() {
-    var x = document.getElementById("demoAcc4");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else {
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  
-  
-  
+  });
+}
+</script>
+<script>
   // Open and close sidebar
   function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
