@@ -4,24 +4,25 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"></link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+<link rel="stylesheet" href="stylesheet1.css"></link>
 </head>
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:200px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-5">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b>LOGO</b></h3>
   </div>
+  <br>
+  <img src="images/disney4.jpg" width="130" height="100">
   <div class="w3-padding-24 w3-medium w3-text-grey" style="font-weight:bold">
     <a href="#" class="w3-bar-item w3-button">Home</a>
     <a href="#" class="w3-bar-item w3-button">Important Links</a>
-    <a onclick="myAccFunc1()" href="javascript:void(0)" id="myBtn1">
-    about<i class="fa fa-caret-down"></i>
+  </div>
+    <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn1">About<i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#team" class="w3-bar-item w3-button">Company</a>
@@ -29,15 +30,13 @@
       <a href="#about" class="w3-bar-item w3-button">Careers</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
-    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
-      Cyber <i class="fa fa-caret-down"></i>
+    <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">Cyber<i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#team" class="w3-bar-item w3-button">Packets</a>
       <a href="#careers" class="w3-bar-item w3-button">Ports</a>
     </div>
-    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
-      Ipv4 Addressing<i class="fa fa-caret-down"></i>
+    <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn3" >Ipv4 Addressing<i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#ipv4" class="w3-bar-block w3-hide w3-padding-large w3-medium">Classful IPv4Addresses</a>
@@ -47,8 +46,7 @@
       <a href="#subnetrange" class="w3-bar-block w3-hide w3-padding-large w3-medium">Subnet Mask/Range</a>
       <a href="#converting" class="w3-bar-block w3-hide w3-padding-large w3-medium">Converting</a>       
     </div>
-    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">
-      Linux Commands<i class="fa fa-caret-down"></i>
+    <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn4">Linux Commands<i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#sysinfo" class="w3-bar-item w3-button">System Info</a>
@@ -68,7 +66,7 @@
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </header>
 
@@ -1356,7 +1354,10 @@
 </div>
 
 <script>
-  // Accordion 
+// Accordion 1
+// Click on the "about" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn1").click();
+
   function myAccFunc1() {
     var x = document.getElementById("demoAcc1");
     if (x.className.indexOf("w3-show") == -1) {
@@ -1365,11 +1366,10 @@
       x.className = x.className.replace(" w3-show", "");
     }
   }
-  
   // Click on the "about" link on page load to open the accordion for demo purposes
-  document.getElementById("myBtn1").click();
+  document.getElementById("myBtn2").click();
   
-    // Accordion 
+  // Accordion 2
     function myAccFunc2() {
     var x = document.getElementById("demoAcc2");
     if (x.className.indexOf("w3-show") == -1) {
@@ -1378,11 +1378,10 @@
       x.className = x.className.replace(" w3-show", "");
     }
   }
-  
   // Click on the "about" link on page load to open the accordion for demo purposes
-  document.getElementById("myBtn2").click();
+  document.getElementById("myBtn3").click();
   
-   // Accordion 
+   // Accordion 3
    function myAccFunc3() {
     var x = document.getElementById("demoAcc3");
     if (x.className.indexOf("w3-show") == -1) {
@@ -1393,9 +1392,9 @@
   }
   
   // Click on the "about" link on page load to open the accordion for demo purposes
-  document.getElementById("myBtn3").click();
+  document.getElementById("myBtn4").click();
   
-    // Accordion 
+    // Accordion 4
     function myAccFunc4() {
     var x = document.getElementById("demoAcc4");
     if (x.className.indexOf("w3-show") == -1) {
@@ -1404,11 +1403,6 @@
       x.className = x.className.replace(" w3-show", "");
     }
   }
-  
-  // Click on the "about" link on page load to open the accordion for demo purposes
-  document.getElementById("myBtn4").click();
-  
-  
   
   
   
