@@ -97,7 +97,8 @@ h5 {
 
 
 .header {
-  background-color: #f1f1f1;
+  background-color: #000000;
+  color:rgb(255, 255, 255)
   padding: 30px;
   text-align: center;
 }                               
@@ -190,7 +191,7 @@ img {
   border-bottom: #f1f1f1;
   border:#ffffff;
   border-style: solid;
-  background: none;
+  background:rgb(4, 4, 4);
   width: 100%;
   text-align: left;
   cursor: pointer;
@@ -199,7 +200,7 @@ img {
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Main content */
