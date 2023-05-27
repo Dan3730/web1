@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+  <div class="img"></div><title></title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
@@ -11,16 +11,24 @@
 <link rel="stylesheet" href="stylesheet1.css"></link>
 </head>
 
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<body class="w3-content" style="max-width:1200px">
+  <div class="w3-container"  id="Welcome">
+    <h5>Welcome</h5>
+    <p>This site will display my accomplishments over the years and hopefully you benefit from learning some basic concepts.</p>  
+    <h2>Mission Statement</h2>
+    <p>Cyber security is for everyone.</p>
+    
+  </div>
+  
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:200px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top" style="z-index:3;width:50px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-5">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
   </div>
   <br>
   <div class="sidenav">
   <img src="images/disney4.jpg" width="180" height="100">
-  
-    
   <div class="w3-padding-24 w3-medium w3-text-grey" style="font-weight:bold">
     <a href="#" class="w3-bar-item w3-button">Home</a>
     <a href="#" class="w3-bar-item w3-button">Important Links</a>
@@ -76,27 +84,15 @@
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:250px">
  
   <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
+<div class="w3-hide-large" style="margin-top:83px"></div>
 
- <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
- <body class="w3-content" style="max-width:1200px">
-  <img src="images/disney4.jpg" alt="Nature" class="responsive" width="600" height="400">
- <div class="w3-container"  id="Welcome">
-  <h5>Welcome</h5>
-  <p>This site will showyou my accomplishments over the years and hopefully teach you some of what I learned</p>  
-  <h2>Mission Statement</h2>
-  <p>We strive to be on the front line of
-  teaching basics in ncyber security and teach 
-  anyone to work efficiently and feel comfortable with 
-  electrionics and technology.
-  </p>
-</div>
+
 <!---Ip Header Content-->
 <div class="w3-container" id="ports">
   <p class="thickborder"></p>
@@ -146,10 +142,9 @@
   <tr><td>161</td><td>SNMP</td><td>Simple Network Management Protocol</td></tr>
   <tr><td>162</td><td>SNMP-TRAP</td><td>Simple Network Management Protocol traps</td></tr>
   <tr><td>512</td><td>rexec</td><td>UNIX remote execution (control)
-  <tr><td>513</td><td>TCP—rlogin<br>UDP—rwho</td><td>TCP—UNIX remote login<br> 
-                      UDP—UNIX broadcast name service</td></tr>
+  <tr><td>513</td><td>TCP—rlogin<br>UDP—rwho</td><td>TCP—UNIX remote login<br>UDP—UNIX broadcast name service</td></tr>
   <tr><td>514</td><td>TCP—rsh<br>UDP—syslog</td>
-      <td>TCP—UNIX remote shell<br>UDP—system log</td></tr>
+  <tr><td>TCP—UNIX remote shell<br>UDP—system log</td></tr>
   <tr><td>515</td><td>Printer UNIX line</td><td>printer remote spooling</td></tr>
   <tr><td>520</td><td>RIP</td><td>Routing Information Protocol</td></tr>
   <tr><td>525</td><td>Timed</td><td>Time server</td></tr>
@@ -174,7 +169,7 @@
         allows end-to-end notification of network congestion
         without dropping packets.
     </li>
-  <sh2>https://en.wikipedia.org/wiki/Explicit_Congestion_Notification</h2>
+    <h2>https://en.wikipedia.org/wiki/Explicit_Congestion_Notification</h2>
     <li>Total Length - 16-bit field indicates to the entire
         size of ip packe header and data in bytes
         The minimum size 20 bytes (No Data) Maximum 65.535 bytes
@@ -555,8 +550,6 @@
 	  <td>13</td>
     </tr>
   </table>
-  
-  </table>
   <h2>Convert 111011 to A decimal.</h2>
   <div style="overflow-x:auto;">
   <table>
@@ -570,7 +563,7 @@
       <td>Binary Turned On</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
     </tr> 
 	   <td>Represented bit value.</td><td>0</td><td>0</td><td>32</td><td>16</td><td>8<td>0</td><td>2</td><td>1</td>
-    </tr>  
+    </tr> 
   </table>
   <table>
     <th>Add the values</th>
@@ -705,7 +698,7 @@
       </tr>
       <tr>
         <td>cp -r /xxx /yyy</td>
-        <td>copies /xxx directıry to /yyy directory</td>
+        <td>copies /xxx directory to /yyy directory</td>
       </tr>
       <tr>
         <td>mv aaa bbb</td>
@@ -767,8 +760,8 @@
       <td>downloads file abc from remote to local device</td>
      </tr>
   </table>  
-    <h2 id="search">Search Commands</h2>
-    <table class="center">
+  <h2 id="search">Search Commands</h2>
+  <table class="center">
       <tr>
         <td>grep x file</td>
         <td>searches for x in file</td>
@@ -838,7 +831,7 @@
       </tr> 
     </table>
  <div style="overflow-x:auto;">
-    <h2 id="fileparm">File Permission</h2>
+    <h2 id="fileperm">File Permission</h2>
     <table>
       <tr>
         <td>chown user</td>
@@ -980,9 +973,7 @@
     </tr>
   </table>
   <h2 id="search">Search Commands</h2>
-  <table class="center">
-    
-  </table>
+  
   <h2 id="lsoption">ls Options</h2>
   <table class="center">
       <tr>

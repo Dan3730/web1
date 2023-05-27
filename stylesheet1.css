@@ -98,7 +98,7 @@ h5 {
 
 .header {
   background-color: #000000;
-  color:rgb(255, 255, 255)
+  color:rgb(255, 255, 255);
   padding: 30px;
   text-align: center;
 }                               
@@ -234,4 +234,25 @@ img {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+
+.img {
+  /* The image used */
+  background-image: url('images/disney4.jpg');
+
+  /* Full height */
+  height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .img {
+    background-attachment: scroll;
+  }
 }
