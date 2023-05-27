@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div class="img"></div><title></title>
+  <p class="thickborder"></p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"></link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+<link rel="stylesheet" href="stylesheet1.css"></link>
+</head>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top" style="z-index:3;width:50px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-5">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+  </div>
+  <div class="sidenav">
+  <img src="images/disney4.jpg" width="180" height="100">
+  <div class="w3-padding-24 w3-medium w3-text-grey" style="font-weight:bold">
+    <a href="how2.html" class="w3-bar-item w3-button">Home</a>
+    <a href="important.html" class="w3-bar-item w3-button">Important Links</a>
+  </div>  
+  <button class="dropdown-btn">welcome</a>
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <a href="welcome.html" class="w3-bar-item w3-button">Welcome</a>
+  </div>
+  <button class="dropdown-btn">Networking<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="networking.html">Networking</a>
+    <li>Ports</li>
+    <li>Headers</li>
+  </div>
+  <button class="dropdown-btn">Subnetting<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="subnetting.html">Subnetting</a>
+      <li>purpose</li>
+      <li>Classful IPv4Addresses</li>
+      <li>Private IPv4 Addresses</li>
+      <li>Special IPv4 Addresses</li>
+      <li>Bogon Ipv4 Addresses</li>
+      <li>Subnet Mask/Range</li>
+      <li>Converting</li>       
+  </div>
+  <button class="dropdown-btn">Linux Commands<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container"> 
+    <a href="linuxcom.html">Linux Commands</a> 
+      <li>System Info</a>
+      <li>User Info</a>
+      <li>File Commands</a>
+      <li>Search Command</a>
+      <li>File Permission</a>
+      <li>File transfer</a>
+      <li>Process Management Commands
+      <li>ls options</a>
+      <li>Compress and Decompress</a>
+      <li>Networking</a>
+      <li>install</a>
+      <li>hardware</a>
+  </div>    
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-12 w3-right" onclick="w3_open()"><i class="fa fa-bars" style="font-size: 24px;"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:auto">
+ 
+  <!-- Push down content on small screens -->
+<div class="w3-hide-large" style="margin-top:83px"></div>
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<!----Linux Cheat Sheet---->
+<h3>Linux Cheet Sheet</h3>
+
+  <h2 id="sysinfo">System Information Commands</h2>
+  <table class="center">
+  <tr>
+    <td>uname -a</td> 
+    <td>shows Linux system info</td>
+  </tr> 
+  <tr>
+    <td>uname -r</td>
+    <td>shows kernel release info</td>
+  </tr>
+  <tr>
+    <td>cat /etc/redhat-release</td>
+    <td>shows installed redhat version</td> 
+  </tr>
+  <tr>
+    <td>uptime</td>
+    <td>displays system running/life time</td> 
+  </tr>
+  <tr>
+    <td>hostname</td>
+    <td>shows system host name</td>
+  </tr>
+  <tr>
+    <td>hostname -I</td> 
+    <td>shows ip addresses of the host</td> 
+  <tr>
+    <td>last</td> 
+    <td>reboot displays system reboot history</td> 
+  </tr>
+    <td>date</td>
+    <td>displays current date and time</td>
+  <tr>
+    <td>cal</td> 
+    <td>displays monthly calendar</td>
+  </tr>
+    <td>mount
+    <td>shows mounted filesy-stems</td>
+  </tr>
+</table>
+  <h2 id="useinfo">User Information Commands</h2>
+  <table class="center">
+    <tr>
+      <td>id</td>
+      <td>shows user&group ids of the current user</td>
+    </tr>
+    <tr>
+      <td>last 
+      <td>shows the last users logged on</td>
+    </tr>
+    <tr>
+      <td>whoami</td>
+      <td>shows who you are logged in as</td>
+    <tr>
+    <tr>
+      <td>who</td>
+      <td>shows who is logged into the system</td>
+    </tr>
+    <tr>
+      <td>w</td>
+      <td>groupadd test creates group “test”</td>
+    </tr>
+    <tr>
+      <td>useradd -c “GK” -m Gokhan</td> 
+      <td>creates “Gokhan” account with comment “GK”</td>
+    <tr>  
+      <td>userdel Gokhan</td>
+      <td>deletes account “Gokhan”</td>
+    </tr>
+    <tr>
+      <td>usermod -aG Networkers Gokhan</td> 
+      <td>adds account “Gokhan” to the “Networkers” group</td>
+    </tr>
+  </table>
+    <h2 id="filecom">File Commands</h2>
+    <table class="center">
+      <tr>
+        <td>ls -l</td>
+        <td>shows file type and access permission</td>
+      </tr>
+      <tr>
+        <td>ls -a</td>
+        <td>lists also hidden files
+      </tr>
+      <tr>        
+        <td>ls -al</td>
+        <td>lists files and directories detailly</td>
+      </tr>
+      <tr>
+        <td>pwd</td>
+        <td>shows present directory</td>
+      </tr>
+      <tr>
+        <td>mkdir directory</td>
+        <td>creates a directory</td>
+      </tr>
+      <tr>
+        <td>rm xyz</td>
+        <td>deletes file xyz</td>
+      </tr>
+      <tr>
+        <td>rm -r /xyz</td>
+        <td>deletes directory /xyz and its contents recursively</td>
+      </tr>
+      <tr>
+        <td>rm -f abc</td>
+        <td>forcefully deletes abc file without confirmation</td>
+      </tr>
+      <tr>
+        <td>rm -rf /xyz</td>
+        <td>forcefully deletes directory /xyz recursively</td>
+      </tr>
+      <tr>
+        <td>cp aaa bbb</td>
+        <td>copies aaa file to bbb</td>
+      </tr>
+      <tr>
+        <td>cp -r /xxx /yyy</td>
+        <td>copies /xxx directory to /yyy directory</td>
+      </tr>
+      <tr>
+        <td>mv aaa bbb</td>
+        <td>renames or moves file aaa to file bbb</td>
+      </tr>      
+    </table>
+  <h2>File commands continued...</h2>
+  <table class="center">    
+    <tr>
+      <td>touch abc</td>
+      <td>creates an empty file named abc</td>
+    </tr>
+    <tr>
+      <td>cat abc</td>
+      <td>used to view file abc</td>
+    </tr>
+    <tr>
+      <td>less abc</td>
+      <td>browse through a text file abc
+    </tr>
+    <tr>
+      <td>head abc</td>
+      <td>displays first 10 lines of file abc</td>
+    </tr>
+    <tr>
+      <td>tail abc</td>
+      <td>displays last 10 lines of file abc
+    </tr>
+    <tr>
+      <td>tail -f abc</td>
+      <td>displays last 10 lines of file abc and follow it as it grows</td>
+    </tr>
+    <tr>
+      <td>tail -F abc</td>
+      <td>outputs last lines of abc as it changes</td>
+    </tr>
+    <tr>
+      <td>file abc</td>
+      <td>gets type of abc</td>
+    </tr>
+    <tr>
+      <td>gpg -c abc</td>
+      <td>encrypts file abc</td>
+    </tr>
+    <tr>
+      <td>gpg abc</td>
+      <td>decrypts file abc</td>
+    </tr>
+    <tr>
+      <td>dir</td>
+      <td>shows files in the current directory</td>
+    </tr>
+    <tr>
+      <td>put abc</td>
+      <td>uploads file abc from local to remote device</td>
+    </tr>
+    <tr>
+      <td>get file</td>
+      <td>downloads file abc from remote to local device</td>
+     </tr>
+  </table>  
+  <h2 id="search">Search Commands</h2>
+  <table class="center">
+      <tr>
+        <td>grep x file</td>
+        <td>searches for x in file</td>
+      </tr>
+      <tr>
+        <td>grep -i</td>
+        <td>case insens-itive search</td>
+      </tr>
+      <tr>
+        <td>grep -r</td>
+        <td>recursive search</td>
+      </tr>
+      <tr>
+        <td>grep -v</td>
+        <td>inverted search</td>
+      </tr>
+      <tr>
+        <td>grep -o</td>
+        <td>shows only matched part of the file</td>
+      </tr>
+      <tr>  
+        <td>find /dir/ -name aaa*</td>
+        <td>finds files starting with aaa in dir</td>
+      </tr>
+      <tr>
+        <td>find /dir/ -user Gokhan</td>
+        <td>finds files owned by Gokhan in dir</td>
+      </tr>
+      <tr>
+        <td>find /dir/ -mmin 10</td> 
+        <td>finds files modifed less than 10 minutes ago in dir</td>
+      </tr>
+      <tr>
+        <td>find /home -size +500M</td>
+        <td>finds files larger than 500MB in /xyz</td>
+      </tr>
+      <tr>
+        <td>find [/folder/location] -name [x]</td>
+        <td>finds file names starting with character x</td>
+      <tr>
+        <td>whereis aaa</td>
+        <td>locates the binary, source, and manual page of aaa</td>
+      </tr>
+      <tr>
+        <td>locate abc</td>
+        <td>finds the location of abc quickly</td>
+      </tr>
+      <tr>
+        <td>command -h / command –help</td>
+        <td>to review all available options of the “command”</td>
+      </tr>
+      <tr>
+        <td>info command</td>
+        <td>to find info documents about the “command”</td>
+      </tr>
+      <tr>
+        <td>whatis command</td>
+        <td>displays a single line description about the "command"</td>
+      </tr>
+      <tr>
+        <td>$ man UNIXCOMMAND</td>
+        <td>to view detailed man page of the “command”</td>
+      </tr>
+      <tr>
+        <td>apropos</td>
+        <td>used to search man pages for available commands on a specific</td>
+      </tr> 
+    </table>
+ <div style="overflow-x:auto;">
+    <h2 id="fileperm">File Permission</h2>
+    <table>
+      <tr>
+        <td>chown user</td>
+        <td>changes ownership of a file/directory</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </td>
+      </tr>
+      <tr>
+        <td>chown user:group filename</td>
+        <td>changes user and group for a file or directory</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>       
+      <tr>
+        <td>r (read) permission, 4</td>
+        <td>w (write) permission, 2</td>
+        <td>x (execute) permission, 1</td>
+        <td>-= no permission</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>File Owner</td>
+        <td>owner/group/everyone</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      <tr>
+        <td>File permissions Example</td>
+        <td>777 | Owner, Group, Everyone has rwx permissions</td>
+        <td>744 | Owner has rwx permission recursively</td>
+        <td>755 | Owner has rwx permission, Group, Everyone has rx permissions</td>
+        <td>776 | Owner, Group has rwx permission, Everyone has rw</td>
+      </tr>
+    </table>
+</div>
+<h2 id="filetran">File Transfer Commands</h2>
+  <table class="center">
+    <tr>
+      <td>scp file.txt server:/tmp</td> 
+      <td>secure copy file.txt to the /tmp folder on server</td>
+    </tr>
+    <tr>
+      <td>scp server:/var/www/*.html/tmp</td>
+      <td>secure copy *.html files in /var/www/ directory on server to</td>
+    </tr>
+    <tr>
+      <td>scp -r server:/var/www /tmp</td>
+      <td>secure copy all files and directories</td>  
+    </tr>
+    <tr>
+      <td>rsync -a /home /backups/</td>
+      <td>synchronize /home to /backups/</td>
+    </tr>    
+    <tr>
+      <td>rsync -avz /home server:/backups/</td>
+      <td>Synchronize files/directories between the local and remote</td>
+    </tr>
+    </table>
+  <h2 id="procman">Process Management Commands</h2>
+  <table class="center">
+    <tr>
+      <td>ps</td>
+      <td>displas currently running processes</td>
+    </tr>
+    <tr>
+      <td>ps PID</td>
+      <td>give the stats of a particular process</td>
+    </tr>
+    <tr>
+      <td>pidof</td>
+      <td>gives the process ID of a process</td>
+    </tr>
+    <tr>
+      <td>ps -ef</td>
+      <td>displays all running processes on the system</td>
+    </tr>
+    <tr> 
+      <td>ps -ef | grep xyz</td>
+      <td>displays process information for xyz</td>
+    </tr>
+      <td>top</td>
+      <td> displays and manages the top processes</td>
+    </tr>
+    <tr>
+      <td>htop</td>
+      <td>interactive process viewer (top alternative)</td>
+    </tr>
+    <tr>
+      <td>kill pid</td>
+      <td>kills process with process ID of pid</td>
+    </tr>
+    <tr>
+      <td>pkill xyz</td>
+      <td>kills process with name xyz</td>
+    </tr>
+    <tr>
+    <tr>
+      <td>killall abc</td>
+      <td>kills all processes named abc</td>
+    </tr>
+    <tr>
+      <td>program &</td>
+      <td>starts program in the background</td>
+    </tr>
+    <tr>
+      <td>bg</td>
+      <td>lists and resumes stopped jobs in the background</td>
+    </tr>
+    <tr>
+      <td>fg</td>
+      <td>brings the most recent background job to foreground.</td>
+    </tr>
+    <tr>
+      <td>fg x</td>
+      <td>brings job x to the foreground</td>
+    </tr>
+    <tr>
+      <td>nice</td>
+      <td>starts a process with a given priority</td>
+    </tr> 
+    <tr>
+      <td>renice</td>
+      <td>changes priority of an already running process</td>
+    </tr>
+    <tr>
+      <td>pstree</td>
+      <td>displays processes in a tree-like diagram</td>
+    </tr>
+    <tr>
+      <td>pmap</td>
+      <td>displays a memory usage map of processes</td>
+    </tr>
+    <tr>
+      <td>lsof</td>
+      <td>lists files opened by running processes</td>
+    </tr>
+  </table>
+  <h2 id="search">Search Commands</h2>
+  
+  <h2 id="lsoption">ls Options</h2>
+  <table class="center">
+      <tr>
+        <td>-a</td>
+        <td>shows all (including hidden)</td>
+      </tr>
+      <tr>
+        <td>-R</td>
+        <td>recursive list scp server:/var/www/*.html/tmp</td>
+      </tr>
+      <tr>
+        <td>-r</td>
+        <td>reverse order</td>
+      </tr>
+      <tr>
+        <td>-t</td>
+        <td>sort by last modified</td>
+      </tr>
+      <tr>
+        <td>-S</td>
+        <td>sort by file size</td>
+      </tr>
+      <tr>
+        <td>-l</td>
+        <td>long listing format</td>
+      </tr>
+      <tr>
+        <td>-1</td>
+        <td>one file per line</td>
+      </tr>
+      <tr>
+        <td>-m</td> 
+        <td>comma--sep-arated output</td>
+      </tr>
+      <tr>
+        <td>-Q</td>
+        <td>quoted output</td>
+      </tr>
+    </table> 
+<h2 id="comprdec">Compress and Decompress commands</h2>
+<table class="center">
+    <tr>
+      <td>gzip abc</td>
+      <td>compress abc file using gzip</td>
+    </tr>
+    <tr>
+      <td>bzip2 abc</td>
+      <td>compresses abc file using bzip2.</td>
+    </tr>
+    <tr>
+      <td>zip abc.zip abc</td>
+      <td>compresses abc file into the archive abc.zip.</td>
+    </tr>
+    <tr>
+      <td>tar -czvf archive.tar.gz /home/temp2/</td>
+      <td>Compress a full directory with all subdirectories</td>
+    </tr>
+    <tr>
+      <td>gzip -d xyz.gz</td>
+      <td>extracts xyz.gz with gzip utility</td>
+    <tr>
+      <td>gunzip xyz.gz</td>
+      <td>extracts xyz.gz with gzip utility</td>
+    </tr>
+    <tr>
+      <td>bzip2 -d file.php.bz2</td>
+      <td>extracts xyz.gz with bzip2 utility</td>
+    </tr>
+      <td>bunzip2 file.php.bz2</td>
+      <td>extracts xyz.gz with bzip2 utility</td>
+    <tr>
+      <td>unzip xyz.zip</td>
+      <td>extracts xyz.zip with zip utility</td>
+    </tr>
+    <tr>
+      <td>gunzip -c output.txt.gz </td>
+      <td>to view the contents of both files without extracting</td>
+    </tr>
+    <tr>
+      <td>tar cf archive.tar directory</td>
+      <td>creates tar named archive.tar containing directory</td>
+    </tr>
+    <tr>
+      <td>tar xf archive.tar</td>
+      <td>extracts the contents from archive.tar</td>
+    </tr>
+    <tr>
+      <td>tar czf archive.tar.gz directory</td>
+      <td>creates a gzip compressed tar file name archive.tar.gz</td>
+    <tr>
+      <td>tar xzf archives.tar.gz</td>
+      <td>extracts a gzip compressed tar file</td>
+    </tr>
+    <tr>
+      <td>tar cjf archive.tar.bz2 directory</td>
+      <td>creates a tar file with bzip2 comression</td>
+    </tr>
+    <tr>
+      <td>tar xjf archive.tarbz2</td>
+      <td>extracts a bzip2 compressed tar file</td>
+    </tr>
+  </table>
+<h2 id="network">Networking Commands</h2>
+<table class="center">
+  <tr>
+    <td>arp</td>
+    <td>displays ARP table of the device</td>
+  </tr>
+  <tr>
+    <td>arpwatch</td>
+    <td>displays ethernet activity and Ethernet/ip pairings</td>
+  </tr>
+  <tr>
+    <td>bmon</td>
+    <td>displays bandwidth, captures</td>
+  </tr>
+  <tr>
+    <td>curl</td>
+    <td>used for file transfer</td>
+  </tr>
+  <tr>
+    <td>dhclient</td>
+    <td>used to analyze clients ip address, subnet mask, gateway, dns server</td>
+  </tr>
+  <tr>
+    <td>dig</td>
+    <td>used for simple DNS lookup</td>
+  </tr>
+  <tr>
+    <td>dstat</td>
+    <td>collects and shows system resources</td>
+  </tr>
+  <tr>
+    <td>ethtool</td>
+    <td> used to check settings of your NIC</td>
+  </tr>
+  <tr>
+    <td>ftp</td>
+    <td>used for file transfer</td>
+  </tr>
+  <tr>
+    <td>host</td>
+    <td>used for IP-name matchings</td>
+  </tr>
+  <tr>
+    <td>hping3</td>
+    <td>used for packet analyze</td>
+  </tr>
+  <tr>
+    <td>ifstat</td>
+    <td>used to monitor network interface statistics</td>
+  </tr>
+  <tr>
+    <td>ip addr</td>
+    <td>used to check network interfaces and routing activitie</td>
+  </tr>
+  <tr>
+    <td>iptables</td>
+    <td>used for ip packet filtering</td>
+  </tr>
+  <tr>
+    <td>iftop</td>
+    <td>displays current bandwidth usage</td>
+  </tr>
+  <tr>
+    <td>ifup/ifdown</td>
+    <td>used to enable or disable interfaces</td>
+  </tr>
+  <tr>
+    <td>iwconfig</td>
+    <td>used to configure wireless interfaces</td>
+  </tr>
+  <tr>
+    <td>netstat</td>
+    <td>to check network connections</td>
+  </tr>
+  <tr>
+    <td>nload</td>
+    <td>used as bandwidth monitoring tool</td>
+  </tr>
+  <tr>
+    <td>nmap</td>
+    <td>used for security audits</td>
+  </tr>
+  <tr>
+    <td>nslookup</td>
+    <td>used also for DNS quesry</td>
+  </tr>
+  <tr>
+    <td>ping</td>
+    <td>used to check reachability</td>
+  </tr>
+  <tr>
+    <td>route</td>
+    <td>displays IP Routing Table</td>
+  </tr>
+  <tr>
+    <td>scp</td>
+    <td>secured file transfer</td>
+  <tr>
+    <td>sftp</td>
+    <td>secured file transfer</td>
+  </tr>
+  <tr>
+    <td>ss</td>
+    <td>gives details about the sockets</td>
+  </tr>
+  <tr>
+    <td>ssh</td>
+    <td>used for secure connections</td>
+  </tr>
+    <td>tshark</td>
+    <td>analyzing and capturing</td>
+  </tr>
+  <tr>
+    <td>tcpdump</td>
+    <td>used for analyzing and capturing</td>
+  </tr>
+  <tr>
+    <td>telnet</td>
+    <td>used for classical unsecure connnection</td>
+  </tr>
+  <tr>
+    <td>tracepath</td>
+    <td>used for path tracking</td>
+  </tr>
+  <tr>
+    <td>traceroute</td>
+    <td>used for path tracking</td>
+  </tr>
+  <tr>
+    <td>w</td>
+    <td>used to check the current system activity</td>
+  </tr>
+  <tr>
+    <td>wget</td>
+    <td>used to download the content of the web servers</td>
+  </tr>
+  <tr>
+    <td>whois</td>
+    <td>checks the whois database and return with IP and Domain infor</td>
+  </tr>
+</table>
+<h2 id="install">Install commands</h2>
+<table class="center">
+    <tr>
+      <td>yum search keyword</td>
+      <td>compresses abc file using gzip.</td>
+    </tr>
+    <tr>
+      <td>yum info abc</td>
+      <td>displays description and summary info about abc package</td>
+    </tr>
+    <tr>
+      <td>rpm -i abc.rpm</td>
+      <td>installs packag from local file named abc.rpm</td>
+    </tr>
+    <tr>
+      <td>yum remove abc</td>
+      <td>Remove/uninstall abc package</td>
+    </tr>
+    <tr>
+      <td>yum list installedl</td>
+      <td>lists all installed packages with yum</td>
+    </tr>
+    <tr>
+      <td>yum search [keyword]</td>
+      <td>finds a package by a related</td>
+    </tr>
+    <tr>
+      <td>yum info [package_name]</td>
+      <td>shows package information and summary</td>
+    </tr>
+    <tr>
+      <td>yum install [package_name.rpm]</td>
+      <td>installs a package using the YUM package manager</td>
+    </tr>
+    <tr>
+      <td>dnf install [package_name.rpm]</td>
+      <td>installs a package using the DNF package manager</td>
+    </tr>
+    <tr>
+      <td>apt-get install [package_name]</td>
+      <td>insalls a package using the APT package manager</td>
+    </tr>
+    <tr>
+      <td>rpm -i [package_name.rpm]</td>
+      <td>installs an .rpm package from a local file</td>
+    </tr>
+    <tr>
+      <td>rpm -e [package_name.rpm]</td>
+      <td>removes an .rpm package</td>
+    </tr>
+    </table>
+<h2 id="hardware">Hardware Information Commands</h2>
+<table class="center">
+      <tr>
+        <td>dmesg</td>
+        <td>displays messages in kernel ring buffer</td>
+      <tr>
+      <tr>
+        <td>cat /proc/cpuinfo</td>
+        <td>displays CPU information</td>
+      <tr>
+        <td>cat /proc/meminfo</td>
+        <td>displays memory information</td>
+      </tr>
+      <tr>
+        <td>lspci -tv</td>
+        <td>displays PCI devices</td>
+      </tr>
+      <tr>
+        <td>lsusb -tv</td>
+        <td>displays USB devices</td>
+      </tr>
+      <tr>
+        <td>dmidecode</td>
+        <td>displays DMI/SMBIOS from BIOS</td>
+      <tr>
+        <td>hdparm -i /dev/sda</td>
+        <td>displays info about disk sda</td>
+      </tr>
+      <tr>
+        <td>hdparm -tT /dev/sda</td>
+        <td>performs a read speed test on disk sda</td>
+      <tr>
+        <td>badblocks -s /dev/sda</td>
+        <td>tests for unreadable blocks on disk sda</td>
+      <tr>
+    </table>
+</div>
+</div>
+<div class="footer">
+
+</div>
+</div>  
+<!-- END MAIN -->
+</div>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+
+
+</body>
+</html>

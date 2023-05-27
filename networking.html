@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div class="img"></div><title></title>
+  <p class="thickborder"></p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"></link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+<link rel="stylesheet" href="stylesheet1.css"></link>
+</head>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top" style="z-index:3;width:50px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-5">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+  </div>
+  <div class="sidenav">
+  <img src="images/disney4.jpg" width="180" height="100">
+  <div class="w3-padding-24 w3-medium w3-text-grey" style="font-weight:bold">
+    <a href="how2.html" class="w3-bar-item w3-button">Home</a>
+    <a href="important.html" class="w3-bar-item w3-button">Important Links</a>
+  </div>  
+  <button class="dropdown-btn">welcome</a>
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <a href="welcome.html" class="w3-bar-item w3-button">Welcome</a>
+  </div>
+  <button class="dropdown-btn">Networking<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="networking.html">Networking</a>
+    <li>Ports</li>
+    <li>Headers</li>
+  </div>
+  <button class="dropdown-btn">Subnetting<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="subnetting.html">Subnetting</a>
+      <li>purpose</li>
+      <li>Classful IPv4Addresses</li>
+      <li>Private IPv4 Addresses</li>
+      <li>Special IPv4 Addresses</li>
+      <li>Bogon Ipv4 Addresses</li>
+      <li>Subnet Mask/Range</li>
+      <li>Converting</li>       
+  </div>
+  <button class="dropdown-btn">Linux Commands<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container"> 
+    <a href="linuxcom.html">Linux Commands</a> 
+      <li>System Info</a>
+      <li>User Info</a>
+      <li>File Commands</a>
+      <li>Search Command</a>
+      <li>File Permission</a>
+      <li>File transfer</a>
+      <li>Process Management Commands
+      <li>ls options</a>
+      <li>Compress and Decompress</a>
+      <li>Networking</a>
+      <li>install</a>
+      <li>hardware</a>
+  </div>    
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-12 w3-right" onclick="w3_open()"><i class="fa fa-bars" style="font-size: 24px;"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:auto">
+ 
+  <!-- Push down content on small screens -->
+<div class="w3-hide-large" style="margin-top:83px"></div>
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<!---ports-->
+<div class="w3-container" id="ports">
+  <p class="thickborder"></p>
+  <h5 id="cyber">Ports</h5>
+  <table>
+  <tr><td>Port</td><td>Keyword</td><td>Description</td></tr>
+  <tr><td>0</td><td>—</td><td>Reserved</td></tr>
+  <tr><td>1–4</td><td>—</td><td>Unassigned</td></tr>
+  <tr><td>5</td><td>RJE</td><td>Remote job entry</td></tr>
+  <tr><td>7</td><td>ECHO</td><td>Echo</td></tr>
+  <tr><td>9</td><td>DISCARD</td><td>Discard</td></tr>
+  <tr><td>11</td><td>USERS</td><td>Active users</td></tr>
+  <tr><td>13</td><td>DAYTIME</td><td>Daytime</td></tr>
+  <tr><td>15</td><td>NETSTAT</td><td>Who is up or NETSTAT</td></tr>
+  <tr><td>17</td><td>QUOTE</td><td>Quote of the day</td></tr>
+  <tr><td>19</td><td>CHARGEN</td><td>Character generator</td></tr>
+  <tr><td>20</td><td>FTP-DATA</td><td>File Transfer Protocol (data)</td></tr>
+  <tr><td>21</td><td>FTP</td><td>File Transfer Protocol</td></tr>
+  <tr><td>23</td><td>TELNET</td><td>Terminal connection</td></tr>
+  <tr><td>25</td><td>SMTP</td><td>Simple Mail Transport Protocol</td></tr>
+  <tr><td>37</td><td>TIME</td><td>Time</td></tr>
+  <tr><td>39</td><td>RLP</td><td>Resource Location Protocol</td></tr>
+  <tr><td>42</td><td>NAMESERVER</td><td>Hostname server</td></tr>
+  <tr><td>43</td><td>NICNAME</td><td>Who is</td></tr>
+  <tr><td>49</td><td>LOGIN</td><td>Login Host Protocol</td></tr>
+  <tr><td>53</td><td>DO</td><td>MAIN Domain name server</td></tr>
+  <tr><td>67</td><td>BOOTPS</td><td>Bootstrap Protocol Server</td></tr>
+  <tr><td>68</td><td>BOOTPC</td><td>Bootstrap Protocol Client</td></tr>
+  <tr><td>69</td><td>TFTP</td><td>Trivial File Transfer Protocol</td></tr>
+  <tr><td>75</td><td>—</td><td>Any private dial-out service</td></tr>
+  <tr><td>77</td><td>—</td><td>Any private RJE service</td></tr>
+  <tr><td>79</td><td>FINGER</td><td>Finger</td></tr>
+  <tr><td>95</td><td>SUPDUP</td><td>SUPDUP Protocol</td></tr>
+  <tr><td>101</td><td>HOST NAME</td><td>Network interface card (NIC) hostname server</td></tr>
+  <tr><td>102</td><td>ISO-TSAP</td><td>ISO-Transport Service Access Point (TSAP)</td></tr>
+  <tr><td>103</td><td>X400</td><td>X400</td></tr>
+  <tr><td>104</td><td>X400-SND</td><td>X400-SND</td></tr>
+  <tr><td>111</td><td>SUNRPC</td><td>Sun Microsystems Remote Procedure Call</td></tr>
+  <tr><td>113</td><td>AUTH</td><td>Authentication service</td></tr>
+  <tr><td>117</td><td>UUCP-PATH</td><td>UNIX-to-UNIX Copy Protocol (UUCP) Path Service</td></tr>
+  <tr><td>119</td><td>NNTP</td><td>Usenet Network News Transfer Protocol</td></tr>
+  <tr><td>123</td><td>NTP</td><td>Network Time Protocol</td></tr>
+  <tr><td>126</td><td>SNMP</td><td>Simple Network Management Protocol</td></tr>
+  <tr><td>137</td><td>NETBIOS-NS</td><td>NetBIOS name service</td></tr>
+  <tr><td>138</td><td>NETBIOS-DGM</td><td>NetBIOS datagram service</td></tr>
+  <tr><td>139</td><td>NETBIOS-SSN</td><td>NetBIOS session service</td></tr>
+  <tr><td>161</td><td>SNMP</td><td>Simple Network Management Protocol</td></tr>
+  <tr><td>162</td><td>SNMP-TRAP</td><td>Simple Network Management Protocol traps</td></tr>
+  <tr><td>512</td><td>rexec</td><td>UNIX remote execution (control)
+  <tr><td>513</td><td>TCP—rlogin<br>UDP—rwho</td><td>TCP—UNIX remote login<br>UDP—UNIX broadcast name service</td></tr>
+  <tr><td>514</td><td>TCP—rsh<br>UDP—syslog</td>
+  <tr><td>TCP—UNIX remote shell<br>UDP—system log</td></tr>
+  <tr><td>515</td><td>Printer UNIX line</td><td>printer remote spooling</td></tr>
+  <tr><td>520</td><td>RIP</td><td>Routing Information Protocol</td></tr>
+  <tr><td>525</td><td>Timed</td><td>Time server</td></tr>
+</table> 
+</div>  
+
+<!---Ip Header Content-->
+<div class="w3-container" id="ipheader">
+  <p class="thickborder"></p>
+  <h2>IP Headers</h2>
+  <div style="overflow-x:auto;">
+  <img src="images/Ip_header.jpg" alt="ipheader">
+  </div>
+  <br>
+  <ul>
+    <li>version - Current IP Version / Used in IPv4 and IPv6 / Needed for IPv6 backwards-compatabile.</li>
+    <li>IHL - Length of the IP header in 32 bit increments</li>
+    <li>DSCP - Mechanism used for classifying network traffic on IP Networks
+    <h2>https://www.sciencedirect.com/topics/computer-science/version-field</h2>
+    <li>ECN - Explicit Congestion Notification - An extension to the 
+        Internet Protocol to the Transmision Control Protocol
+        allows end-to-end notification of network congestion
+        without dropping packets.
+    </li>
+    <h2>https://en.wikipedia.org/wiki/Explicit_Congestion_Notification</h2>
+    <li>Total Length - 16-bit field indicates to the entire
+        size of ip packe header and data in bytes
+        The minimum size 20 bytes (No Data) Maximum 65.535 bytes
+    </li>
+    <li>Identification - The Ip packet is fragmented then each 
+      packet will use the same 16 bit number
+      to identify which IP packet they belong to.
+    </li>
+    <li>Flags</li>
+    1rst bit is always set to 0<br>
+    2nd bit is called the DG (Dont Fragment)
+    3rd bit is called the MF (More Fragments) bit and is
+    set on all fragmented packets except the last one.
+    </li>
+    <li>Fragment Offset - 13th bit field specifies the position of
+    fragment in the original fragmented IP packet.</li>
+    <li>Time To Live - Every packet that passes through the router. the
+    time to live field is decremented b 1. Once it hits 0 the router will
+    drop the packet and sends an ICMP time exceeded messafe to the sender.The time to live filed has 8 bits and is used
+    to prevent packets from looping around forever (if you have a routing loop)
+    </li>
+    <li>Protocol</li>
+    <li>Header Checksum - 16 bit field used to store a checksum of the header.
+    The receiver can use the checksum to check if there are any errors in the header.</li>
+    <li>Source Address - 32 bit source IP address</li>
+    <li>Destination Address - 32 bit destination IP address</li>
+    <li>Options - this field is not used often, is optional and has a 
+        variable length based on the options that were used.
+        When you use this field, the value in the header length field will increase.
+        An example of a possible option is “source route” where the sender<br>
+        requests for a certain routing path.
+    </li>
+    <h2>Source - https://networklessons.com/cisco/ccna-routing-switching-icnd1-100-105/ipv4-packet-header </h2>
+    <h2>https://www.sciencedirect.com/topics/computer-science/version-field</h2>
+
+    <div class="footer">
+
+    </div>
+    </div>  
+    <!-- END MAIN -->
+    </div>
+    <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <script>
+      // Open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+       
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+    
+    
+    </body>
+    </html>
+    
+</div>

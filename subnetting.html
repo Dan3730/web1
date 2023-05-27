@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div class="img"></div><title></title>
+  <p class="thickborder"></p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"></link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+<link rel="stylesheet" href="stylesheet1.css"></link>
+</head>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top" style="z-index:3;width:50px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-5">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+  </div>
+  <div class="sidenav">
+  <img src="images/disney4.jpg" width="180" height="100">
+  <div class="w3-padding-24 w3-medium w3-text-grey" style="font-weight:bold">
+    <a href="how2.html" class="w3-bar-item w3-button">Home</a>
+    <a href="important.html" class="w3-bar-item w3-button">Important Links</a>
+  </div>  
+  <button class="dropdown-btn">welcome</a>
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <a href="welcome.html" class="w3-bar-item w3-button">Welcome</a>
+  </div>
+  <button class="dropdown-btn">Networking<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="networking.html">Networking</a>
+    <li>Ports</li>
+    <li>Headers</li>
+  </div>
+  <button class="dropdown-btn">Subnetting<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="subnetting.html">Subnetting</a>
+      <li>purpose</li>
+      <li>Classful IPv4Addresses</li>
+      <li>Private IPv4 Addresses</li>
+      <li>Special IPv4 Addresses</li>
+      <li>Bogon Ipv4 Addresses</li>
+      <li>Subnet Mask/Range</li>
+      <li>Converting</li>       
+  </div>
+  <button class="dropdown-btn">Linux Commands<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container"> 
+    <a href="linuxcom.html">Linux Commands</a> 
+      <li>System Info</a>
+      <li>User Info</a>
+      <li>File Commands</a>
+      <li>Search Command</a>
+      <li>File Permission</a>
+      <li>File transfer</a>
+      <li>Process Management Commands
+      <li>ls options</a>
+      <li>Compress and Decompress</a>
+      <li>Networking</a>
+      <li>install</a>
+      <li>hardware</a>
+  </div>    
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-12 w3-right" onclick="w3_open()"><i class="fa fa-bars" style="font-size: 24px;"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:auto">
+ 
+  <!-- Push down content on small screens -->
+<div class="w3-hide-large" style="margin-top:83px"></div>
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<!-- Subnetting-->
+ <table id="purpose">
+  <h2>What is the purpose of subnetting</h2>
+  <tr>
+    <td>
+      <li>To seperate device from other devices</li>
+      <li>Limit the amount of available ip addresses on the network.</li>
+      <li>Network segmentation</li>
+      <li>Provide ip addresses to devices</li>
+    </td>   
+  </tr>  
+  </table>
+  <!---Classful IPv4 Addresses-->
+  <h3 id="ipv4">Classful IPv4 Addresses </h3> 
+  <table>
+    <tr>
+      <td>Class</td>
+      <td>Range</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>0.0.0.0-127.255.255.255</td>     
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>128.0.0.0-191.255.255.255</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>192.0.0.0-223.255.255.255</td>
+    </tr>
+    <tr>
+     <td>D</td>
+     <td>224.0.0.0-239.255.255.255</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>240.0.0.0-255.255.255.255</td>      
+    </tr>
+    <tr>
+      <td><p>127 is not shown because it's the assigned loopback address.</p></td>
+      <td></td>
+    </tr>
+  </table>
+<!--Private IPv4 Addresses-->
+<h3 id="privateipv4">Private IPv4 Addresses</h3>
+<table>
+    <tr><td>10.0.0.0-10.255.255.255</td></tr>
+    <tr><td>172.16.0.0-172.31.255.255</td></tr>
+    <tr><td>192.168.0.0-192.168.255.255</td></tr>
+</table>
+<!--Special IPv4 Addresses-->  
+<h3 id="special">Special IPv4 Addresses</h3>
+<table> 
+    <tr>
+      <td>Local Host</td>
+      <td>APIPA</td>
+    </tr>
+    <tr>
+      <td>127.0.0.0-127.255.255.255</td>
+      <td>169.254.0.0-169.254.255.255</td>
+    </tr>
+</table>
+<!---Bogon IPv4 Addresses-->
+<h3 id="bogon">Bogon IPv4 Addresses</h3>
+<table>
+  <tr>
+    <td>0.0.0.8</td>
+    <td>This network</td>
+  <tr>
+    <td>10.0.0/8</td>
+    <td>Private IPv4 Address Block</td>
+  </tr>
+  <tr>
+    <td>100.64.0.0/10</td>
+    <td>Carrier-grade NAT</td>
+  </tr>
+  <tr>
+    <td>127.0.0/8</td>
+    <td>Loopback</td>
+  </tr>
+  <tr>
+    <td>127.0.53.53</td>
+    <td>Name Collision occurence</td>
+  </tr>
+  <tr>
+    <td>169.254.0.0/16</td>
+    <td>Link Local</td>
+  </tr>
+  <tr>
+    <td>172.16.0.0/12</td>
+    <td>Private IPv4 Address Block</td>
+  </tr>
+  <tr>
+    <td>192.0.0/24</td>
+    <td>IETF protocol assignments</td>
+  </tr>
+  <tr>
+    <td>198.18.0.0/15</td>
+    <td>Network benchmark testing</td>
+  </tr>
+  <tr>
+    <td>198.51.100.0/24</td>
+    <td>TEST-NET-2</td>
+  </tr>
+  <tr>
+    <td>203.0.113.0/24</td>
+    <td>TEST-NET-3</td>
+  </tr>
+  <tr>
+    <td>224.0.0.0/4</td> 
+    <td>Multicast</td>
+  </tr>
+  <tr>
+    <td>240.0.0.0/4</td>
+    <td>Reserved</td> 
+  </tr>
+  <tr>
+    <td>255.255.255.255/32</td>
+    <td>Limited broadcast</td> 
+  </tr>
+</table>
+<!--Notations-->  
+<h3 id="subnetrange">Subnet Mask/Range</h3>
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>CIDR</th>
+      <th>Subnet Mask</th>
+      <th>Addresses</th>
+      <th>Wildcard</th>
+    </tr>
+    <tr>
+      <td>/32</td>
+      <td>255.255.255.255</td>
+      <td>1</td>
+      <td>0.0.0.0</td>     
+    </tr>
+    <tr>
+      <td>/31</td>
+      <td>255.255.255.254</td>
+      <td>2</td>
+      <td>0.0.0.1</td>    
+    </tr>
+    <tr>
+      <td>/30</td>
+      <td>255.255.255.252</td>
+      <td>4</td>            
+      <td>0.0.0.3</td>  
+    </tr>
+    <tr>
+      <td>/29</td>
+      <td>255.255.255.248</td>
+      <td>8</td>            
+      <td>0.0.0.7</td>  
+    </tr>
+    <tr>
+      <td>/28</td>
+      <td>255.255.255.240</td>
+      <td>16</td>            
+      <td>0.0.0.15</td>  
+    </tr>  
+    <tr>
+      <td>/27</td>
+      <td>255.255.255.224</td>
+      <td>32</td>            
+      <td>0.0.0.31</td>  
+    </tr>
+    <tr>
+      <td>/26</td>
+      <td>255.255.255.192</td>
+      <td>64</td>            
+      <td>0.0.0.63</td>  
+    </tr>
+    <tr>
+      <td>/25</td>
+      <td>255.255.255.128</td>
+      <td>128</td>            
+      <td>0.0.0.127</td>  
+    </tr>
+    <tr>
+      <td>/24</td>
+      <td>255.255.255.0</td>
+      <td>256</td>            
+      <td>0.0.0.255</td>  
+    </tr>
+    <tr>
+      <td>/23</td>
+      <td>255.255.254.0</td>
+      <td>512</td>            
+      <td>0.0.1.255</td>  
+    </tr>
+    <tr>
+      <td>/22</td>
+      <td>255.255.252.0</td>
+      <td>1,024</td>            
+      <td>0.0.3.255</td>  
+    </tr>
+    <tr>
+      <td>/21</td>
+      <td>255.255.248.0</td>
+      <td>2,048</td>            
+      <td>0.0.7.255</td>  
+    </tr>
+    <tr>
+      <td>/20</td>
+      <td>255.255.240.0</td>
+      <td>4,096</td>            
+      <td>0.0.15.255</td>  
+    </tr>
+    <tr>
+      <td>/19</td>
+      <td>255.255.254.0</td>
+      <td>8,192</td>            
+      <td>0.0.31.255</td>  
+   </tr>
+   <tr>
+      <td>/18</td>
+      <td>255.255.192.0</td>
+      <td>16,384</td>            
+      <td>0.0.63.255</td>  
+    </tr>
+    <tr>
+      <td>/17</td>
+      <td>255.255.128.0</td>
+      <td>32,768</td>            
+      <td>0.0.127.255</td>  
+    </tr>
+    <tr>
+      <td>/16</td>
+      <td>255.255.0.0</td>
+      <td>65,536</td>            
+      <td>0.0.255.255</td>  
+    </tr>
+      <td>/15</td>
+      <td>255.254.0.0</td>
+      <td>131,072</td>            
+      <td>0.1.255.255</td>  
+    </tr> 
+      <td>/14</td>
+      <td>255.252.0.0</td>
+      <td>262,144</td>            
+      <td>0.3.255.255</td>  
+    </tr>
+      <td>/13</td>
+      <td>255.248.0.0</td>
+      <td>524,288</td>            
+      <td>0.7.255.255</td>  
+    </tr> 
+      <td>/12</td>
+      <td>255.240.0.0</td>
+      <td>1,048,576</td>            
+      <td>0.15.255.255</td>  
+    </tr>  
+      <td>/11</td>
+      <td>255.224.0.0</td>
+      <td>2,097,152</td>            
+      <td>0.31.255.255</td>  
+    </tr>  
+      <td>/10</td>
+      <td>255.192.0.0</td>
+      <td>4,194,304</td>            
+      <td>0.63.255.255</td>  
+    </tr>  
+      <td>/09</td>
+      <td>255.128.0.0</td>
+      <td>8,388,608</td>            
+      <td>0.127.255.255</td>  
+    </tr>
+      <td>/08</td>
+      <td>255.0.0.0</td>
+      <td>16,777,216</td>            
+      <td>0.255.255.255</td>  
+    </tr>
+      <td>/07</td>
+      <td>254.0.0.0</td>
+      <td>33,554,432</td>            
+      <td>1.255.255.255</td>  
+    <tr>
+      <td>/06</td>
+      <td>252.0.0.0</td>
+      <td>67,108,864</td>            
+      <td>3.255.255.255</td>  
+    </tr> 
+      <td>/05</td> 
+      <td>248.0.0.0</td>
+      <td>134,217,728</td>            
+      <td>7.255.255.255</td>  
+    </tr> 
+      <td>/04</td>
+      <td>240.0.0.0</td>
+      <td>268,435,456</td>            
+      <td>15.255.255.255</td>  
+    </tr>
+      <td>/03</td>
+      <td>224.0.0.0</td>
+      <td>536,870,912</td>            
+      <td>31.255.255.255</td>  
+    </tr> 
+      <td>/02</td>
+      <td>192.0.0.0</td>
+      <td>1,073,741,824</td>            
+      <td>63.255.255.255</td>  
+    </tr> 
+      <td>/01</td>
+      <td>128.0.0.0</td>
+      <td>2,147,483,648</td>            
+      <td>127.255.255.255</td>  
+    </tr> 
+      <td>/00</td>
+      <td>0.0.0.0</td>
+      <td>4,294,967,296</td>            
+      <td>255.255.255.255</td>  
+    </tr>
+</table>
+</div>
+ <!--Converting -->
+ <div style="overflow-x:auto;">
+  <table>
+    <h2 id="converting">Convert 1011 to A Decimal</h2>
+    <tr>
+      <td>Bytes</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+    </tr>
+    <tr>
+      <td>Power2</td><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>    
+    </tr>
+    <tr>
+      <td>Binary Turned On</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td> 
+    </tr> 
+    <tr>
+      <td>Represented bit value.</td><td>0</td><td>0</td><td>0</td><td>0</td><td>8</td><td>0</td><td>2</td><td>1</td>
+    </tr>  
+  </table>  
+  <table>
+    <th>Add the values</th>
+    <tr>
+    <td>
+	    8 + 2 = 10
+      10 + 2 = 12
+	    12 + 1 = 13</td>
+	  <td>13</td>
+    </tr>
+  </table>
+  <h2>Convert 111011 to A decimal.</h2>
+  <div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <td>0</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+    </tr>
+    <tr>
+      <td>Power2</td><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>    
+    </tr>
+    <tr>
+      <td>Binary Turned On</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
+    </tr> 
+	   <td>Represented bit value.</td><td>0</td><td>0</td><td>32</td><td>16</td><td>8<td>0</td><td>2</td><td>1</td>
+    </tr> 
+  </table>
+  <table>
+    <th>Add the values</th>
+    <tr>
+    <td>
+	    32 + 16 = 48
+      48 + 8 = 56
+	    56 + 2 = 58
+	    58 + 1 = 59</td>
+	  <td>59</td>
+    </tr>
+  </table>
+</div>
+<div class="footer">
+
+</div>
+</div>  
+<!-- END MAIN -->
+</div>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+
+
+</body>
+</html>
