@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
+<title></title>
 <head>
-  <div class="img"></div><title></title>
-  <p class="thickborder"></p>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
@@ -11,6 +10,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 <link rel="stylesheet" href="stylesheet1.css"></link>
 </head>
+<div class="img"></div>
+<p class="thickborder"></p>
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top" style="z-index:3;width:50px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-5">
@@ -89,45 +90,73 @@
 </div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:auto">
 <h5>Cyber Awareness</h5>
-<li><h4>Types Of Attackers</h4>
-  <h3>Industrial comptitors and foreign intelligence services</h3>
-  <p>These threat actors are interested in financial gain
+<p class="thickborder"></p>
+<div class="w3-main" style="margin-left:auto">
+<h3>Types Of Attackers</h3>
+<table>
+<tr>
+  <td><h3>Industrial comptitors and foreign 
+    intelligence services</h3>
+  </td>
+  <td>
+  <p>These threat actors are interested in financial gain 
     for their companies or countries.</p>
-  <h3>Hackers</h3>
-  <p>People who are interested in breaking into computer systems
+  </td>
+</tr>
+<tr>
+  <td><h3>Hackers</h3></td>
+  <td><p>People who are interested in breaking into computer systems
     using various technics that include a wide range of skills.(OSNIT-
     Open Source Intelligence)</p>
-  <h3>Hactivist</h3>
-  <p>People who attack companies for political or ideological motives.</p>
-  <h3>Employees</h3>
-  <p>People who are employeed by a business or company
+  </td>
+</tr>
+<tr>
+  <td><h3>Hactivist</h3></td>
+  <td>
+    <p>People who attack companies for political 
+    or ideological motives.</p>
+  </td>
+</tr>
+<tr>
+  <td><h3>Employees</h3></td>
+  <td>
+    <p>People who are employeed by a business or company
     who have legitmate access that either accidentaly
     or deliberate misuse of their network.
   </p>
-  <h4>Types of Attacks</h4>
-  <h3>Phishing</h3>
-  <p>Sending emails to large numer of people asking for sensitive
+  </td>
+</tr>
+</table>
+  <h3>Types of Attacks</h3></td>
+<table>
+  <tr>
+    <td><h3>Phishing</h3></td>
+    <td><p>Sending emails to large numer of people asking for sensitive
     information (such as bank details) or encouraging them to visit
-    websites
-  <h3>water holing</h3>
-  <p>Setting up a fake website or compromising
+    websites</p>
+    </td>
+  </tr>
+  <tr>
+    <td><h3>water holing</h3></td>
+    <td><p>Setting up a fake website or compromising
     a legitmate one in order to exploit visiting users.</p>
-  <h3>Ransomware</h3>
-  <p>When a hacker takes control over a device,computer, or network
-    using malware that encrypts files and demands payment
-    for decrypting your files</p>
-  <h3>scanning</h3>
-  <p>Attacking the internet using scanning utilities that can analyze
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Ransomware</h3></td>
+    <td><p>When a hacker takes control over a device,computer, or network 
+      using malware that encrypts files and demands payment 
+      for decrypting your files</p>
+    </td>
+  </tr>
+  <tr>
+    <td><h3>scanning</h3></td>
+    <td><p>Attacking the internet using scanning utilities that can analyze
     data</p>
-    
-  <li><h2>Cyber Threat Prevention</h2></li>
-
-</div>
-</div>
-
-
+    </td>
+  </tr>
+</table>
 </div>
 </div>  
 <!-- END MAIN -->
@@ -139,7 +168,7 @@ var i;
 
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
-    th.is.classList.toggle("active");
+    this.classList.toggle("active");
     var dropdownContent = this.nextElementSibling;
     if (dropdownContent.style.display === "block") {
       dropdownContent.style.display = "none";
