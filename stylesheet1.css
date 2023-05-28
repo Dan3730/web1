@@ -196,10 +196,10 @@ img {
   color: #ffffff;
   display: block;
   height: 50px;
-  border-width: 2px;
+  border-width: 1px;
   border-bottom: #f1f1f1;
   border:#ffffff;
-  border-style: solid;
+  border-style:dashed;
   background-color:rgb(0, 0, 0);
   width: 100%;
   text-align: left;
