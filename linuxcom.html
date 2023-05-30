@@ -343,36 +343,26 @@
       </tr> 
     </table>
  <div style="overflow-x:auto;">
-    <h2 id="fileperm">File Permission</h2>
+    <h2>File Permission</h2>
     <table>
       <tr>
-        <td>chown user</td>
-        <td>changes ownership of a file/directory</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </td>
-      </tr>
-      <tr>
-        <td>chown user:group filename</td>
-        <td>changes user and group for a file or directory</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>       
-      <tr>
-        <td>r (read) permission, 4</td>
-        <td>w (write) permission, 2</td>
-        <td>x (execute) permission, 1</td>
-        <td>-= no permission</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>File Owner</td>
-        <td>owner/group/everyone</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>
+          ls -l - Shows the long list of data files that 
+          include file permissions.
+          <br>
+          chown user - Changes ownership of a file/directory
+          chown user:group - filename - 
+          Changes user and group for a file or directory
+        </td>
+      </tr>  
+    </table>
+    <br>
+    <table>
+      <tr><td></td>r (read) permission, 4</td></tr>
+            w (write) permission, 2<br>
+            x (execute) permission, 1<br>
+            -= no permission</td>
+      
       <tr>
         <td>File permissions Example</td>
         <td>777 | Owner, Group, Everyone has rwx permissions</td>
