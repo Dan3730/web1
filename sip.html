@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
@@ -24,7 +24,15 @@
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
-      <a href="about.html" class="w3-bar-item w3-button">Welcome</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+  </div>
+  <button class="dropdown-btn">Cyber Awareness<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="cyberaware.html">Cyber Awareness</a>
+    <li>Types of Attacks</li>
+    <li>Types of Attackers</li>
+    <li>Cyber threat Prevention</li>
   </div>
   <button class="dropdown-btn">Networking<i class="fa fa-caret-down"></i>
   </button>
@@ -64,58 +72,41 @@
   </div>    
   </div>
 </nav>
-
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-12 w3-right" onclick="w3_open()"><i class="fa fa-bars" style="font-size: 24px;"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-12 w3-right" onclick="w3_open()">
+    <i class="fa fa-bars" style="font-size: 24px;"></i></a>
 </header>
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close" id="myOverlay"></div>
-
-<div class="img"></div>
-  <p class="thickborder"></p>
-  <h5>Important Links</h5>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close" id="myOverlay">
+</div>
+<div class="w3-main" style="margin-left:auto">
+  <div class="img"></div>
   <p class="thickborder"></p>
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:auto">
-
-  <!-- Push down content on small screens -->
-<div class="w3-hide-large" style="margin-top:83px"></div>
+<div class="w3-main" style="margin-left:auto"> 
+<!-- Push down content on small screens -->
+<div class="w3-hide-large"></div>
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-
-<!----important links---->
-
-<div class="w3-container">
+<!--Display content-->
+<body class="w3-content" style="max-width:1200px">  
+<h5>About</h5>
+<p class="thickborder"></p>
 <table>
-  <tr><td>  
-  <h2>Need someone to talk to?</h2>    
-    <a href="https://suicidepreventionlifeline.org">
-      <img alt="W3Schools" src="suicidebanner.JPG" width="200" height="100">
-    </a>
-  </td></tr>
+  <tr>
+    <td>
+      <p>This site will display my accomplishments over the years and hopefully you benefit from learning some basic concepts.
+      </p>
+    </td>
+  </tr>  
 </table>
+<h2>Mission Statement</h2>
 <table>
-  <tr><td>
-  <h2>Online Predators.</h2>
-    <a href="https://www.stopchildpredators.org/">
-      <img alt="W3Schools" src="preditors.JPG" width="200" height="100">
-    </a>
-  </tr></td>
+  <td><p>Cyber security is for everyone.</p></td>
 </table>
-<table>
-  <tr><td>
-  <h2>Amber Alerts</h2>
-    <a href="https://www.missingkids.org/Amber.html">
-      <img alt="W3Schools" src="images/Flag1.jpg" width="200" height="100">
-    </a>
-  </td></tr>
-</table>  
 </div>
-</div>  
-
 <!-- END MAIN -->
 </div>
-
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
