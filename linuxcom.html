@@ -19,12 +19,12 @@
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
   </div>
   <div class="sidenav">
-  <img src="images/disney4.jpg" alt="Ddisney" width="180" height="100">
+  <img src="images/disney4.jpg" alt="Disney" width="180" height="100">
   <div class="w3-padding-24 w3-medium w3-text-grey" style="font-weight:bold">
     <a href="how2.html" class="w3-bar-item w3-button">Home</a>
     <a href="important.html" class="w3-bar-item w3-button">Important Links</a>
   </div>  
-  <button class="dropdown-btn">about
+  <button class="dropdown-btn">About
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
@@ -130,13 +130,16 @@
     <td>last</td> 
     <td>reboot displays system reboot history</td> 
   </tr>
+  <tr>
     <td>date</td>
     <td>displays current date and time</td>
+  </tr>
   <tr>
     <td>cal</td> 
     <td>displays monthly calendar</td>
   </tr>
-    <td>mount
+  <tr>
+    <td>mount</td>
     <td>shows mounted filesy-stems</td>
   </tr>
 </table>
@@ -153,7 +156,7 @@
     <tr>
       <td>whoami</td>
       <td>shows who you are logged in as</td>
-    <tr>
+    </tr>
     <tr>
       <td>who</td>
       <td>shows who is logged into the system</td>
@@ -366,17 +369,23 @@
     </table>
     <br>
     <table>
-      <tr><td></td>r (read) permission, 4</td></tr>
-            w (write) permission, 2<br>
-            x (execute) permission, 1<br>
-            -= no permission</td>
-      
+      <tr>
+        <td>r (read) permission, 4</td>
+        <td>w (write) permission, 2</td>
+      </tr>
+      <tr>
+        <td>x (execute) permission, </td>
+        <td>-= no permission</td>     
       <tr>
         <td>File permissions Example</td>
         <td>777 | Owner, Group, Everyone has rwx permissions</td>
+      <tr>    
         <td>744 | Owner has rwx permission recursively</td>
         <td>755 | Owner has rwx permission, Group, Everyone has rx permissions</td>
+      </tr>
+      <tr>
         <td>776 | Owner, Group has rwx permission, Everyone has rw</td>
+        <td></td>
       </tr>
     </table>
 </div>
@@ -425,6 +434,7 @@
       <td>ps -ef | grep xyz</td>
       <td>displays process information for xyz</td>
     </tr>
+    <tr>
       <td>top</td>
       <td> displays and manages the top processes</td>
     </tr>
@@ -440,7 +450,6 @@
       <td>pkill xyz</td>
       <td>kills process with name xyz</td>
     </tr>
-    <tr>
     <tr>
       <td>killall abc</td>
       <td>kills all processes named abc</td>
@@ -482,9 +491,8 @@
       <td>lists files opened by running processes</td>
     </tr>
   </table>
-  <h2 id="search">Search Commands</h2>
-  
-  <h2 id="lsoption">ls Options</h2>
+  <h2>Search Commands</h2>
+  <h2>ls Options</h2>
   <table class="center">
       <tr>
         <td>-a</td>
@@ -552,6 +560,7 @@
       <td>bzip2 -d file.php.bz2</td>
       <td>extracts xyz.gz with bzip2 utility</td>
     </tr>
+    <tr>
       <td>bunzip2 file.php.bz2</td>
       <td>extracts xyz.gz with bzip2 utility</td>
     <tr>
@@ -695,6 +704,7 @@
     <td>ssh</td>
     <td>used for secure connections</td>
   </tr>
+  <tr>
     <td>tshark</td>
     <td>analyzing and capturing</td>
   </tr>
@@ -783,7 +793,7 @@
       <tr>
         <td>dmesg</td>
         <td>displays messages in kernel ring buffer</td>
-      <tr>
+      </tr>
       <tr>
         <td>cat /proc/cpuinfo</td>
         <td>displays CPU information</td>
@@ -809,14 +819,12 @@
       <tr>
         <td>hdparm -tT /dev/sda</td>
         <td>performs a read speed test on disk sda</td>
+      </tr>
       <tr>
         <td>badblocks -s /dev/sda</td>
         <td>tests for unreadable blocks on disk sda</td>
-      <tr>
-    </table>
-</div>
-</div>
-</div>  
+      </tr>
+    </table> 
 <!-- END MAIN -->
 </div>
 <script>
