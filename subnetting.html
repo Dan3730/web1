@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>  
   <title>funcryptology.org</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,84 +10,111 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="stylesheet1.css">
 </head>
-<div class="img"></div>
-<p class="thickborder"></p>
-<!-- Sidebar/menu -->
+<!--Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top" style="z-index:3;width:50px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-5">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
   </div>
   <div class="sidenav">
-  <img src="images/disney4.jpg" alit="Disney" width="180" height="100">
+  <img src="images/disney4.jpg" width="180" height="100">
   <div class="w3-padding-24 w3-medium w3-text-grey" style="font-weight:bold">
     <a href="how2.html" class="w3-bar-item w3-button">Home</a>
     <a href="important.html" class="w3-bar-item w3-button">Important Links</a>
   </div>  
-  <button class="dropdown-btn">About</a>
+  <!--About-->
+  <button class="dropdown-btn">About
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
-      <a href="about.html" class="w3-bar-item w3-button">About</a>
+    <a href="about.html" class="w3-bar-item w3-button">About</a>
   </div>
+  <!--EndAbout-->
+  <!--SIP-->
   <button class="dropdown-btn">SIP
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     <a href="sip.html" class="w3-bar-item w3-button">SIP</a>
+    <a href="production.html" class="w3-bar-item w3-button">Production Diagram</a>
   </div>
-  <button class="dropdown-btn">Networking<i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="networking.html">Networking</a>
-    Ports
-    Headers
-  </div>
+  <!--EndOfSip-->
+  <!--CyberAwarness-->
   <button class="dropdown-btn">Cyber Awareness<i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     <a href="cyberaware.html">Cyber Awareness</a>
-    Types of Attacks
-    Types of Attackers
-    Cyber threat Prevention
+    <li>Types of Attacks</li>
+    <li>Types of Attackers</li>
+    <li>Cyber threat Prevention</li>
   </div>
+<!--EndOfCyberAwarness-->
+<!--Networking-->
+  <button class="dropdown-btn">Networking<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="networking.html">Networking</a>
+    <li>Ports</li>
+    <li>Headers</li>
+  </div>
+  <!--Subnetting-->
   <button class="dropdown-btn">Subnetting<i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     <a href="subnetting.html">Subnetting</a>
-      purpose
-      Classful IPv4Addresses
-      Private IPv4 Addresses
-      Special IPv4 Addresses
-      Bogon Ipv4 Addresses
-      Subnet Mask/Range
-      Converting       
+      <li>purpose</li>
+      <li>Classful IPv4Addresses</li>
+      <li>Private IPv4 Addresses</li>
+      <li>Special IPv4 Addresses</li>
+      <li>Bogon Ipv4 Addresses</li>
+      <li>Subnet Mask/Range</li>
+      <li>Converting</li>       
   </div>
+  <!--EndOfSubnetting-->
+  <!---Linux Commands-->
   <button class="dropdown-btn">Linux Commands<i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container"> 
     <a href="linuxcom.html">Linux Commands</a> 
-      System Info
-      User Info
-      File Commands
-      Search Command
-      File Permission
-      File transfer
-      Process Management Commands
-      ls options
-      Compress and Decompress
-      Networking
-      install
-      hardware
-  </div>    
+      <li>System Info</li>
+      <li>User Info</li>
+      <li>File Commands</li>
+      <li>Search Command</li>
+      <li>File Permission</li>
+      <li>File transfer</li>
+      <li>Process Management Commands
+      <li>ls options</li>
+      <li>Compress and Decompress</li>
+      <li>Networking</li>
+      <li>install</li>
+      <li>hardware</li>
   </div>
+<!---SystemsAndProcesses-->
+<button class="dropdown-btn">Systems/Processes<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+  <a href="systems.html">Systems/Processes</a>
+</div>    
+<!--EOSystemAndProcess-->
+<!---SystemsAndProcesses-->
+<button class="dropdown-btn">Production/Design<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+  <a href="systems.html">Production/Design</a>
+</div>    
+<!--EOSystemAndProcess-->
+</div>
 </nav>
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-12 w3-right" onclick="w3_open()"><i class="fa fa-bars" style="font-size: 24px;"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-12 w3-right" onclick="w3_open()">
+    <i class="fa fa-bars" style="font-size: 24px;"></i></a>
 </header>
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close" id="myOverlay"></div>
-
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close" id="myOverlay">
+</div>
+<div class="w3-main" style="margin-left:auto">
+  <div class="img"></div>
+  <p class="thickborder"></p>
 <!-- !PAGE CONTENT! -->
 <h5>Subnetting</h5>
 <p class="thickborder"></p>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>  
-  <title>funcryptology.org</title>
+<title>funcryptology.org</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,99 +10,76 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="stylesheet1.css">
 </head>
-<!--Sidebar/menu -->
+<body class="w3-content" style="max-width:1200px"> 
+<!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top" style="z-index:3;width:50px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-5">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
   </div>
   <div class="sidenav">
-  <img src="images/disney4.jpg" width="180" height="100">
-  <div class="w3-padding-24 w3-medium w3-text-grey" style="font-weight:bold">
+  <img src="images/disney4.jpg" width="180" height="100" alt="disney"> 
     <a href="how2.html" class="w3-bar-item w3-button">Home</a>
     <a href="important.html" class="w3-bar-item w3-button">Important Links</a>
-  </div>  
-  <!--About-->
-  <button class="dropdown-btn">About
+    <button class="dropdown-btn">About
     <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="about.html" class="w3-bar-item w3-button">About</a>
-  </div>
-  <!--EndAbout-->
-  <!--SIP-->
-  <button class="dropdown-btn">SIP
+    </button>
+    <div class="dropdown-container">
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+    </div>
+    <button class="dropdown-btn">SIP
     <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="sip.html" class="w3-bar-item w3-button">SIP</a>
-    <a href="production.html" class="w3-bar-item w3-button">Production Diagram</a>
-  </div>
-  <!--EndOfSip-->
-  <!--CyberAwarness-->
+    </button>
+    <div class="dropdown-container">
+      <a href="sip.html" class="w3-bar-item w3-button">SIP</a>
+    </div>
+    <div class="dropdown-container">
+      <a href="sip.html" class="w3-bar-item w3-button">SIP</a>
+    </div>
   <button class="dropdown-btn">Cyber Awareness<i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     <a href="cyberaware.html">Cyber Awareness</a>
-    <li>Types of Attacks</li>
-    <li>Types of Attackers</li>
-    <li>Cyber threat Prevention</li>
+    Types of Attacks<br>
+    Types of Attackers<br>
+    Cyber threat Prevention
   </div>
-<!--EndOfCyberAwarness-->
-<!--Networking-->
   <button class="dropdown-btn">Networking<i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     <a href="networking.html">Networking</a>
-    <li>Ports</li>
-    <li>Headers</li>
+    Ports<br>
+    Headers
   </div>
-  <!--Subnetting-->
   <button class="dropdown-btn">Subnetting<i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     <a href="subnetting.html">Subnetting</a>
-      <li>purpose</li>
-      <li>Classful IPv4Addresses</li>
-      <li>Private IPv4 Addresses</li>
-      <li>Special IPv4 Addresses</li>
-      <li>Bogon Ipv4 Addresses</li>
-      <li>Subnet Mask/Range</li>
-      <li>Converting</li>       
+      purpose<br>
+      Classful IPv4Addresses<br>
+      Private IPv4 Addresses<br>
+      Special IPv4 Addresses<br>
+      Bogon Ipv4 Addresses<br>
+      Subnet Mask/Range<br>
+      Converting       
   </div>
-  <!--EndOfSubnetting-->
-  <!---Linux Commands-->
   <button class="dropdown-btn">Linux Commands<i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container"> 
     <a href="linuxcom.html">Linux Commands</a> 
-      <li>System Info</li>
-      <li>User Info</li>
-      <li>File Commands</li>
-      <li>Search Command</li>
-      <li>File Permission</li>
-      <li>File transfer</li>
-      <li>Process Management Commands
-      <li>ls options</li>
-      <li>Compress and Decompress</li>
-      <li>Networking</li>
-      <li>install</li>
-      <li>hardware</li>
+      System Info<br>
+      User Info<br>
+      File Commands<br>
+      Search Command<br>
+      File Permission<br>
+      File transfer<br>
+      Process Management Commands<br>
+      ls options<br>
+      Compress and Decompress<br>
+      Networking<br>
+      install<br>
+      hardware
+  </div>    
   </div>
-<!---SystemsAndProcesses-->
-<button class="dropdown-btn">Systems/Processes<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-container">
-  <a href="systems.html">Systems/Processes</a>
-</div>    
-<!--EOSystemAndProcess-->
-<!---SystemsAndProcesses-->
-<button class="dropdown-btn">Production/Design<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-container">
-  <a href="systems.html">Production/Design</a>
-</div>    
-<!--EOSystemAndProcess-->
-</div>
 </nav>
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
@@ -121,7 +98,7 @@
 <div class="w3-hide-large"></div>
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <!--Display content--> 
-<h5>About</h5>
+<h5>Production and Design</h5>
 <p class="thickborder"></p>
 <table>
   <tr>
