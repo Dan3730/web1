@@ -16,7 +16,7 @@
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
   </div>
   <div class="sidenav">
-  <img src="images/disney4.jpg" width="180" height="100">
+  <img src="images/disney4.jpg" alt="Disney" width="180" height="100">
   <div class="w3-padding-24 w3-medium w3-text-grey" style="font-weight:bold">
     <a href="how2.html" class="w3-bar-item w3-button">Home</a>
     <a href="important.html" class="w3-bar-item w3-button">Important Links</a>
@@ -43,9 +43,9 @@
   </button>
   <div class="dropdown-container">
     <a href="cyberaware.html">Cyber Awareness</a>
-    <li>Types of Attacks</li>
-    <li>Types of Attackers</li>
-    <li>Cyber threat Prevention</li>
+    Types of Attacks
+    Types of Attackers
+    Cyber threat Prevention
   </div>
 <!--EndOfCyberAwarness-->
 <!--Networking-->
@@ -53,21 +53,21 @@
   </button>
   <div class="dropdown-container">
     <a href="networking.html">Networking</a>
-    <li>Ports</li>
-    <li>Headers</li>
+    Ports
+    Headers
   </div>
   <!--Subnetting-->
   <button class="dropdown-btn">Subnetting<i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     <a href="subnetting.html">Subnetting</a>
-      <li>purpose</li>
-      <li>Classful IPv4Addresses</li>
-      <li>Private IPv4 Addresses</li>
-      <li>Special IPv4 Addresses</li>
-      <li>Bogon Ipv4 Addresses</li>
-      <li>Subnet Mask/Range</li>
-      <li>Converting</li>       
+      purpose
+      Classful IPv4Addresses
+      Private IPv4 Addresses
+      Special IPv4 Addresses
+      Bogon Ipv4 Addresses
+      Subnet Mask/Range
+      Converting       
   </div>
   <!--EndOfSubnetting-->
   <!---Linux Commands-->
@@ -75,18 +75,18 @@
   </button>
   <div class="dropdown-container"> 
     <a href="linuxcom.html">Linux Commands</a> 
-      <li>System Info</li>
-      <li>User Info</li>
-      <li>File Commands</li>
-      <li>Search Command</li>
-      <li>File Permission</li>
-      <li>File transfer</li>
-      <li>Process Management Commands
-      <li>ls options</li>
-      <li>Compress and Decompress</li>
-      <li>Networking</li>
-      <li>install</li>
-      <li>hardware</li>
+      System Info
+      User Info
+      File Commands
+      Search Command
+      File Permission
+      File transfer
+      Process Management Commands
+      ls options
+      Compress and Decompress
+      Networking
+      install
+      hardware
   </div>
 <!---SystemsAndProcesses-->
 <button class="dropdown-btn">Systems/Processes<i class="fa fa-caret-down"></i>
@@ -112,11 +112,9 @@
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close" id="myOverlay">
 </div>
-<div class="w3-main" style="margin-left:auto">
   <div class="img"></div>
   <p class="thickborder"></p>
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:auto"> 
 <!-- Push down content on small screens -->
 <div class="w3-hide-large"></div>
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
@@ -129,14 +127,14 @@
 <div class="w3-hide-large"></div>
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <!-- Subnetting-->
- <table id="purpose">
-  <h3>What is the purpose of subnetting</h3>
+<h3>Purpose of subnetting</h3>
+ <table>
   <tr>
     <td>
-      <li>To seperate device from other devices
-      <li>Limit the amount of available ip addresses on the network.
-      <li>Network segmentation
-      <li>Provide ip addresses to devices
+      To seperate device from other devices
+      Limit the amount of available ip addresses on the network.
+      Network segmentation
+      Provide ip addresses to devices
     </td>   
   </tr>  
   </table>
@@ -252,8 +250,8 @@
 </table>
 <!--Notations-->  
 <h3>Subnet Mask/Range</h3>
-<table>
 <div style="overflow-x:auto;">
+<table>
     <tr>
       <th>CIDR</th>
       <th>Subnet Mask</th>
@@ -362,81 +360,97 @@
       <td>65,536</td>            
       <td>0.0.255.255</td>  
     </tr>
+    <tr>
       <td>/15</td>
       <td>255.254.0.0</td>
       <td>131,072</td>            
       <td>0.1.255.255</td>  
-    </tr> 
+    </tr>
+    <tr> 
       <td>/14</td>
       <td>255.252.0.0</td>
       <td>262,144</td>            
       <td>0.3.255.255</td>  
     </tr>
+    <tr>
       <td>/13</td>
       <td>255.248.0.0</td>
       <td>524,288</td>            
       <td>0.7.255.255</td>  
-    </tr> 
+    </tr>
+    <tr> 
       <td>/12</td>
       <td>255.240.0.0</td>
       <td>1,048,576</td>            
       <td>0.15.255.255</td>  
-    </tr>  
+    </tr>
+    <tr>  
       <td>/11</td>
       <td>255.224.0.0</td>
       <td>2,097,152</td>            
       <td>0.31.255.255</td>  
-    </tr>  
+    </tr>
+    <tr>  
       <td>/10</td>
       <td>255.192.0.0</td>
       <td>4,194,304</td>            
       <td>0.63.255.255</td>  
-    </tr>  
+    </tr>
+    <tr>  
       <td>/09</td>
       <td>255.128.0.0</td>
       <td>8,388,608</td>            
       <td>0.127.255.255</td>  
     </tr>
+    <tr>
       <td>/08</td>
       <td>255.0.0.0</td>
       <td>16,777,216</td>            
       <td>0.255.255.255</td>  
     </tr>
+    <tr>
       <td>/07</td>
       <td>254.0.0.0</td>
       <td>33,554,432</td>            
       <td>1.255.255.255</td>  
+    </tr>
     <tr>
       <td>/06</td>
       <td>252.0.0.0</td>
       <td>67,108,864</td>            
       <td>3.255.255.255</td>  
-    </tr> 
+    </tr>
+    <tr> 
       <td>/05</td> 
       <td>248.0.0.0</td>
       <td>134,217,728</td>            
       <td>7.255.255.255</td>  
-    </tr> 
+    </tr>
+    <tr> 
       <td>/04</td>
       <td>240.0.0.0</td>
       <td>268,435,456</td>            
       <td>15.255.255.255</td>  
     </tr>
+    <tr>
       <td>/03</td>
       <td>224.0.0.0</td>
       <td>536,870,912</td>            
       <td>31.255.255.255</td>  
-    </tr> 
+    </tr>
+    <tr> 
       <td>/02</td>
       <td>192.0.0.0</td>
       <td>1,073,741,824</td>            
       <td>63.255.255.255</td>  
-    </tr> 
+    </tr>
+    <tr> 
       <td>/01</td>
       <td>128.0.0.0</td>
       <td>2,147,483,648</td>            
       <td>127.255.255.255</td>  
-    </tr> 
+    </tr>
+    <tr> 
       <td>/00</td>
       <td>0.0.0.0</td>
       <td>4,294,967,296</td>            
@@ -460,9 +474,9 @@
     <tr>
       <td>Represented bit value.</td><td>0</td><td>0</td><td>0</td><td>0</td><td>8</td><td>0</td><td>2</td><td>1</td>
     </tr>  
-  </table>  
+  </table>
+  <h3>Add the values</h3>  
   <table>
-    <th>Add the values</th>
     <tr>
     <td>
 	    8 + 2 = 10
@@ -471,10 +485,9 @@
 	  <td>13</td>
     </tr>
   </table>
+  <div style="overflow-x:auto;">
   <h3>Convert 111011 to A decimal.</h3>
   <table>
-  <div style="overflow-x:auto;">
-  
     <tr>
       <td>0</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
     </tr>
@@ -482,20 +495,32 @@
       <td>Power2</td><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>    
     </tr>
     <tr>
-      <td>Binary Turned On</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
-    </tr> 
-	   <td>Represented bit value.</td><td>0</td><td>0</td><td>32</td><td>16</td><td>8<td>0</td><td>2</td><td>1</td>
+      <td>Binary Turned On</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>    
+    <td>Represented bit value.</td><td>0</td><td>0</td><td>32</td><td>16</td><td>8<td>0</td><td>2</td><td>1</td>
     </tr> 
   </table>
-  <table>
-    <th>Add the values</th>
+  <h3>Add the values</h3>
+  <table> 
     <tr>
     <td>
 	    32 + 16 = 48
       48 + 8 = 56
 	    56 + 2 = 58
-	    58 + 1 = 59</td>
+	    58 + 1 = 59
+    </td>
 	  <td>59</td>
+    <td></td>
+    <td></td>
     </tr>
   </table>
 </div>
